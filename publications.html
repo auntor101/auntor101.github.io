@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Auntor Chakma - Research Publications and Academic Contributions">
+    <title>Publications | Auntor Chakma</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Auntor Chakma</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="research.html" class="nav-link">Research</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="publications.html" class="nav-link active">Publications</a></li>
+                <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Publications</h1>
+            <p>Research Contributions and Academic Output</p>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="section">
+        <div class="container">
+            <div class="publications-container">
+                <h2 class="pub-section-title"><i class="fas fa-book"></i> Published</h2>
+                
+                <div class="publication-card">
+                    <span class="pub-type conference">Conference</span>
+                    <h3>A Deep Learning-Based Framework for Bangla Vehicle License Plate Detection and Recognition</h3>
+                    <p class="authors">Sagor Mohajon, G.M. Sakhawat Hossain, Md Mynoddin, Rishita Chakma, Tanjim Mahmud, Punam Kanungoi, <strong>Auntor Chakma</strong></p>
+                    <p class="venue"><i class="fas fa-book"></i> Springer CCIS, vol 2683, 2025</p>
+                    <div class="pub-abstract">
+                        <p>Proposes a deep-learning framework for Bangla vehicle license plate text recognition using image restoration and sequence recognition techniques. The framework achieves 96% character-level accuracy on a synthetic Bangla license plate dataset, demonstrating robust performance for local vehicle identification systems.</p>
+                    </div>
+                    <div class="pub-links">
+                        <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                        <a href="#" class="pub-link"><i class="fas fa-external-link-alt"></i> Springer Link</a>
+                    </div>
+                </div>
+
+                <h2 class="pub-section-title"><i class="fas fa-flask"></i> In Preparation</h2>
+
+                <div class="publication-card">
+                    <span class="pub-type preprint">Manuscript in Preparation</span>
+                    <h3>Generative-Enhanced Ensemble Framework for Diabetic Retinopathy Grading under Severe Class Imbalance</h3>
+                    <p class="authors"><strong>Auntor Chakma</strong>, et al.</p>
+                    <p class="venue"><i class="fas fa-flask"></i> Target Journal: Medical Image Analysis / IEEE Journal of Biomedical and Health Informatics</p>
+                    <div class="pub-abstract">
+                        <p>Developed dual-head architecture combining ordinal regression with categorical classification for seven-stage diabetic retinopathy grading, utilizing Stable Diffusion 2.1 generative augmentation with ControlNet-Canny conditioning and morphological attention masks. The framework addresses severe class imbalance challenges in medical imaging through advanced generative techniques. Achieved 91.65% accuracy with 91.67% macro F1-score, validated through Grad-CAM explainability analysis for clinical interpretability.</p>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Generative AI</span>
+                        <span class="tech-tag">Medical Imaging</span>
+                        <span class="tech-tag">Explainable AI</span>
+                        <span class="tech-tag">Deep Learning</span>
+                    </div>
+                </div>
+
+                <div class="publication-card">
+                    <span class="pub-type preprint">Manuscript in Preparation</span>
+                    <h3>Attentive TabNet Framework for Multiclass Intrusion Detection in IoMT</h3>
+                    <p class="authors"><strong>Auntor Chakma</strong>, et al.</p>
+                    <p class="venue"><i class="fas fa-flask"></i> Target Journal: IEEE Internet of Things Journal / Computer Networks</p>
+                    <div class="pub-abstract">
+                        <p>Developed TabNet-based framework with attention mechanisms for multiclass intrusion detection in Internet of Medical Things (IoMT) environments. The framework incorporates GAN-based synthetic data generation to address severe class imbalance in cybersecurity datasets. Achieved 97.96% multiclass accuracy across 89 million network traffic records, demonstrating robust performance for real-world IoMT security applications. The attention-based architecture provides interpretable feature importance for security analysis.</p>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">TabNet</span>
+                        <span class="tech-tag">IoMT Security</span>
+                        <span class="tech-tag">Intrusion Detection</span>
+                        <span class="tech-tag">GANs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
