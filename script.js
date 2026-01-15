@@ -84,6 +84,47 @@ function copyEmail() {
     });
 }
 
+// Load CV link from localStorage
+const cvButton = document.getElementById('downloadCV');
+if (cvButton) {
+    const cvLink = localStorage.getItem('cvLink');
+    if (cvLink) {
+        cvButton.href = cvLink;
+    } else {
+        cvButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            alert('CV link not set. Please contact admin.');
+        });
+    }
+}
+
+// Load profile picture from localStorage
+window.addEventListener('DOMContentLoaded', () => {
+    const profilePic = localStorage.getItem('profilePic');
+    if (profilePic) {
+        const avatars = document.querySelectorAll('.avatar');
+        avatars.forEach(avatar => {
+            avatar.innerHTML = `<img src="${profilePic}" alt="Profile" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">`;
+        });
+    }
+});
+
+// Load publication links from localStorage
+const pubLinks = document.querySelectorAll('.pub-link');
+pubLinks.forEach(link => {
+    const pubId = link.getAttribute('data-pub-id');
+    const storedLink = localStorage.getItem(pubId.replace('-text', ''));
+    
+    if (storedLink) {
+        link.href = storedLink;
+    } else {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            alert('Link not available yet. Please check back later.');
+        });
+    }
+});
+
 // Intersection Observer for animations
 const observerOptions = {
     threshold: 0.1,
