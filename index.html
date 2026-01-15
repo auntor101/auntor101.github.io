@@ -4,14 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Auntor Chakma - AI Researcher | Generative AI | Computer Vision">
-    <meta name="keywords" content="Auntor Chakma, AI, Generative AI, Computer Vision, Machine Learning, Research, XAI">
-    <meta name="author" content="Auntor Chakma">
     <title>Auntor Chakma | AI Researcher</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Netlify Identity Widget for CMS authentication -->
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -52,16 +48,16 @@
                     <span>Research Intern @ ELITE Research Lab LLC, NY</span>
                 </div>
                 <div class="social-links">
-                    <a href="mailto:auntorchakma@gmail.com" class="social-icon" aria-label="Email">
+                    <a href="mailto:auntorchakma@gmail.com" class="social-icon">
                         <i class="fas fa-envelope"></i>
                     </a>
-                    <a href="https://github.com/auntor101" target="_blank" class="social-icon" aria-label="GitHub">
+                    <a href="https://github.com/auntor101" target="_blank" class="social-icon">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://linkedin.com/in/auntor101" target="_blank" class="social-icon" aria-label="LinkedIn">
+                    <a href="https://linkedin.com/in/auntor101" target="_blank" class="social-icon">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://scholar.google.com/citations?user=zhwU8sUAAAAJ&hl=en" target="_blank" class="social-icon" aria-label="Google Scholar">
+                    <a href="https://scholar.google.com/citations?user=zhwU8sUAAAAJ&hl=en" target="_blank" class="social-icon">
                         <i class="fas fa-graduation-cap"></i>
                     </a>
                 </div>
@@ -87,7 +83,7 @@
                 <div class="about-stats">
                     <div class="stat-card">
                         <i class="fas fa-file-alt"></i>
-                        <h3>3</h3>
+                        <h3>1</h3>
                         <p>Publications</p>
                     </div>
                     <div class="stat-card">
@@ -171,18 +167,5 @@
     </button>
 
     <script src="script.js"></script>
-    <script src="cms-loader.js"></script>
-    <!-- Netlify Identity redirect after login -->
-    <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-          }
-        });
-      }
-    </script>
 </body>
 </html>
