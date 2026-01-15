@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Auntor Chakma - Research Publications and Academic Contributions">
+    <meta name="description" content="Auntor Chakma - Research Publications and Academic Work">
     <title>Publications | Auntor Chakma</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -37,71 +36,122 @@
     <section class="page-header">
         <div class="container">
             <h1>Publications</h1>
-            <p>Research Contributions and Academic Output</p>
+            <p>Research Contributions and Academic Publications</p>
         </div>
     </section>
 
     <!-- Publications Section -->
     <section class="section">
         <div class="container">
-            <div class="publications-container">
-                <h2 class="pub-section-title"><i class="fas fa-book"></i> Published</h2>
-                
-                <div class="publication-card">
-                    <span class="pub-type conference">Conference</span>
-                    <h3>A Deep Learning-Based Framework for Bangla Vehicle License Plate Detection and Recognition</h3>
-                    <p class="authors">Sagor Mohajon, G.M. Sakhawat Hossain, Md Mynoddin, Rishita Chakma, Tanjim Mahmud, Punam Kanungoi, <strong>Auntor Chakma</strong></p>
-                    <p class="venue"><i class="fas fa-book"></i> Springer CCIS, vol 2683, 2025</p>
-                    <div class="pub-abstract">
-                        <p>Proposes a deep-learning framework for Bangla vehicle license plate text recognition using image restoration and sequence recognition techniques. The framework achieves 96% character-level accuracy on a synthetic Bangla license plate dataset, demonstrating robust performance for local vehicle identification systems.</p>
-                    </div>
-                    <div class="pub-links">
-                        <a href="#" class="pub-link" data-pub-id="pub1-pdf"><i class="fas fa-file-pdf"></i> <span id="pub1-pdf-text">PDF</span></a>
-                        <a href="#" class="pub-link" data-pub-id="pub1-link"><i class="fas fa-external-link-alt"></i> <span id="pub1-link-text">Link</span></a>
-                    </div>
+            <!-- Publication 1: Bangla License Plate - PUBLISHED -->
+            <div class="publication-card">
+                <div class="pub-header">
+                    <span class="status-badge published">Published</span>
+                    <span class="type-badge">Conference</span>
                 </div>
-
-                <h2 class="pub-section-title"><i class="fas fa-flask"></i> In Preparation</h2>
-
-                <div class="publication-card">
-                    <span class="pub-type preprint">Manuscript in Preparation</span>
-                    <h3>Generative-Enhanced Ensemble Framework for Diabetic Retinopathy Grading under Severe Class Imbalance</h3>
-                    <p class="authors"><strong>Auntor Chakma</strong>, et al.</p>
-                    <p class="venue"><i class="fas fa-flask"></i> Manuscript in Preparation</p>
-                    <div class="pub-abstract">
-                        <p>Developed dual-head architecture combining ordinal regression with categorical classification for seven-stage diabetic retinopathy grading, utilizing Stable Diffusion 2.1 generative augmentation with ControlNet-Canny conditioning and morphological attention masks. The framework addresses severe class imbalance challenges in medical imaging through advanced generative techniques. Achieved 91.65% accuracy with 91.67% macro F1-score, validated through Grad-CAM++ explainability analysis for clinical interpretability.</p>
-                    </div>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Generative AI</span>
-                        <span class="tech-tag">Medical Imaging</span>
-                        <span class="tech-tag">Explainable AI</span>
-                        <span class="tech-tag">Deep Learning</span>
-                        <span class="tech-tag">Grad-CAM++</span>
-                    </div>
-                    <div class="pub-links">
-                        <a href="#" class="pub-link" data-pub-id="pub2-pdf"><i class="fas fa-file-pdf"></i> <span id="pub2-pdf-text">PDF</span></a>
-                        <a href="#" class="pub-link" data-pub-id="pub2-link"><i class="fas fa-external-link-alt"></i> <span id="pub2-link-text">Link</span></a>
-                    </div>
+                <h3>Advancing Bangladeshi Intelligent Transportation Systems: An Extended ALPR System with GFPGAN Deblurring and Linguistically Valid Synthetic Datasets</h3>
+                <p class="authors">Sagar Mohajan, G.M. Sakhawat Hossain, Md Mynoddin, Rishita Chakma, Tanjim Mahmud, Punam Kanungoe, <strong>Auntor Chakma</strong></p>
+                <p class="venue">Lecture Notes in Networks and Systems, Springer, 2022</p>
+                <div class="pub-abstract">
+                    <p>Automatic License Plate Recognition (ALPR) is a core component of Intelligent Transportation Systems, yet it remains challenging in non-Latin contexts such as Bangladesh. This paper presents an end-to-end Bangla ALPR pipeline that addresses degradation and data scarcity through GFPGAN-based restoration, linguistically constrained synthetic plate generation, and segmentation-free sequence transcription using MobileNetV2 + BiLSTM with CTC decoding.</p>
                 </div>
+                <div class="pub-contributions">
+                    <h4>Key Contributions:</h4>
+                    <ul>
+                        <li>Trained and evaluated 5 distinct deep learning models (Custom CNN, InceptionV3, MobileNetV2, VGG16, ResNet50) for Bangla character recognition</li>
+                        <li>Collaborated with primary authors on model development, experimentation, and comparative analysis</li>
+                        <li>Contributed to academic writing and manuscript preparation</li>
+                    </ul>
+                </div>
+                <div class="pub-links">
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-032-11355-9_16" target="_blank" class="btn btn-outline"><i class="fas fa-external-link-alt"></i> View Publication</a>
+                </div>
+            </div>
 
-                <div class="publication-card">
-                    <span class="pub-type preprint">Manuscript in Preparation</span>
-                    <h3>Attentive TabNet Framework for Multiclass Intrusion Detection in IoMT</h3>
-                    <p class="authors"><strong>Auntor Chakma</strong>, et al.</p>
-                    <p class="venue"><i class="fas fa-flask"></i> Manuscript in Preparation</p>
-                    <div class="pub-abstract">
-                        <p>Developed TabNet-based framework with attention mechanisms for multiclass intrusion detection in Internet of Medical Things (IoMT) environments. The framework incorporates GAN-based synthetic data generation to address severe class imbalance in cybersecurity datasets. Achieved 97.96% multiclass accuracy across 89 million network traffic records, demonstrating robust performance for real-world IoMT security applications. The attention-based architecture provides interpretable feature importance for security analysis.</p>
-                    </div>
-                    <div class="tech-tags">
-                        <span class="tech-tag">TabNet</span>
-                        <span class="tech-tag">IoMT Security</span>
-                        <span class="tech-tag">Intrusion Detection</span>
-                        <span class="tech-tag">GANs</span>
-                    </div>
-                    <div class="pub-links">
-                        <a href="#" class="pub-link" data-pub-id="pub3-pdf"><i class="fas fa-file-pdf"></i> <span id="pub3-pdf-text">PDF</span></a>
-                        <a href="#" class="pub-link" data-pub-id="pub3-link"><i class="fas fa-external-link-alt"></i> <span id="pub3-link-text">Link</span></a>
-                    </div>
+            <!-- Publication 2: Diabetic Retinopathy - COMPLETED -->
+            <div class="publication-card">
+                <div class="pub-header">
+                    <span class="status-badge completed">Completed</span>
+                    <span class="type-badge">Journal</span>
+                </div>
+                <h3>Generative-Enhanced Ensemble Framework for Diabetic Retinopathy Grading under Severe Class Imbalance</h3>
+                <p class="authors"><strong>Auntor Chakma</strong>, Collaborators</p>
+                <p class="venue">Manuscript Completed, 2025</p>
+                <div class="pub-abstract">
+                    <p>Developed ensemble framework combining VGG19, DenseNet121, and InceptionResNetV2 with GAN-based synthetic data generation and Grad-CAM++ visualization for interpretable diabetic retinopathy grading. Addresses severe class imbalance in medical imaging datasets through advanced data augmentation and ensemble techniques.</p>
+                </div>
+                <div class="pub-contributions">
+                    <h4>Key Contributions:</h4>
+                    <ul>
+                        <li>Designed generative AI-enhanced ensemble architecture for handling severe class imbalance</li>
+                        <li>Implemented Grad-CAM++ for explainable AI in medical diagnosis</li>
+                        <li>Achieved robust performance through weighted ensemble strategies</li>
+                    </ul>
+                </div>
+                <div class="pub-tags">
+                    <span class="tag">Ensemble Learning</span>
+                    <span class="tag">Generative AI</span>
+                    <span class="tag">Grad-CAM++</span>
+                    <span class="tag">Medical Imaging</span>
+                    <span class="tag">Class Imbalance</span>
+                </div>
+            </div>
+
+            <!-- Publication 3: IoMT Intrusion Detection - THESIS & PREPRINT -->
+            <div class="publication-card">
+                <div class="pub-header">
+                    <span class="status-badge thesis">Thesis & Preprint</span>
+                    <span class="type-badge">Journal</span>
+                </div>
+                <h3>Attentive TabNet Framework for Multiclass Intrusion Detection in Internet of Medical Things</h3>
+                <p class="authors"><strong>Auntor Chakma</strong>, Co-authors</p>
+                <p class="venue">BSc Thesis, Manuscript in Preparation, 2025</p>
+                <div class="pub-abstract">
+                    <p>Developed TabNet-based framework with attention mechanisms and GAN-based synthetic data generation for IoMT intrusion detection, achieving 97.96% multiclass accuracy across 89 million network traffic records. Defense completed in May 2025.</p>
+                </div>
+                <div class="pub-contributions">
+                    <h4>Key Contributions:</h4>
+                    <ul>
+                        <li>Designed attentive TabNet framework for multiclass intrusion detection in IoMT, overcoming limitations of binary-focused IDS systems</li>
+                        <li>Addressed severe data imbalance through GAN-based synthetic minority sample generation</li>
+                        <li>Demonstrated TabNet's attention mechanism superiority for generalizable IoMT security models</li>
+                    </ul>
+                </div>
+                <div class="pub-tags">
+                    <span class="tag">TabNet</span>
+                    <span class="tag">IoMT Security</span>
+                    <span class="tag">GAN</span>
+                    <span class="tag">Attention Mechanism</span>
+                    <span class="tag">Intrusion Detection</span>
+                    <span class="tag">Grad-CAM++</span>
+                </div>
+            </div>
+
+            <!-- Publication 4: Network Traffic Detection - ONGOING UNDER FACULTY -->
+            <div class="publication-card">
+                <div class="pub-header">
+                    <span class="status-badge ongoing">Ongoing under Faculty</span>
+                    <span class="type-badge">Research</span>
+                </div>
+                <h3>Developing an Adaptive Machine Learning Framework for Real-Time Detection of Malicious Network Traffic in Bangladesh</h3>
+                <p class="authors"><strong>Auntor Chakma</strong> (Contributed), Faculty Supervisor, Team</p>
+                <p class="venue">Research Project, Ongoing</p>
+                <div class="pub-abstract">
+                    <p>Contributed to early-stage development of an adaptive machine learning framework for real-time malicious network traffic detection. The framework incorporates GAN-based synthetic data generation to address class imbalance challenges in cybersecurity applications. Project continues under faculty supervision.</p>
+                </div>
+                <div class="pub-contributions">
+                    <h4>My Contributions:</h4>
+                    <ul>
+                        <li>Designed GAN-based synthetic data generation framework to address class imbalance in cybersecurity datasets</li>
+                        <li>Contributed to feature engineering and initial model architecture design</li>
+                        <li>Transitioned from project; research continues under faculty supervision</li>
+                    </ul>
+                </div>
+                <div class="pub-tags">
+                    <span class="tag">Network Security</span>
+                    <span class="tag">GAN</span>
+                    <span class="tag">Real-time Detection</span>
+                    <span class="tag">Class Imbalance</span>
                 </div>
             </div>
         </div>
@@ -112,6 +162,5 @@
     </button>
 
     <script src="script.js"></script>
-    <script src="cms-loader.js"></script>
 </body>
 </html>
