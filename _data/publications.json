@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "title": "A Deep Learning-Based Framework for Bangla Vehicle License Plate Detection and Recognition",
+      "authors": "Sagor Mohajon, G.M. Sakhawat Hossain, Md Mynoddin, Rishita Chakma, Tanjim Mahmud, Punam Kanungoi, Auntor Chakma",
+      "venue": "Springer CCIS, vol 2683, 2025",
+      "year": 2025,
+      "status": "Published",
+      "type": "Conference",
+      "abstract": "Proposes a deep-learning framework for Bangla vehicle license plate text recognition using image restoration and sequence recognition techniques. The framework achieves 96% character-level accuracy on a synthetic Bangla license plate dataset, demonstrating robust performance for local vehicle identification systems.",
+      "pdf": "",
+      "link": "",
+      "tags": "Deep Learning, Computer Vision, OCR"
+    },
+    {
+      "title": "Generative-Enhanced Ensemble Framework for Diabetic Retinopathy Grading under Severe Class Imbalance",
+      "authors": "Auntor Chakma, et al.",
+      "venue": "Manuscript in Preparation",
+      "year": 2025,
+      "status": "In Preparation",
+      "type": "Preprint",
+      "abstract": "Developed dual-head architecture combining ordinal regression with categorical classification for seven-stage diabetic retinopathy grading, utilizing Stable Diffusion 2.1 generative augmentation with ControlNet-Canny conditioning and morphological attention masks. The framework addresses severe class imbalance challenges in medical imaging through advanced generative techniques. Achieved 91.65% accuracy with 91.67% macro F1-score, validated through Grad-CAM++ explainability analysis for clinical interpretability.",
+      "pdf": "",
+      "link": "",
+      "tags": "Generative AI, Medical Imaging, Explainable AI, Deep Learning, Grad-CAM++"
+    },
+    {
+      "title": "Attentive TabNet Framework for Multiclass Intrusion Detection in IoMT",
+      "authors": "Auntor Chakma, et al.",
+      "venue": "Manuscript in Preparation",
+      "year": 2025,
+      "status": "In Preparation",
+      "type": "Preprint",
+      "abstract": "Developed TabNet-based framework with attention mechanisms for multiclass intrusion detection in Internet of Medical Things (IoMT) environments. The framework incorporates GAN-based synthetic data generation to address severe class imbalance in cybersecurity datasets. Achieved 97.96% multiclass accuracy across 89 million network traffic records, demonstrating robust performance for real-world IoMT security applications. The attention-based architecture provides interpretable feature importance for security analysis.",
+      "pdf": "",
+      "link": "",
+      "tags": "TabNet, IoMT Security, Intrusion Detection, GANs"
+    }
+  ]
+}

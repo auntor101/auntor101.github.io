@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "degree": "Bachelor of Science in Computer Science and Engineering",
+      "institution": "Rangamati Science and Technology University",
+      "location": "Rangamati, Bangladesh",
+      "start_year": "2018",
+      "end_year": "2025",
+      "gpa": "3.50/4.00",
+      "thesis": "Attentive TabNet Framework for Multiclass Intrusion Detection in IoMT",
+      "thesis_abstract": "Developed TabNet-based framework with attention mechanisms and GAN-based synthetic data generation for IoMT intrusion detection, achieving 97.96% multiclass accuracy across 89 million network traffic records. Defense completed in May 2025, manuscript in preparation for journal submission."
+    },
+    {
+      "degree": "Higher Secondary Certificate (HSC)",
+      "institution": "Notre Dame College",
+      "location": "Dhaka, Bangladesh",
+      "start_year": "2015",
+      "end_year": "2017",
+      "gpa": "5.00/5.00",
+      "thesis": "",
+      "thesis_abstract": ""
+    },
+    {
+      "degree": "Secondary School Certificate (SSC)",
+      "institution": "Laker's Public School and College",
+      "location": "Dhaka, Bangladesh",
+      "start_year": "2013",
+      "end_year": "2015",
+      "gpa": "5.00/5.00",
+      "thesis": "",
+      "thesis_abstract": ""
+    }
+  ]
+}

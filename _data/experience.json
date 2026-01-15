@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "position": "Research Intern",
+      "company": "ELITE Research Lab LLC",
+      "location": "New York, USA (Remote)",
+      "start_date": "January 2026",
+      "end_date": "Present",
+      "current": true,
+      "description": "Contributing to research in generative AI and healthcare diagnostics applications\nDeveloping advanced deep learning models for clinical decision support systems",
+      "tech_tags": "Generative AI, Deep Learning, Research"
+    },
+    {
+      "position": "Research Collaborator",
+      "company": "ELITE Research Lab LLC",
+      "location": "Queens, NY, USA (Remote)",
+      "start_date": "August 2025",
+      "end_date": "December 2025",
+      "current": false,
+      "description": "Developed generative-enhanced ensemble framework achieving 91.65% accuracy for diabetic retinopathy classification across seven stages\nDesigned dual-head neural architecture integrating ordinal regression and categorical classification\nImplemented stacking ensemble combining five CNN architectures improving baseline accuracy by 2.09%\nApplied Stable Diffusion 2.1 with ControlNet for synthetic image generation addressing severe class imbalance",
+      "tech_tags": "PyTorch, Stable Diffusion, Ensemble Learning, Generative AI"
+    },
+    {
+      "position": "Research Assistant",
+      "company": "Rangamati Science and Technology University",
+      "location": "Rangamati, Bangladesh",
+      "start_date": "December 2024",
+      "end_date": "June 2025",
+      "current": false,
+      "description": "Collected and preprocessed large-scale real-time network traffic dataset from Bangladesh telecommunications infrastructure\nConducted literature review on intrusion detection systems and network security methodologies\nCollaborated with research team on developing deep learning framework for malicious traffic detection\nSupported experiment environment setup and data pipeline development",
+      "tech_tags": "Deep Learning, Network Security, Data Preprocessing, Literature Review"
+    },
+    {
+      "position": "Software Engineer Intern",
+      "company": "Celloscope Limited",
+      "location": "Dhaka, Bangladesh",
+      "start_date": "March 2024",
+      "end_date": "June 2024",
+      "current": false,
+      "description": "Contributed to backend systems development using Java, Spring Boot, and RESTful APIs\nDesigned and implemented relational database schemas with MySQL\nCompleted training in Agile software development methodologies and sprint planning\nCollaborated with development team using Git version control workflows",
+      "tech_tags": "Java, Spring Boot, MySQL, REST APIs, Git"
+    }
+  ]
+}

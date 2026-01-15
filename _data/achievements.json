@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "title": "Merit Scholarship",
+      "description": "Rangamati Science and Technology University",
+      "year": "2023-2024, 2024-2025",
+      "icon": "fas fa-trophy"
+    },
+    {
+      "title": "Chittagong Hill Tracts Development Board Scholarship",
+      "description": "Awarded for Academic Excellence",
+      "year": "2018, 2023, 2024, 2025",
+      "icon": "fas fa-award"
+    },
+    {
+      "title": "Rangamati Hill District Council Scholarship",
+      "description": "Academic Performance Recognition",
+      "year": "2023, 2025",
+      "icon": "fas fa-medal"
+    },
+    {
+      "title": "Third Place - Inter University Hackathon",
+      "description": "Developed web-based platform for Rangamati Hill Tracts community resource mapping",
+      "year": "2023",
+      "icon": "fas fa-code"
+    },
+    {
+      "title": "Inter-School Drawing Competition - First Place",
+      "description": "National Level Competition",
+      "year": "2008",
+      "icon": "fas fa-palette"
+    },
+    {
+      "title": "Inter-School Drawing Competition - Second Place",
+      "description": "National Level Competition",
+      "year": "2009",
+      "icon": "fas fa-palette"
+    }
+  ]
+}

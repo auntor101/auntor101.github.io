@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "title": "Anomaly Detection in IOMT Devices",
+      "description": "Developed anomaly detection system for Internet of Medical Things devices using VAE (Variational Autoencoder), Autoencoder, and LSTM models. The framework identifies security threats and unusual patterns in healthcare IoT environments through unsupervised learning techniques.",
+      "icon": "fas fa-shield-alt",
+      "github_url": "https://github.com/auntor101/Anomaly--Detections-in-IOMT-devices-",
+      "demo_url": "",
+      "tech_tags": "VAE, Autoencoder, LSTM, IoMT, Security"
+    },
+    {
+      "title": "Github Profile Analyzer",
+      "description": "Full-stack application for analyzing GitHub profiles and generating hirability scores for job market assessment. Provides insights into developer activity, code quality, and professional visibility.",
+      "icon": "fas fa-chart-line",
+      "github_url": "https://github.com/auntor101/Github-Profile-Analyzer",
+      "demo_url": "",
+      "tech_tags": "Python, GitHub API, Data Analysis, Web Development"
+    },
+    {
+      "title": "University Vehicle Tracking System",
+      "description": "Real-time GPS tracking system for university vehicles enabling students to monitor location, routes, and seat availability. Features live updates, route optimization, and mobile interface.",
+      "icon": "fas fa-bus",
+      "github_url": "https://github.com/auntor101/Multiple-University-Vehicles-Tracking-in-Real-Time-for-a-Smoother-Transportation",
+      "demo_url": "",
+      "tech_tags": "Java, Android, Real-time GPS, Firebase"
+    },
+    {
+      "title": "Ecommerce Web Application",
+      "description": "Full-stack ecommerce platform built with Django and React featuring product management, shopping cart functionality, secure payment integration, and responsive design.",
+      "icon": "fas fa-shopping-cart",
+      "github_url": "https://github.com/auntor101/Ecommerce-Web-Application-using-Django-and-React",
+      "demo_url": "",
+      "tech_tags": "Django, React, JavaScript, REST API"
+    },
+    {
+      "title": "Chittagong Weather Prediction Model",
+      "description": "Machine learning-based weather forecasting system for Chittagong Division, Bangladesh using historical meteorological data. Implements time series analysis and regression models for accurate weather predictions.",
+      "icon": "fas fa-cloud-sun-rain",
+      "github_url": "https://github.com/auntor101/Weather-Prediction",
+      "demo_url": "",
+      "tech_tags": "Python, Time Series, ML Models, Data Science"
+    }
+  ]
+}

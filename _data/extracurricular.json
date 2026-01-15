@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "title": "AI Seminar Host",
+      "organization": "University Campus",
+      "date": "2023 - 2024",
+      "description": "Hosted seminars on artificial intelligence and AI safety on school campus, educating students and faculty about AI applications, ethical considerations, and safety protocols.",
+      "icon": "fas fa-chalkboard-teacher"
+    },
+    {
+      "title": "Winter Relief Distribution",
+      "organization": "Rangamati Hill District Rural Areas",
+      "date": "Winter 2023, Winter 2024",
+      "description": "Distributed books and warm clothes to underprivileged communities in rural areas of Rangamati Hill District during winter seasons, supporting education and basic needs.",
+      "icon": "fas fa-hand-holding-heart"
+    },
+    {
+      "title": "Conference Website Developer",
+      "organization": "RMSTU International Bioscience Conference 2025",
+      "date": "2024 - 2025",
+      "description": "Built conference website (icbc.rmstu-conf.ac.bd) as part of 6-member development team. Worked as security analyst and backend developer ensuring secure and robust platform for the international conference.",
+      "icon": "fas fa-code"
+    },
+    {
+      "title": "Technical Session Coordinator",
+      "organization": "RMSTU International Bioscience Conference 2025",
+      "date": "May 16-18, 2025",
+      "description": "Coordinated technical sessions, managed presentation schedules, and assisted with conference logistics for international academic conference.",
+      "icon": "fas fa-chalkboard-teacher"
+    },
+    {
+      "title": "Volunteer",
+      "organization": "Bangladesh Red Crescent Society",
+      "date": "2023 - 2024",
+      "description": "Supported disaster response initiatives and community health awareness programs. Participated in blood donation campaigns and emergency relief operations.",
+      "icon": "fas fa-hand-holding-heart"
+    }
+  ]
+}

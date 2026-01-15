@@ -1,0 +1,44 @@
+{
+  "categories": [
+    {
+      "name": "Programming Languages",
+      "icon": "fas fa-code",
+      "skills": "Python, Java, C"
+    },
+    {
+      "name": "ML/DL Frameworks",
+      "icon": "fas fa-brain",
+      "skills": "PyTorch, TensorFlow, Scikit-learn, Keras, OpenCV"
+    },
+    {
+      "name": "Data Science Tools",
+      "icon": "fas fa-chart-bar",
+      "skills": "NumPy, Pandas, Matplotlib, Seaborn, Data Preprocessing, Feature Engineering"
+    },
+    {
+      "name": "Web Development",
+      "icon": "fas fa-laptop-code",
+      "skills": "Django, RESTful APIs, Spring Boot"
+    },
+    {
+      "name": "Databases",
+      "icon": "fas fa-database",
+      "skills": "MySQL, MongoDB"
+    },
+    {
+      "name": "Security & Network Tools",
+      "icon": "fas fa-shield-alt",
+      "skills": "Wireshark, Network Analysis"
+    },
+    {
+      "name": "Operating Systems & Tools",
+      "icon": "fas fa-server",
+      "skills": "Linux, Git, GitHub"
+    },
+    {
+      "name": "Documentation & Tools",
+      "icon": "fas fa-tools",
+      "skills": "LaTeX, Microsoft Office, Technical Writing"
+    }
+  ]
+}

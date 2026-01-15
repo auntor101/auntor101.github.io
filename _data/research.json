@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "title": "Generative-Enhanced Ensemble Framework for Diabetic Retinopathy Grading under Severe Class Imbalance",
+      "organization": "ELITE Research Lab LLC, New York",
+      "start_date": "August 2025",
+      "end_date": "December 2025",
+      "status": "Ongoing",
+      "description": "Developed a dual-head architecture combining ordinal regression with categorical classification for seven-stage diabetic retinopathy grading. The framework utilizes Stable Diffusion 2.1 generative augmentation with ControlNet-Canny conditioning and morphological attention masks for addressing severe class imbalance in medical imaging datasets.",
+      "contributions": "Designed dual-head neural architecture integrating ordinal regression and categorical classification\nAchieved 91.65% accuracy for seven-stage diabetic retinopathy classification\nImplemented stacking ensemble combining five CNN architectures improving baseline accuracy by 2.09%\nApplied explainable AI techniques using Grad-CAM++ for model interpretability and clinical validation\nAchieved 91.67% macro F1-score demonstrating robust performance across imbalanced classes",
+      "tech_tags": "PyTorch, Stable Diffusion 2.1, ControlNet, CNN Ensemble, Grad-CAM++, Medical Imaging, XAI"
+    },
+    {
+      "title": "Developing an Adaptive Machine Learning Framework for Real-Time Detection of Malicious Network Traffic in Bangladesh",
+      "organization": "Rangamati Science and Technology University",
+      "start_date": "December 2024",
+      "end_date": "June 2025",
+      "status": "Completed",
+      "description": "Contributed to developing an adaptive machine learning framework for detecting malicious network traffic using real-time data from Bangladesh telecommunications infrastructure. The project focused on creating robust detection mechanisms for various network-based security threats.",
+      "contributions": "Collected and preprocessed large-scale real-time network traffic dataset from Bangladesh telecommunications infrastructure\nCollaborated with research team on deep learning model development and optimization\nConducted literature review on network security and intrusion detection systems\nSupported experiment environment setup and data pipeline development\nContributed to academic writing and technical documentation",
+      "tech_tags": "Deep Learning, Network Security, Data Preprocessing, Python, Literature Review"
+    },
+    {
+      "title": "Attentive TabNet Framework for Multiclass Intrusion Detection in IoMT",
+      "organization": "Rangamati Science and Technology University",
+      "start_date": "2024",
+      "end_date": "May 2025",
+      "status": "Manuscript in Preparation",
+      "description": "Developed an advanced intrusion detection system for Internet of Medical Things (IoMT) environments using TabNet architecture with attention mechanisms. The framework incorporates GAN-based synthetic data generation to address class imbalance challenges in cybersecurity applications.",
+      "contributions": "Developed TabNet-based framework with attention mechanisms for IoMT intrusion detection\nImplemented GAN-based synthetic data generation to address severe class imbalance\nAchieved 97.96% multiclass accuracy across 89 million network traffic records\nDesigned feature engineering pipeline for network traffic analysis\nValidated framework performance on large-scale real-world IoMT datasets",
+      "tech_tags": "TabNet, GANs, Attention Mechanism, IoMT Security, Deep Learning, Intrusion Detection"
+    },
+    {
+      "title": "A Deep Learning-Based Framework for Bangla Vehicle License Plate Detection and Recognition",
+      "organization": "Rangamati Science and Technology University",
+      "start_date": "2023",
+      "end_date": "2024",
+      "status": "Completed",
+      "description": "Developed a deep learning framework for Bangla vehicle license plate text recognition using image restoration and sequence recognition techniques. The system addresses challenges specific to Bangla character recognition in license plate detection.",
+      "contributions": "Designed end-to-end framework for Bangla license plate detection and recognition\nImplemented image restoration techniques for enhancing license plate quality\nAchieved 96% character-level accuracy on synthetic Bangla license plate dataset\nDeveloped sequence recognition pipeline for text extraction\nPublished findings in Springer CCIS proceedings",
+      "tech_tags": "Deep Learning, Computer Vision, OCR, Image Processing, Python"
+    }
+  ]
+}
