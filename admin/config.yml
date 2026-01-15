@@ -1,0 +1,128 @@
+backend:
+  name: github
+  repo: auntor101/auntor101.github.io
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "config"
+    label: "Site Configuration"
+    files:
+      - label: "Personal Info"
+        name: "personal"
+        file: "_data/personal.json"
+        fields:
+          - {label: "Full Name", name: "name", widget: "string"}
+          - {label: "Tagline", name: "tagline", widget: "string"}
+          - {label: "Current Position", name: "current_position", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Phone", name: "phone", widget: "string"}
+          - {label: "Location", name: "location", widget: "string"}
+          - {label: "GitHub URL", name: "github", widget: "string"}
+          - {label: "LinkedIn URL", name: "linkedin", widget: "string"}
+          - {label: "Google Scholar URL", name: "scholar", widget: "string"}
+          - {label: "Profile Picture", name: "profile_pic", widget: "image", required: false}
+          - {label: "CV PDF", name: "cv_pdf", widget: "file", required: false}
+          - {label: "About Me (Paragraph 1)", name: "about_p1", widget: "text"}
+          - {label: "About Me (Paragraph 2)", name: "about_p2", widget: "text"}
+          - {label: "About Me (Paragraph 3)", name: "about_p3", widget: "text"}
+
+  - name: "publications"
+    label: "Publications"
+    folder: "_data/publications"
+    create: true
+    slug: "{{year}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Authors", name: "authors", widget: "string"}
+      - {label: "Venue", name: "venue", widget: "string"}
+      - {label: "Year", name: "year", widget: "number"}
+      - {label: "Status", name: "status", widget: "select", options: ["Published", "In Preparation"]}
+      - {label: "Type", name: "type", widget: "select", options: ["Conference", "Journal", "Preprint"]}
+      - {label: "Abstract", name: "abstract", widget: "text"}
+      - {label: "PDF", name: "pdf", widget: "file", required: false}
+      - {label: "External Link", name: "link", widget: "string", required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+
+  - name: "experience"
+    label: "Work Experience"
+    folder: "_data/experience"
+    create: true
+    slug: "{{year}}-{{slug}}"
+    fields:
+      - {label: "Position", name: "position", widget: "string"}
+      - {label: "Company", name: "company", widget: "string"}
+      - {label: "Location", name: "location", widget: "string"}
+      - {label: "Start Date", name: "start_date", widget: "string"}
+      - {label: "End Date", name: "end_date", widget: "string"}
+      - {label: "Current", name: "current", widget: "boolean", default: false}
+      - {label: "Description", name: "description", widget: "list"}
+      - {label: "Technologies", name: "tech_tags", widget: "list"}
+
+  - name: "projects"
+    label: "Projects"
+    folder: "_data/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Icon", name: "icon", widget: "string", default: "fas fa-code"}
+      - {label: "GitHub URL", name: "github_url", widget: "string", required: false}
+      - {label: "Demo URL", name: "demo_url", widget: "string", required: false}
+      - {label: "Technologies", name: "tech_tags", widget: "list"}
+
+  - name: "research"
+    label: "Research Projects"
+    folder: "_data/research"
+    create: true
+    slug: "{{year}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Organization", name: "organization", widget: "string"}
+      - {label: "Start Date", name: "start_date", widget: "string"}
+      - {label: "End Date", name: "end_date", widget: "string"}
+      - {label: "Status", name: "status", widget: "select", options: ["Ongoing", "Completed", "Manuscript in Preparation"]}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Key Contributions", name: "contributions", widget: "list"}
+      - {label: "Technologies", name: "tech_tags", widget: "list"}
+
+  - name: "education"
+    label: "Education"
+    folder: "_data/education"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Degree", name: "degree", widget: "string"}
+      - {label: "Institution", name: "institution", widget: "string"}
+      - {label: "Location", name: "location", widget: "string"}
+      - {label: "Start Year", name: "start_year", widget: "string"}
+      - {label: "End Year", name: "end_year", widget: "string"}
+      - {label: "GPA/CGPA", name: "gpa", widget: "string"}
+      - {label: "Thesis Title", name: "thesis", widget: "string", required: false}
+      - {label: "Thesis Abstract", name: "thesis_abstract", widget: "text", required: false}
+
+  - name: "achievements"
+    label: "Achievements"
+    folder: "_data/achievements"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Year", name: "year", widget: "string"}
+      - {label: "Icon", name: "icon", widget: "string", default: "fas fa-trophy"}
+
+  - name: "extracurricular"
+    label: "Extracurricular Activities"
+    folder: "_data/extracurricular"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Organization", name: "organization", widget: "string"}
+      - {label: "Date/Period", name: "date", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Icon", name: "icon", widget: "string", default: "fas fa-hand-holding-heart"}
