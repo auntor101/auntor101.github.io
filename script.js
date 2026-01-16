@@ -87,13 +87,14 @@ function copyEmail() {
 // Load CV link from localStorage
 const cvButton = document.getElementById('downloadCV');
 if (cvButton) {
-    const cvLink = localStorage.getItem('cvLink');
+    const cvLink = localStorage.getItem('cvUrl');
     if (cvLink) {
         cvButton.href = cvLink;
+        cvButton.target = '_blank';
     } else {
         cvButton.addEventListener('click', (e) => {
             e.preventDefault();
-            alert('CV link not set. Please contact admin.');
+            alert('CV not available yet. Please check back later.');
         });
     }
 }
@@ -110,19 +111,27 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 // Load publication links from localStorage
-const pubLinks = document.querySelectorAll('.pub-link');
-pubLinks.forEach(link => {
-    const pubId = link.getAttribute('data-pub-id');
-    const storedLink = localStorage.getItem(pubId.replace('-text', ''));
-    
-    if (storedLink) {
-        link.href = storedLink;
-    } else {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            alert('Link not available yet. Please check back later.');
-        });
-    }
+document.addEventListener('DOMContentLoaded', () => {
+    const pubLinks = document.querySelectorAll('.pub-link');
+    pubLinks.forEach(link => {
+        const pubId = link.getAttribute('data-pub-id');
+        if (pubId) {
+            // Check localStorage for saved links (format: pub_0_pdf, pub_0_link, etc.)
+            const index = pubId.match(/\d+/)?.[0] || '0';
+            const type = pubId.includes('pdf') ? 'pdf' : 'link';
+            const storedLink = localStorage.getItem(`pub_${index}_${type}`);
+            
+            if (storedLink) {
+                link.href = storedLink;
+                link.target = '_blank';
+            } else {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    alert('Link not available yet. Please check back later.');
+                });
+            }
+        }
+    });
 });
 
 // Intersection Observer for animations

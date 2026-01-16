@@ -1,27 +1,520 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="noindex" />
-  <title>Content Manager | Auntor Chakma Portfolio</title>
-  <!-- Netlify Identity Widget -->
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Admin Panel | Auntor Chakma</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0f23 100%);
+            min-height: 100vh;
+            color: #e4e4e7;
+        }
+
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .login-box {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 40px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .login-box h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+            color: #818cf8;
+        }
+
+        .login-box input {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            color: #fff;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .login-box input:focus {
+            outline: none;
+            border-color: #818cf8;
+        }
+
+        .login-box button {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #818cf8, #6366f1);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .login-box button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(129, 140, 248, 0.3);
+        }
+
+        .error-msg {
+            color: #f87171;
+            text-align: center;
+            margin-bottom: 15px;
+            display: none;
+        }
+
+        /* Admin Panel Styles */
+        .admin-container {
+            display: none;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        .admin-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .admin-header h1 {
+            font-size: 1.8rem;
+            color: #818cf8;
+        }
+
+        .logout-btn {
+            padding: 10px 20px;
+            background: rgba(248, 113, 113, 0.2);
+            border: 1px solid #f87171;
+            border-radius: 8px;
+            color: #f87171;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .logout-btn:hover {
+            background: #f87171;
+            color: white;
+        }
+
+        .admin-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .admin-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 25px;
+        }
+
+        .admin-card h2 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #818cf8;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: #a1a1aa;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+            background: rgba(0, 0, 0, 0.2);
+            color: #fff;
+            font-size: 0.95rem;
+            font-family: inherit;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: #818cf8;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .save-btn {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #10b981, #059669);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-top: 10px;
+        }
+
+        .save-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
+        }
+
+        .github-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 15px;
+            padding: 10px 16px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+            color: #a1a1aa;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .github-link:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+
+        .success-msg {
+            background: rgba(16, 185, 129, 0.2);
+            border: 1px solid #10b981;
+            color: #10b981;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            text-align: center;
+            display: none;
+        }
+
+        .preview-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 10px;
+            border: 2px solid #818cf8;
+        }
+
+        .pub-item {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .pub-item h4 {
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+            color: #e4e4e7;
+        }
+
+        .pub-item .form-group {
+            margin-bottom: 12px;
+        }
+
+        .section-divider {
+            border: none;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin: 20px 0;
+        }
+
+        .instructions {
+            background: rgba(129, 140, 248, 0.1);
+            border: 1px solid rgba(129, 140, 248, 0.3);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            font-size: 0.85rem;
+            color: #a1a1aa;
+        }
+
+        .instructions strong {
+            color: #818cf8;
+        }
+
+        @media (max-width: 768px) {
+            .admin-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-  <!-- Include the Decap CMS script (formerly Netlify CMS) -->
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-  <script>
-    // Initialize Netlify Identity
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
+    <!-- Login Screen -->
+    <div class="login-container" id="loginScreen">
+        <div class="login-box">
+            <h1><i class="fas fa-lock"></i> Admin Login</h1>
+            <p class="error-msg" id="errorMsg">Incorrect password</p>
+            <input type="password" id="passwordInput" placeholder="Enter admin password" onkeypress="if(event.key==='Enter')login()">
+            <button onclick="login()">Login</button>
+        </div>
+    </div>
+
+    <!-- Admin Panel -->
+    <div class="admin-container" id="adminPanel">
+        <div class="admin-header">
+            <h1><i class="fas fa-cog"></i> Admin Panel</h1>
+            <button class="logout-btn" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Logout</button>
+        </div>
+
+        <div class="admin-grid">
+            <!-- Profile Settings -->
+            <div class="admin-card">
+                <h2><i class="fas fa-user"></i> Profile Settings</h2>
+                <div class="success-msg" id="profileSuccess">Saved successfully!</div>
+                
+                <div class="form-group">
+                    <label>Profile Picture URL</label>
+                    <input type="text" id="profilePicUrl" placeholder="https://example.com/your-photo.jpg">
+                    <img id="profilePreview" class="preview-img" style="display:none;">
+                </div>
+
+                <div class="form-group">
+                    <label>CV / Resume PDF URL</label>
+                    <input type="text" id="cvUrl" placeholder="https://example.com/your-cv.pdf">
+                </div>
+
+                <button class="save-btn" onclick="saveProfile()"><i class="fas fa-save"></i> Save Profile Settings</button>
+
+                <div class="instructions">
+                    <strong>How to upload files:</strong><br>
+                    1. Go to <a href="https://github.com/auntor101/auntor101.github.io/upload/main/assets/uploads" target="_blank" style="color:#818cf8;">GitHub uploads folder</a><br>
+                    2. Upload your image/PDF<br>
+                    3. Copy the URL: <code>/assets/uploads/filename.jpg</code>
+                </div>
+            </div>
+
+            <!-- Publication Links -->
+            <div class="admin-card">
+                <h2><i class="fas fa-book"></i> Publication Links</h2>
+                <div class="success-msg" id="pubSuccess">Saved successfully!</div>
+
+                <div id="publicationsList">
+                    <!-- Publications will be loaded here -->
+                </div>
+
+                <button class="save-btn" onclick="savePublications()"><i class="fas fa-save"></i> Save Publication Links</button>
+
+                <a href="https://github.com/auntor101/auntor101.github.io/edit/main/_data/publications.json" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i> Edit full publication details on GitHub
+                </a>
+            </div>
+
+            <!-- Quick Edit Links -->
+            <div class="admin-card">
+                <h2><i class="fas fa-edit"></i> Edit Content on GitHub</h2>
+                <p style="color:#a1a1aa; margin-bottom:20px; font-size:0.9rem;">Click any link below to edit the JSON data directly on GitHub:</p>
+
+                <a href="https://github.com/auntor101/auntor101.github.io/edit/main/_data/personal.json" target="_blank" class="github-link">
+                    <i class="fas fa-user"></i> Personal Info (name, bio, socials)
+                </a>
+                <a href="https://github.com/auntor101/auntor101.github.io/edit/main/_data/publications.json" target="_blank" class="github-link">
+                    <i class="fas fa-book"></i> Publications
+                </a>
+                <a href="https://github.com/auntor101/auntor101.github.io/edit/main/_data/experience.json" target="_blank" class="github-link">
+                    <i class="fas fa-briefcase"></i> Work Experience
+                </a>
+                <a href="https://github.com/auntor101/auntor101.github.io/edit/main/_data/projects.json" target="_blank" class="github-link">
+                    <i class="fas fa-code"></i> Projects
+                </a>
+                <a href="https://github.com/auntor101/auntor101.github.io/edit/main/_data/research.json" target="_blank" class="github-link">
+                    <i class="fas fa-flask"></i> Research
+                </a>
+                <a href="https://github.com/auntor101/auntor101.github.io/edit/main/_data/education.json" target="_blank" class="github-link">
+                    <i class="fas fa-graduation-cap"></i> Education
+                </a>
+                <a href="https://github.com/auntor101/auntor101.github.io/edit/main/_data/skills.json" target="_blank" class="github-link">
+                    <i class="fas fa-tools"></i> Skills
+                </a>
+                <a href="https://github.com/auntor101/auntor101.github.io/edit/main/_data/achievements.json" target="_blank" class="github-link">
+                    <i class="fas fa-trophy"></i> Achievements
+                </a>
+                <a href="https://github.com/auntor101/auntor101.github.io/upload/main/assets/uploads" target="_blank" class="github-link">
+                    <i class="fas fa-upload"></i> Upload Images/PDFs
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple password protection (change this password!)
+        const ADMIN_PASSWORD = 'auntor2025';
+        
+        // Check if already logged in
+        if (sessionStorage.getItem('adminLoggedIn') === 'true') {
+            showAdminPanel();
         }
-      });
-    }
-  </script>
+
+        function login() {
+            const password = document.getElementById('passwordInput').value;
+            if (password === ADMIN_PASSWORD) {
+                sessionStorage.setItem('adminLoggedIn', 'true');
+                showAdminPanel();
+            } else {
+                document.getElementById('errorMsg').style.display = 'block';
+                document.getElementById('passwordInput').value = '';
+            }
+        }
+
+        function logout() {
+            sessionStorage.removeItem('adminLoggedIn');
+            location.reload();
+        }
+
+        function showAdminPanel() {
+            document.getElementById('loginScreen').style.display = 'none';
+            document.getElementById('adminPanel').style.display = 'block';
+            loadSavedData();
+            loadPublications();
+        }
+
+        function loadSavedData() {
+            // Load profile pic
+            const profilePic = localStorage.getItem('profilePic');
+            if (profilePic) {
+                document.getElementById('profilePicUrl').value = profilePic;
+                showProfilePreview(profilePic);
+            }
+
+            // Load CV URL
+            const cvUrl = localStorage.getItem('cvUrl');
+            if (cvUrl) {
+                document.getElementById('cvUrl').value = cvUrl;
+            }
+        }
+
+        function showProfilePreview(url) {
+            if (url) {
+                const preview = document.getElementById('profilePreview');
+                preview.src = url;
+                preview.style.display = 'block';
+                preview.onerror = () => preview.style.display = 'none';
+            }
+        }
+
+        // Preview profile pic on input change
+        document.getElementById('profilePicUrl').addEventListener('input', function() {
+            showProfilePreview(this.value);
+        });
+
+        function saveProfile() {
+            const profilePic = document.getElementById('profilePicUrl').value.trim();
+            const cvUrl = document.getElementById('cvUrl').value.trim();
+
+            if (profilePic) localStorage.setItem('profilePic', profilePic);
+            else localStorage.removeItem('profilePic');
+
+            if (cvUrl) localStorage.setItem('cvUrl', cvUrl);
+            else localStorage.removeItem('cvUrl');
+
+            // Show success message
+            const msg = document.getElementById('profileSuccess');
+            msg.style.display = 'block';
+            setTimeout(() => msg.style.display = 'none', 3000);
+        }
+
+        async function loadPublications() {
+            try {
+                const response = await fetch('/_data/publications.json');
+                const data = await response.json();
+                
+                const container = document.getElementById('publicationsList');
+                container.innerHTML = '';
+
+                if (data.items && data.items.length > 0) {
+                    data.items.forEach((pub, index) => {
+                        const savedPdf = localStorage.getItem(`pub_${index}_pdf`) || pub.pdf || '';
+                        const savedLink = localStorage.getItem(`pub_${index}_link`) || pub.link || '';
+
+                        container.innerHTML += `
+                            <div class="pub-item">
+                                <h4>${pub.title}</h4>
+                                <div class="form-group">
+                                    <label>PDF URL</label>
+                                    <input type="text" id="pub_${index}_pdf" value="${savedPdf}" placeholder="https://example.com/paper.pdf">
+                                </div>
+                                <div class="form-group">
+                                    <label>External Link</label>
+                                    <input type="text" id="pub_${index}_link" value="${savedLink}" placeholder="https://doi.org/...">
+                                </div>
+                            </div>
+                        `;
+                    });
+                } else {
+                    container.innerHTML = '<p style="color:#a1a1aa;">No publications found. Add them via GitHub.</p>';
+                }
+            } catch (error) {
+                document.getElementById('publicationsList').innerHTML = '<p style="color:#a1a1aa;">Could not load publications. Add them via GitHub.</p>';
+            }
+        }
+
+        function savePublications() {
+            const pubItems = document.querySelectorAll('.pub-item');
+            pubItems.forEach((item, index) => {
+                const pdfInput = document.getElementById(`pub_${index}_pdf`);
+                const linkInput = document.getElementById(`pub_${index}_link`);
+
+                if (pdfInput) {
+                    const pdfVal = pdfInput.value.trim();
+                    if (pdfVal) localStorage.setItem(`pub_${index}_pdf`, pdfVal);
+                    else localStorage.removeItem(`pub_${index}_pdf`);
+                }
+
+                if (linkInput) {
+                    const linkVal = linkInput.value.trim();
+                    if (linkVal) localStorage.setItem(`pub_${index}_link`, linkVal);
+                    else localStorage.removeItem(`pub_${index}_link`);
+                }
+            });
+
+            // Show success message
+            const msg = document.getElementById('pubSuccess');
+            msg.style.display = 'block';
+            setTimeout(() => msg.style.display = 'none', 3000);
+        }
+    </script>
 </body>
 </html>
