@@ -84,23 +84,24 @@ function copyEmail() {
     });
 }
 
-// Load CV link from localStorage
-const cvButton = document.getElementById('downloadCV');
-if (cvButton) {
-    const cvLink = localStorage.getItem('cvUrl');
-    if (cvLink) {
-        cvButton.href = cvLink;
-        cvButton.target = '_blank';
-    } else {
-        cvButton.addEventListener('click', (e) => {
-            e.preventDefault();
-            alert('CV not available yet. Please check back later.');
-        });
-    }
-}
-
-// Load profile picture from localStorage
+// Load CV link and profile picture from localStorage
 window.addEventListener('DOMContentLoaded', () => {
+    // Load CV link
+    const cvButton = document.getElementById('downloadCV');
+    if (cvButton) {
+        const cvLink = localStorage.getItem('cvUrl');
+        if (cvLink) {
+            cvButton.href = cvLink;
+            cvButton.target = '_blank';
+        } else {
+            cvButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                alert('CV not available yet. Please check back later.');
+            });
+        }
+    }
+
+    // Load profile picture
     const profilePic = localStorage.getItem('profilePic');
     if (profilePic) {
         const avatars = document.querySelectorAll('.avatar');
