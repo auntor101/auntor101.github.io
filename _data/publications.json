@@ -9,7 +9,7 @@
       "type": "Conference",
       "abstract": "Proposes a deep-learning framework for Bangla vehicle license plate text recognition using image restoration and sequence recognition techniques. The framework achieves 96% character-level accuracy on a synthetic Bangla license plate dataset, demonstrating robust performance for local vehicle identification systems.",
       "pdf": "",
-      "link": "",
+      "link": "https://link.springer.com/chapter/10.1007/978-3-032-11355-9_16",
       "tags": "Deep Learning, Computer Vision, OCR"
     },
     {
