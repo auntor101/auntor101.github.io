@@ -14,7 +14,6 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">Auntor Chakma</div>
-            <ul class="nav-menu" id="navMenu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="research.html" class="nav-link">Research</a></li>
                 <li><a href="experience.html" class="nav-link">Experience</a></li>
@@ -22,6 +21,7 @@
                 <li><a href="publications.html" class="nav-link active">Publications</a></li>
                 <li><a href="education.html" class="nav-link">Education</a></li>
                 <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="references.html" class="nav-link">References</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
@@ -43,6 +43,8 @@
     <!-- Publications Section -->
     <section class="section">
         <div class="container">
+            
+            <h2 class="section-title">Publications</h2>
             <!-- Publication 1: Bangla License Plate - PUBLISHED -->
             <div class="publication-card">
                 <div class="pub-header">
@@ -71,17 +73,19 @@
                 </div>
             </div>
 
-            <!-- Publication 2: Diabetic Retinopathy - MANUSCRIPT IN PREPARATION -->
+            <h2 class="section-title" style="margin-top: 40px;">Under Review</h2>
+
+            <!-- Publication 2: Diabetic Retinopathy -->
             <div class="publication-card">
                 <div class="pub-header">
-                    <span class="status-badge preparation">Manuscript in Preparation</span>
+                    <span class="status-badge review" style="background: #fff4e5; color: #f57c00; padding: 4px 8px; border-radius: 4px; font-weight: 500; font-size: 0.85rem;">Under Review</span>
                     <span class="type-badge">Journal</span>
                 </div>
-                <h3>Interpretable Diabetic Retinopathy Classification Using Diffusion-Based Synthetic Images and Explainable Ensemble Method</h3>
-                <p class="authors"><strong>Auntor Chakma</strong>, Collaborators</p>
-                <p class="venue">Manuscript in Preparation, 2025</p>
+                <h3>An ensemble approach for diabetic retinopathy severity classification with diffusion-based augmentation and explainability.</h3>
+                <p class="authors"><strong>Auntor Chakma</strong>, Rishita Chakma, Diya Rahman, T.H. Liew</p>
+                <p class="venue">Emerging Science Journal, Submitted March 2025</p>
                 <div class="pub-abstract">
-                    <p>Developed an interpretable diabetic retinopathy classification system combining diffusion-based synthetic image generation with explainable ensemble methods. The framework addresses severe class imbalance in medical imaging through advanced generative AI techniques while maintaining clinical interpretability.</p>
+                    <p>This paper develops an AI system to automatically detect and grade diabetic retinopathy severity from retinal images, combining generative augmentation, ensemble deep learning, and explainability to support clinical screening.</p>
                 </div>
                 <div class="pub-contributions">
                     <h4>Key Highlights:</h4>
@@ -102,15 +106,31 @@
                 </div>
             </div>
 
-            <!-- Publication 3: IoMT Intrusion Detection - PREPRINT -->
+            <!-- Publication 3: Federated Learning -->
             <div class="publication-card">
                 <div class="pub-header">
-                    <span class="status-badge preprint">Preprint</span>
+                    <span class="status-badge review" style="background: #fff4e5; color: #f57c00; padding: 4px 8px; border-radius: 4px; font-weight: 500; font-size: 0.85rem;">Under Review</span>
                     <span class="type-badge">Journal</span>
                 </div>
+                <h3>Multimodal federated learning with privacy-preserving mechanisms in healthcare.</h3>
+                <p class="authors"><strong>Auntor Chakma</strong>, F.T.Z. Moon, F. Jahan, M.K. Morol, T.H. Liew, D. Nandi, A.A. Jubair, M. Rahman</p>
+                <p class="venue">Frontiers in Digital Health, Submitted April 2025</p>
+                <div class="pub-abstract">
+                    <p>This paper examines how hospitals can jointly train AI models on combined data types such as medical images and health records without sharing patient data, using federated learning. It identifies that no existing system applies separate privacy protections per data type and outlines what future systems need to address this gap.</p>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="margin-top: 40px;">Thesis</h2>
+
+            <!-- Publication 4: TabNet -->
+            <div class="publication-card">
+                <div class="pub-header">
+                    <span class="status-badge thesis" style="background: #e8f0fe; color: #1a73e8; padding: 4px 8px; border-radius: 4px; font-weight: 500; font-size: 0.85rem;">Thesis</span>
+                    <span class="type-badge">B.Sc. Thesis</span>
+                </div>
                 <h3>Attentive TabNet Framework for Multiclass Intrusion Detection in Internet of Medical Things</h3>
-                <p class="authors"><strong>Auntor Chakma</strong>, Co-authors</p>
-                <p class="venue">Preprint, Manuscript in Preparation, 2025</p>
+                <p class="authors"><strong>Auntor Chakma</strong></p>
+                <p class="venue">B.Sc. Thesis, 2025</p>
                 <div class="pub-abstract">
                     <p>Developed an advanced intrusion detection system for Internet of Medical Things (IoMT) environments using TabNet architecture with attention mechanisms. The framework incorporates GAN-based synthetic data generation to address class imbalance challenges in cybersecurity applications.</p>
                 </div>
@@ -130,6 +150,7 @@
                     <span class="tag">Attention Mechanism</span>
                 </div>
             </div>
+
         </div>
     </section>
 
