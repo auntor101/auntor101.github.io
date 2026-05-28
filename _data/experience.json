@@ -17,7 +17,7 @@
       "start_date": "August 2025",
       "end_date": "December 2025",
       "current": false,
-      "description": "Developed generative-enhanced ensemble framework achieving 91.65% accuracy for diabetic retinopathy classification across seven stages\nDesigned dual-head neural architecture integrating ordinal regression and categorical classification\nImplemented stacking ensemble combining five CNN architectures improving baseline accuracy by 2.09%\nApplied Stable Diffusion 2.1 with ControlNet for synthetic image generation addressing severe class imbalance",
+      "description": "Worked on generative AI (Stable Diffusion), diabetic retinopathy (medical image) classification, and transfer learning.\nDesigned dual-head neural architecture integrating ordinal regression and categorical classification\nImplemented stacking ensemble combining five CNN architectures improving baseline accuracy by 2.09%\nApplied Stable Diffusion 2.1 with ControlNet for synthetic image generation addressing severe class imbalance",
       "tech_tags": "PyTorch, Stable Diffusion, Ensemble Learning, Generative AI"
     },
     {
@@ -27,7 +27,7 @@
       "start_date": "December 2024",
       "end_date": "June 2025",
       "current": false,
-      "description": "Collected and preprocessed large-scale real-time network traffic dataset from Bangladesh telecommunications infrastructure\nConducted literature review on intrusion detection systems and network security methodologies\nCollaborated with research team on developing deep learning framework for malicious traffic detection\nSupported experiment environment setup and data pipeline development",
+      "description": "Simulated and collected network traffic data, conducted literature review, and performed data analysis and preprocessing\nCollaborated with research team on deep learning model development and optimization\nSupported experiment environment setup and data pipeline development",
       "tech_tags": "Deep Learning, Network Security, Data Preprocessing, Literature Review"
     },
     {

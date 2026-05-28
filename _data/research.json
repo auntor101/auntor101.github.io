@@ -7,7 +7,7 @@
       "end_date": "December 2025",
       "status": "Ongoing",
       "description": "Developed a dual-head architecture combining ordinal regression with categorical classification for seven-stage diabetic retinopathy grading. The framework utilizes Stable Diffusion 2.1 generative augmentation with ControlNet-Canny conditioning and morphological attention masks for addressing severe class imbalance in medical imaging datasets.",
-      "contributions": "Designed dual-head neural architecture integrating ordinal regression and categorical classification\nAchieved 91.65% accuracy for seven-stage diabetic retinopathy classification\nImplemented stacking ensemble combining five CNN architectures improving baseline accuracy by 2.09%\nApplied explainable AI techniques using Grad-CAM++ for model interpretability and clinical validation\nAchieved 91.67% macro F1-score demonstrating robust performance across imbalanced classes",
+      "contributions": "Developed a dual-head architecture combining ordinal regression with categorical classification\nWorked on generative AI (Stable Diffusion), diabetic retinopathy (medical image) classification, and transfer learning\nImplemented stacking ensemble combining five CNN architectures improving baseline accuracy by 2.09%\nApplied Stable Diffusion 2.1 with ControlNet for synthetic image generation addressing severe class imbalance\nApplied explainable AI techniques using Grad-CAM++ for model interpretability and clinical validation\nAchieved 91.67% macro F1-score demonstrating robust performance across imbalanced classes",
       "tech_tags": "PyTorch, Stable Diffusion 2.1, ControlNet, CNN Ensemble, Grad-CAM++, Medical Imaging, XAI"
     },
     {
@@ -16,8 +16,8 @@
       "start_date": "December 2024",
       "end_date": "June 2025",
       "status": "Completed",
-      "description": "Contributed to developing an adaptive machine learning framework for detecting malicious network traffic using real-time data from Bangladesh telecommunications infrastructure. The project focused on creating robust detection mechanisms for various network-based security threats.",
-      "contributions": "Collected and preprocessed large-scale real-time network traffic dataset from Bangladesh telecommunications infrastructure\nCollaborated with research team on deep learning model development and optimization\nConducted literature review on network security and intrusion detection systems\nSupported experiment environment setup and data pipeline development\nContributed to academic writing and technical documentation",
+      "description": "Simulated and collected network traffic data, conducted literature review, and performed data analysis and preprocessing.",
+      "contributions": "Simulated and collected network traffic data, conducted literature review, and performed data analysis and preprocessing\nCollaborated with research team on deep learning model development and optimization\nSupported experiment environment setup and data pipeline development\nContributed to academic writing and technical documentation",
       "tech_tags": "Deep Learning, Network Security, Data Preprocessing, Python, Literature Review"
     },
     {
