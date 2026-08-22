@@ -1,14 +1,44 @@
 {
   "items": [
     {
-      "position": "Research Intern",
+      "position": "Research Assistant",
       "company": "ELITE Research Lab LLC",
-      "location": "New York, USA (Remote)",
-      "start_date": "January 2026",
+      "location": "Queens, NY, USA (Remote)",
+      "start_date": "June 2026",
       "end_date": "Present",
       "current": true,
-      "description": "Contributing to research in generative AI and healthcare diagnostics applications\nDeveloping advanced deep learning models for clinical decision support systems",
-      "tech_tags": "Generative AI, Deep Learning, Research"
+      "description": "Working on AI agents and RAG (retrieval-augmented generation) systems for medical applications\nSupervising two interns on a research project on signal processing for medical equipment and outcome prediction, since August 2026",
+      "tech_tags": "AI Agents, RAG, Signal Processing, Mentoring"
+    },
+    {
+      "position": "Management Information System (MIS) Officer",
+      "company": "ASHIKA Development Associates",
+      "location": "Rangamati, Chittagong, Bangladesh",
+      "start_date": "July 2026",
+      "end_date": "Present",
+      "current": true,
+      "description": "Working on a WFP-funded project as MIS Officer, implemented by ASHIKA Development Associates\nData visualization and trend showcasing with solutions, presentation of findings, and documentation\nBuilding and maintaining data pipelines and dashboards to track project indicators, and supporting automated reporting for program monitoring",
+      "tech_tags": "Data Visualization, MIS, Reporting, Dashboards"
+    },
+    {
+      "position": "Junior Research Assistant",
+      "company": "ELITE Research Lab LLC",
+      "location": "Queens, NY, USA (Remote)",
+      "start_date": "April 2026",
+      "end_date": "May 2026",
+      "current": false,
+      "description": "Served as primary author on a federated learning research project, carried out in collaboration with a fellow researcher at the lab\nApplied differential privacy as the formal privacy-preserving mechanism, and simulated federated clients from the collected data\nMerged two datasets and benchmarked model performance against an established baseline\nApplied explainable AI (XAI) techniques to interpret model predictions; manuscript is being prepared for submission",
+      "tech_tags": "Federated Learning, Differential Privacy, XAI, Benchmarking, Primary Author"
+    },
+    {
+      "position": "AI Research Intern",
+      "company": "ELITE Research Lab LLC",
+      "location": "Queens, NY, USA (Remote)",
+      "start_date": "January 2026",
+      "end_date": "May 2026",
+      "current": false,
+      "description": "Led as primary author a mini-review on multimodal federated learning with privacy-preserving mechanisms in healthcare, synthesizing convergence trends, per-modality privacy gaps, and open challenges across the literature\nManuscript accepted for publication in Frontiers in Digital Health following peer review",
+      "tech_tags": "Federated Learning, Multimodal, Literature Review, Primary Author"
     },
     {
       "position": "Research Collaborator",

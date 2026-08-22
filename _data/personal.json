@@ -1,8 +1,8 @@
 {
   "name": "Auntor Chakma",
-  "tagline": "AI Researcher | Generative AI | Computer Vision",
-  "current_position": "Research Assistant · ELITE Research Lab LLC · Queens, NY, USA (Remote)",
-  "since": "Jun 2026",
+  "tagline": "Applied AI | Biomedical Application | Trustworthy AI | Large Language Models | Computer Vision",
+  "current_position": "Research Assistant · ELITE Research Lab LLC · Queens, NY, USA (Remote); MIS Officer · ASHIKA Development Associates · Rangamati, Chittagong",
+  "since": "Jun 2026 (ELITE Lab) · Jul 2026 (ASHIKA)",
   "education": "B.Sc. (Engineering), CSE · RMSTU",
   "education_secondary": "Notre Dame College, Dhaka",
   "located": "Dhaka, Bangladesh",
@@ -16,7 +16,7 @@
   "scholar": "https://scholar.google.com/citations?user=zhwU8sUAAAAJ&hl=en",
   "profile_pic": "",
   "cv_pdf": "",
-  "about_p1": "Computer Science and Engineering graduate with research experience in applied machine learning, artificial intelligence, and computer vision. Currently working as a Research Assistant at ELITE Research Lab LLC in Queens, NY (Remote).",
+  "about_p1": "Computer Science and Engineering graduate with research experience in applied machine learning, artificial intelligence, and computer vision. Currently working as a Research Assistant at ELITE Research Lab LLC in Queens, NY (Remote), and as an MIS Officer at ASHIKA Development Associates in Rangamati, Chittagong.",
   "about_p2": "My work spans multiple domains of AI, with emphasis on explainable AI, generative models, and computer vision systems. I develop robust machine learning frameworks that address real-world problems.",
   "about_p3": "I am actively seeking graduate education opportunities to advance my expertise in AI-driven applications and contribute to research in the field."
 }

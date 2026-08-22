@@ -14,6 +14,7 @@
       "degree": "Higher Secondary Certificate (HSC)",
       "institution": "Notre Dame College",
       "location": "Dhaka, Bangladesh",
+      "board": "Dhaka Board",
       "start_year": "2015",
       "end_year": "2017",
       "gpa": "5.00/5.00",
@@ -24,8 +25,20 @@
       "degree": "Secondary School Certificate (SSC)",
       "institution": "Laker's Public School and College",
       "location": "Dhaka, Bangladesh",
+      "board": "Chittagong Board",
       "start_year": "2013",
       "end_year": "2015",
+      "gpa": "5.00/5.00",
+      "thesis": "",
+      "thesis_abstract": ""
+    },
+    {
+      "degree": "Junior School Certificate (JSC)",
+      "institution": "Laker's Public School and College",
+      "location": "Dhaka, Bangladesh",
+      "board": "Chittagong Board",
+      "start_year": "2011",
+      "end_year": "2013",
       "gpa": "5.00/5.00",
       "thesis": "",
       "thesis_abstract": ""
