@@ -1,101 +1,227 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Auntor Chakma - Research in AI, Computer Vision, and Machine Learning">
-    <title>Research | Auntor Chakma</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research · Auntor Chakma</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap">
+<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">Auntor Chakma</div>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="research.html" class="nav-link active">Research</a></li>
-                <li><a href="experience.html" class="nav-link">Experience</a></li>
-                <li><a href="projects.html" class="nav-link">Projects</a></li>
-                <li><a href="publications.html" class="nav-link">Publications</a></li>
-                <li><a href="education.html" class="nav-link">Education</a></li>
-                <li><a href="skills.html" class="nav-link">Skills</a></li>
-                <li><a href="references.html" class="nav-link">References</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+
+<!-- Cursor -->
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- Progress -->
+<div class="progress" id="progress"></div>
+
+<nav class="masthead" aria-label="Primary">
+  <div class="masthead-inner">
+    <a href="index.html" class="brand">Auntor Chakma</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" data-hover=""><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" data-nav="">About</a></li>
+      <li><a href="research.html#interests" data-nav="">Interests</a></li>
+      <li><a href="research.html#publications" data-nav="">Publications</a></li>
+      <li><a href="projects.html" data-nav="">Projects</a></li>
+      <li><a href="experience.html#experience" data-nav="">Experience</a></li>
+      <li><a href="education.html#education" data-nav="">Education</a></li>
+      <li><a href="education.html#skills" data-nav="">Skills</a></li>
+      <li><a href="education.html#awards" data-nav="">Awards</a></li>
+      <li><a href="experience.html#service" data-nav="">Leadership</a></li>
+      <li><a href="references.html" data-nav="">References</a></li>
+      <li><a href="#contact" data-nav="">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section id="interests" class="chapter alt-bg">
+  <div class="chapter-header reveal">
+    <div class="chapter-no">02</div>
+    <h2 class="chapter-title">Research Interests</h2>
+    <div class="chapter-sub">Primary and secondary areas of research focus.</div>
+    <svg class="ornament" viewBox="0 0 120 18" fill="none" stroke="currentColor" stroke-width="1">
+      <line x1="0" y1="9" x2="48" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" y1="9" x2="120" y2="9"></line>
+    </svg>
+  </div>
+
+  <div class="interests">
+    <div class="interest-block reveal">
+      <h3><span class="sn">1.</span> Primary Focus</h3>
+      <div class="tag-list">
+        <span class="tag primary" data-hover="">Multimodal AI</span>
+        <span class="tag primary" data-hover="">Vision-Language Models (VLMs)</span>
+        <span class="tag primary" data-hover="">Large Language Models</span>
+        <span class="tag primary" data-hover="">Trustworthy AI</span>
+        <span class="tag primary" data-hover="">AI Safety</span>
+      </div>
+    </div>
+    <div class="interest-block reveal reveal-delay-1">
+      <h3><span class="sn">2.</span> Secondary Focus</h3>
+      <div class="tag-list">
+        <span class="tag" data-hover="">Federated Learning</span>
+        <span class="tag" data-hover="">Network &amp; AI Security</span>
+      </div>
+    </div>
+    <div class="interest-block reveal">
+      <p>I build multimodal and vision-language models, with healthcare as my main application area, and work on four properties of them, interpretability, trustworthiness, AI safety, and privacy for data security. In my diabetic retinopathy paper, lesion masks guided the model's attention during training, and an ensemble of three backbones reached 91.63% accuracy on seven-stage classification. Our multimodal federated learning review found that only 1 of 8 empirical studies (12.5%) applied a formal privacy mechanism to model updates.</p>
+    </div>
+    <div class="interest-block reveal reveal-delay-1">
+      <h3><span class="sn">3.</span> Real-world applications</h3>
+      <div class="exp-content"><ul>
+        <li>A health worker in a clinic with no specialist could record a patient's breathing and receive a classification with an explanation. The lung-sound project works toward this by combining three public datasets: ICBHI, KAUH, and RD@TR.</li>
+        <li>Public fundus datasets hold mostly normal and mild cases, so models miss advanced diabetic retinopathy, where a missed reading costs the most. Our paper generates images of the rare stages and trains the model to attend to lesions, and the full pipeline beats standard augmentation by 4.65% absolute accuracy at matched training-set size.</li>
+        <li>Hospitals can train one model without exchanging patient records, but the model updates they exchange can still leak information, so those updates need a formal privacy mechanism. Only one of the eight empirical studies in our review applied one.</li>
+        <li>A vision-language model can describe an image wrongly and with full confidence. Testing where it fails, and showing which parts of the image its answer relies on, gives a reader a way to catch the error before acting on it.</li>
+        <li>Networked medical devices are exposed to attacks. My thesis model detected and classified attacks in Internet of Medical Things traffic with 97.96% multiclass accuracy across 89 million records.</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="publications" class="chapter">
+  <div class="chapter-header reveal">
+    <div class="chapter-no">03</div>
+    <h2 class="chapter-title">Publications</h2>
+    <div class="chapter-sub">Published and accepted work, ongoing research, and the thesis.</div>
+    <svg class="ornament" viewBox="0 0 120 18" fill="none" stroke="currentColor" stroke-width="1">
+      <line x1="0" y1="9" x2="48" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" y1="9" x2="120" y2="9"></line>
+    </svg>
+  </div>
+
+  <div class="pub-filters reveal" role="tablist">
+    <button class="filter-btn active" data-filter="all" data-hover="">All Writings</button>
+    <button class="filter-btn" data-filter="published" data-hover="">Published</button>
+    <button class="filter-btn" data-filter="accepted" data-hover="">Accepted</button>
+    <button class="filter-btn" data-filter="ongoing" data-hover="">Ongoing Research</button>
+    <button class="filter-btn" data-filter="thesis" data-hover="">Thesis</button>
+    <button class="filter-btn" data-filter="2026" data-hover="">2026</button>
+  </div>
+
+  <div class="publications" id="pubs">
+    <article class="pub-card reveal" data-status="accepted" data-year="2026" data-hover="">
+      <div class="pub-year">2026<small>Accepted</small></div>
+      <div>
+        <div class="pub-meta">
+          <span class="pub-badge accepted">Accepted</span>
+          <span class="pub-type"><a href="https://hightechjournal.org/" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);">HighTech and Innovation Journal</a> · Q1, Scopus-indexed</span>
         </div>
-    </nav>
+        <h3>An Ensemble Approach for Diabetic Retinopathy Severity Classification with Diffusion-Based Augmentation and Explainability</h3>
+        <p class="pub-authors"><strong>Auntor Chakma</strong>, Diya Rahman, T. H. Liew</p>
+        <p class="pub-venue">Accepted 9 August 2026</p>
+      </div>
+      <span class="pub-link" data-hover="">Accepted</span>
+    </article>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1>Research</h1>
-            <p>Exploring AI, Computer Vision, and Machine Learning Applications</p>
+    <article class="pub-card reveal" data-status="accepted" data-year="2026" data-hover="">
+      <div class="pub-year">2026<small>Accepted</small></div>
+      <div>
+        <div class="pub-meta">
+          <span class="pub-badge accepted">Accepted</span>
+          <span class="pub-type"><a href="https://www.frontiersin.org/journals/digital-health" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);">Frontiers in Digital Health</a> · Q1 · Impact Factor 5.2 · CiteScore 6.8</span>
         </div>
-    </section>
+        <h3>Multimodal Federated Learning with Privacy-Preserving Mechanisms in Healthcare: A Mini Review of Convergence, Challenges, and Future Directions</h3>
+        <p class="pub-authors"><strong>Auntor Chakma</strong>, F. T. Z. Moon, F. Jahan, M. K. Morol, T. H. Liew, D. Nandi, A. A. Jubair, M. Rahman</p>
+        <p class="pub-venue">Accepted September 2026. My role: first author, from the literature search to the written review, during a three-month internship at ELITE Research Lab.</p>
+      </div>
+      <span class="pub-link" data-hover="">Accepted</span>
+    </article>
 
-    <!-- Research Section -->
-    <section class="section">
-        <div class="container">
-            <div class="research-list">
-                <h2 style="margin-bottom: 20px; font-size: 1.8rem; color: var(--primary);">Currently Working On</h2>
-                <div class="research-card" style="margin-bottom: 40px; padding: 20px;">
-                    <!-- Blank for now -->
-                </div>
-                
-                <h2 style="margin-bottom: 20px; font-size: 1.8rem; color: var(--primary);">Past Research</h2>
-                <!-- Research 3: Bangla License Plate -->
-                <div class="research-card">
-                    <div class="research-header">
-                        <h3>A Deep Learning-Based Framework for Bangla Vehicle License Plate Detection and Recognition</h3>
-                        <span class="status-badge published">Published</span>
-                    </div>
-                    <div class="research-meta">
-                        <div class="research-info">
-                            <i class="fas fa-building"></i>
-                            <span>Rangamati Science and Technology University</span>
-                        </div>
-                        <div class="research-info">
-                            <i class="fas fa-book"></i>
-                            <span>CCIS Vol. 2683, Springer</span>
-                        </div>
-                    </div>
-                    <div class="research-description">
-                        <p>Developed a deep learning framework for Bangla vehicle license plate text recognition using image restoration and sequence recognition techniques. The system addresses challenges specific to Bangla character recognition in license plate detection.</p>
-                        <div class="research-achievements">
-                            <h4>Key Contributions:</h4>
-                            <ul>
-                                <li>Trained and evaluated 5 distinct deep learning models for Bangla character recognition</li>
-                                <li>Collaborated with primary authors on model development and experimentation</li>
-                                <li>Contributed to academic writing and manuscript preparation</li>
-                                <li>Achieved 96% character-level accuracy on synthetic Bangla license plate dataset</li>
-                                <li>Published in Springer Communications in Computer and Information Science (CCIS)</li>
-                            </ul>
-                        </div>
-                        <div class="tech-tags">
-                            <span class="tech-tag">Deep Learning</span>
-                            <span class="tech-tag">Computer Vision</span>
-                            <span class="tech-tag">OCR</span>
-                            <span class="tech-tag">Image Processing</span>
-                            <span class="tech-tag">PyTorch</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <article class="pub-card reveal" data-status="published" data-year="2026" data-hover="">
+      <div class="pub-year">2026<small>Conference</small></div>
+      <div>
+        <div class="pub-meta">
+          <span class="pub-badge published">Published</span>
+          <span class="pub-type"><a href="https://link.springer.com/book/10.1007/978-3-032-11355-9" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);">Springer CCIS</a>, vol. 2683 (ICDSAIA 2025, pp. 220–235)</span>
         </div>
-    </section>
+        <h3>A Deep Learning–Based Framework for Bangla Vehicle License Plate Detection and Recognition</h3>
+        <p class="pub-authors">Sagar Mohajan, G. M. Sakhawat Hossain, Md Mynoddin, Rishita Chakma, Tanjim Mahmud, Punam Kanungoe, <strong>Auntor Chakma</strong></p>
+        <p class="pub-venue">Published 10 January 2026. My role: model development, and writing and figures.</p>
+      </div>
+      <a class="pub-link" href="https://link.springer.com/chapter/10.1007/978-3-032-11355-9_16" target="_blank" rel="noopener" data-hover="">Read <span class="arrow">→</span></a>
+    </article>
 
-    <button class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+    <article class="pub-card reveal" data-status="ongoing" data-year="2026" data-hover="">
+      <div class="pub-year">2026<small>Ongoing</small></div>
+      <div>
+        <div class="pub-meta">
+          <span class="pub-badge ongoing">Ongoing Research</span>
+          <span class="pub-type">ELITE Research Lab LLC</span>
+        </div>
+        <h3>Multimodal and Vision-Language Models</h3>
+        <p class="pub-authors"><strong>Auntor Chakma</strong>, mentored by Md Kishor Morol</p>
+        <p class="pub-venue">Vision-language models that show what an answer relies on, expose where they fail, and protect the data they learn from. The work continues my multimodal and federated learning research under the supervision of Md Kishor Morol.</p>
+      </div>
+      <span class="pub-link" data-hover="">In Progress</span>
+    </article>
 
-    <script src="script.js"></script>
-</body>
-</html>
+    <article class="pub-card reveal" data-status="ongoing" data-year="2026" data-hover="">
+      <div class="pub-year">2026<small>Ongoing</small></div>
+      <div>
+        <div class="pub-meta">
+          <span class="pub-badge ongoing">Ongoing Research</span>
+          <span class="pub-type">ELITE Research Lab LLC</span>
+        </div>
+        <h3>Signal Processing on Medical Equipment for Outcome Prediction</h3>
+        <p class="pub-authors"><strong>Auntor Chakma</strong> (supervising), with two research interns</p>
+        <p class="pub-venue">Combines the ICBHI, KAUH and RD@TR lung-sound datasets and extends Pulmo-TS2ONN (IEEE TIM 2024) into one model that classifies pulmonary disorders from respiratory sounds. The goals are low computational cost and predictions that come with an explanation, so that a health worker in a low-resource clinic can use the model. The work began in August 2026, and the target venue is a Springer Nature journal.</p>
+      </div>
+      <span class="pub-link" data-hover="">In Progress</span>
+    </article>
+
+    <article class="pub-card reveal" data-status="thesis" data-hover="">
+      <div class="pub-year">Thesis</div>
+      <div>
+        <div class="pub-meta">
+          <span class="pub-badge thesis">Thesis</span>
+          <span class="pub-type">Undergraduate Thesis</span>
+        </div>
+        <h3>Attentive TabNet Framework for Multiclass Intrusion Detection in the Internet of Medical Things</h3>
+        <p class="pub-authors"><strong>Auntor Chakma</strong>, B.Sc. thesis, Rangamati Science and Technology University · Supervisor: Md Mynoddin</p>
+        <p class="pub-venue">An attention-based TabNet framework with GAN-based synthetic minority-sample generation for intrusion detection in Internet of Medical Things networks, reaching 97.96% multiclass accuracy across 89 million network traffic records.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<footer id="contact" class="colophon">
+  <div class="colophon-inner">
+    <div class="chapter-header reveal">
+      <div class="chapter-no" style="color:var(--paper);opacity:.7">Contact</div>
+      <h2 class="chapter-title">Get in Touch</h2>
+      <div class="chapter-sub" style="color:rgba(243,236,220,.75)">Open to research collaboration and graduate study inquiries.</div>
+      <svg class="ornament" viewBox="0 0 120 18" fill="none" stroke="#f3ecdc" stroke-width="1">
+        <line x1="0" y1="9" x2="48" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" y1="9" x2="120" y2="9"></line>
+      </svg>
+    </div>
+
+    <div class="colophon-grid">
+      <div class="colophon-col reveal">
+        <h5>By Post</h5>
+        <p>Dhaka, Bangladesh</p>
+        <small>Available for remote collaboration with research groups worldwide.</small>
+      </div>
+      <div class="colophon-col reveal reveal-delay-1">
+        <h5>By Wire</h5>
+        <a href="mailto:auntorchakma@gmail.com" data-hover="">auntorchakma@gmail.com</a>
+        <a href="tel:+8801759859159" data-hover="">(+880) 1759 859 159</a>
+        <button class="copy-btn" id="copyEmail" data-hover="">Copy email</button>
+      </div>
+      <div class="colophon-col reveal reveal-delay-2">
+        <h5>Elsewhere</h5>
+        <a href="https://github.com/auntor101" target="_blank" rel="noopener" data-hover="">GitHub</a>
+        <a href="https://linkedin.com/in/auntor101" target="_blank" rel="noopener" data-hover="">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=zhwU8sUAAAAJ&amp;hl=en" target="_blank" rel="noopener" data-hover="">Google Scholar</a>
+      </div>
+    </div>
+
+    <div class="colophon-foot">
+      <span>© 2026 · Auntor Chakma</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body></html>

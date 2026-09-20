@@ -1,183 +1,248 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Auntor Chakma - Education, Achievements, and Extracurricular Activities">
-    <title>Education | Auntor Chakma</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Education · Auntor Chakma</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap">
+<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">Auntor Chakma</div>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="research.html" class="nav-link">Research</a></li>
-                <li><a href="experience.html" class="nav-link">Experience</a></li>
-                <li><a href="projects.html" class="nav-link">Projects</a></li>
-                <li><a href="publications.html" class="nav-link">Publications</a></li>
-                <li><a href="education.html" class="nav-link active">Education</a></li>
-                <li><a href="skills.html" class="nav-link">Skills</a></li>
-                <li><a href="references.html" class="nav-link">References</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+
+<!-- Cursor -->
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- Progress -->
+<div class="progress" id="progress"></div>
+
+<nav class="masthead" aria-label="Primary">
+  <div class="masthead-inner">
+    <a href="index.html" class="brand">Auntor Chakma</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" data-hover=""><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" data-nav="">About</a></li>
+      <li><a href="research.html#interests" data-nav="">Interests</a></li>
+      <li><a href="research.html#publications" data-nav="">Publications</a></li>
+      <li><a href="projects.html" data-nav="">Projects</a></li>
+      <li><a href="experience.html#experience" data-nav="">Experience</a></li>
+      <li><a href="education.html#education" data-nav="">Education</a></li>
+      <li><a href="education.html#skills" data-nav="">Skills</a></li>
+      <li><a href="education.html#awards" data-nav="">Awards</a></li>
+      <li><a href="experience.html#service" data-nav="">Leadership</a></li>
+      <li><a href="references.html" data-nav="">References</a></li>
+      <li><a href="#contact" data-nav="">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section id="education" class="chapter">
+  <div class="chapter-header reveal">
+    <div class="chapter-no">06</div>
+    <h2 class="chapter-title">Education</h2>
+    <div class="chapter-sub">Academic degrees, coursework, and thesis work.</div>
+    <svg class="ornament" viewBox="0 0 120 18" fill="none" stroke="currentColor" stroke-width="1">
+      <line x1="0" y1="9" x2="48" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" y1="9" x2="120" y2="9"></line>
+    </svg>
+  </div>
+
+  <div class="edu-list">
+    <article class="edu-item reveal">
+      <div class="edu-side"><strong>Bachelor's</strong>Rangamati, Bangladesh</div>
+      <div class="edu-body">
+        <h3>Bachelor of Science in Computer Science and Engineering</h3>
+        <div class="inst">Rangamati Science and Technology University</div>
+        <div class="meta"><strong>CGPA 3.50 / 4.00</strong>Department of Computer Science and Engineering</div>
+        <div class="sem-grades">
+          <h5>Recent Semester GPA</h5>
+          <div class="sem-row">
+            <div class="sem"><span class="sem-no">Sem 5</span><span class="sem-gpa">3.70</span></div>
+            <div class="sem"><span class="sem-no">Sem 6</span><span class="sem-gpa">3.82</span></div>
+            <div class="sem"><span class="sem-no">Sem 7</span><span class="sem-gpa">3.93</span></div>
+            <div class="sem"><span class="sem-no">Sem 8</span><span class="sem-gpa">3.74</span></div>
+          </div>
         </div>
-    </nav>
-
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1>Education & Achievements</h1>
-            <p>Academic Background and Recognitions</p>
+        <div class="thesis">
+          <h5>Thesis</h5>
+          <span class="ttl">Attentive TabNet Framework for Multiclass Intrusion Detection in IoMT</span>
+          <p>An attention-based TabNet framework with GAN-based synthetic minority-sample generation for intrusion detection in Internet of Medical Things networks, reaching 97.96% multiclass accuracy across 89 million network traffic records.</p>
         </div>
-    </section>
-
-    <!-- Education Section -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="education-timeline">
-                <div class="education-card">
-                    <div class="edu-header">
-                        <h3>Bachelor of Science in Computer Science and Engineering</h3>
-                        <span class="edu-date">September 2018 - February 2025</span>
-                    </div>
-                    <h4>Rangamati Science and Technology University</h4>
-                    <p class="location"><i class="fas fa-map-marker-alt"></i> Rangamati, Bangladesh</p>
-                    <div class="edu-details">
-                        <div class="cgpa-badge">CGPA: 3.50/4.00</div>
-                        <div class="thesis-section">
-                            <h5><i class="fas fa-graduation-cap"></i> Thesis</h5>
-                            <p><strong>Attentive TabNet Framework for Multiclass Intrusion Detection in IoMT</strong></p>
-                            <p class="thesis-abstract">Developed TabNet-based framework with attention mechanisms and GAN-based synthetic data generation for IoMT intrusion detection, achieving 97.96% multiclass accuracy across 89 million network traffic records. Defense completed in May 2025, manuscript in preparation for journal submission.</p>
-                        </div>
-                        <div class="coursework-section">
-                            <h5><i class="fas fa-book"></i> Relevant Coursework</h5>
-                            <div class="coursework-grid">
-                                <span class="course">Machine Learning</span>
-                                <span class="course">Artificial Intelligence</span>
-                                <span class="course">Data Structures & Algorithms</span>
-                                <span class="course">Database Management Systems</span>
-                                <span class="course">Computer Networking</span>
-                                <span class="course">Information Security</span>
-                                <span class="course">Vector Calculus & Linear Algebra</span>
-                                <span class="course">Probability & Statistics</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="education-card">
-                    <div class="edu-header">
-                        <h3>Higher Secondary Certificate (HSC)</h3>
-                        <span class="edu-date">2015 - 2017</span>
-                    </div>
-                    <h4>Notre Dame College</h4>
-                    <p class="location"><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</p>
-                    <div class="edu-details">
-                        <div class="cgpa-badge">GPA: 5.00/5.00</div>
-                    </div>
-                </div>
-
-                <div class="education-card">
-                    <div class="edu-header">
-                        <h3>Secondary School Certificate (SSC)</h3>
-                        <span class="edu-date">2015</span>
-                    </div>
-                    <h4>Laker's Public School and College</h4>
-                    <p class="location"><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</p>
-                    <div class="edu-details">
-                        <div class="cgpa-badge">GPA: 5.00/5.00</div>
-                    </div>
-                </div>
-            </div>
+        <div class="coursework">
+          <h5>Relevant Coursework</h5>
+          <div class="row">
+            <span>Machine Learning</span>
+            <span>Artificial Intelligence</span>
+            <span>Data Structures &amp; Algorithms</span>
+            <span>Database Management Systems</span>
+            <span>Computer Networking</span>
+            <span>Information Security</span>
+            <span>Vector Calculus &amp; Linear Algebra</span>
+            <span>Probability &amp; Statistics</span>
+          </div>
         </div>
-    </section>
+      </div>
+    </article>
 
-    <!-- Achievements Section -->
-    <section class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">Achievements</h2>
-            <div class="achievements-grid">
-                <div class="achievement-card">
-                    <i class="fas fa-trophy"></i>
-                    <h3>Merit Scholarship</h3>
-                    <p>Rangamati Science and Technology University</p>
-                    <span class="achievement-year">2023-2024, 2024-2025</span>
-                </div>
+    <article class="edu-item reveal">
+      <div class="edu-side"><strong>Higher Secondary</strong>Dhaka Board</div>
+      <div class="edu-body">
+        <h3>Higher Secondary Certificate (HSC)</h3>
+        <div class="inst">Notre Dame College</div>
+        <div class="meta"><strong>GPA 5.00 / 5.00</strong>Dhaka Board</div>
+      </div>
+    </article>
 
-                <div class="achievement-card">
-                    <i class="fas fa-award"></i>
-                    <h3>Chittagong Hill Tracts Development Board Scholarship</h3>
-                    <p>Awarded for Academic Excellence</p>
-                    <span class="achievement-year">2018, 2023, 2024, 2025</span>
-                </div>
+    <article class="edu-item reveal">
+      <div class="edu-side"><strong>Secondary</strong>Chittagong Board</div>
+      <div class="edu-body">
+        <h3>Secondary School Certificate (SSC)</h3>
+        <div class="inst">Laker's Public School and College</div>
+        <div class="meta"><strong>GPA 5.00 / 5.00</strong>Chittagong Board</div>
+      </div>
+    </article>
 
-                <div class="achievement-card">
-                    <i class="fas fa-medal"></i>
-                    <h3>Rangamati Hill District Council Scholarship</h3>
-                    <p>Academic Performance Recognition</p>
-                    <span class="achievement-year">2023, 2025</span>
-                </div>
+  </div>
+</section>
 
-                <div class="achievement-card">
-                    <i class="fas fa-code"></i>
-                    <h3>Third Place - Inter University Hackathon</h3>
-                    <p>Developed web-based platform for Rangamati Hill Tracts community resource mapping</p>
-                    <span class="achievement-year">2023</span>
-                </div>
+<section id="skills" class="chapter alt-bg">
+  <div class="chapter-header reveal">
+    <div class="chapter-no">07</div>
+    <h2 class="chapter-title">Tools &amp; Languages</h2>
+    <div class="chapter-sub">Technical skills and programming tools.</div>
+    <svg class="ornament" viewBox="0 0 120 18" fill="none" stroke="currentColor" stroke-width="1">
+      <line x1="0" y1="9" x2="48" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" y1="9" x2="120" y2="9"></line>
+    </svg>
+  </div>
 
-                <div class="achievement-card">
-                    <i class="fas fa-palette"></i>
-                    <h3>Inter-School Drawing Competition</h3>
-                    <p>National Level Competition - First Place</p>
-                    <span class="achievement-year">2008</span>
-                </div>
+  <div class="skills-grid">
+    <div class="skill-cat reveal">
+      <span class="sn">1.</span>
+      <div class="row"><span>Python</span><span>Java</span><span>C</span></div>
+    </div>
+    <div class="skill-cat reveal">
+      <span class="sn">2.</span>
+      <div class="row"><span>PyTorch</span><span>TensorFlow</span><span>Scikit-learn</span><span>Keras</span><span>OpenCV</span><span>LangChain</span><span>LangGraph</span><span>RAG</span></div>
+    </div>
+    <div class="skill-cat reveal">
+      <span class="sn">3.</span>
+      <div class="row"><span>NumPy</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span><span>Data Preprocessing</span><span>Feature Engineering</span></div>
+    </div>
+    <div class="skill-cat reveal">
+      <span class="sn">4.</span>
+      <div class="row"><span>Django</span><span>FastAPI</span><span>Spring Boot</span><span>RESTful APIs</span></div>
+    </div>
+    <div class="skill-cat reveal">
+      <span class="sn">5.</span>
+      <div class="row"><span>MySQL</span><span>MongoDB</span><span>PostgreSQL</span></div>
+    </div>
+    <div class="skill-cat reveal">
+      <span class="sn">6.</span>
+      <div class="row"><span>Wireshark</span><span>Network Analysis</span></div>
+    </div>
+    <div class="skill-cat reveal">
+      <span class="sn">7.</span>
+      <div class="row"><span>Linux</span><span>Git</span><span>GitHub</span></div>
+    </div>
+    <div class="skill-cat reveal">
+      <span class="sn">8.</span>
+      <div class="row"><span>LaTeX</span><span>Microsoft Office</span><span>Technical Writing</span></div>
+    </div>
+  </div>
+</section>
 
-                <div class="achievement-card">
-                    <i class="fas fa-palette"></i>
-                    <h3>Inter-School Drawing Competition</h3>
-                    <p>National Level Competition - Second Place</p>
-                    <span class="achievement-year">2009</span>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="awards" class="chapter">
+  <div class="chapter-header reveal">
+    <div class="chapter-no">08</div>
+    <h2 class="chapter-title">Awards</h2>
+    <div class="chapter-sub">Scholarships, competitions, and academic recognitions.</div>
+    <svg class="ornament" viewBox="0 0 120 18" fill="none" stroke="currentColor" stroke-width="1">
+      <line x1="0" y1="9" x2="48" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" y1="9" x2="120" y2="9"></line>
+    </svg>
+  </div>
 
-    <!-- Extracurricular Activities Section -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">Extracurricular Activities</h2>
-            <div class="activities-list">
-                <div class="activity-card">
-                    <div class="activity-icon">
-                        <i class="fas fa-chalkboard-teacher"></i>
-                    </div>
-                    <div class="activity-content">
-                        <h3>AI Seminar Host</h3>
-                        <h4>Educational Campuses</h4>
-                        <span class="activity-date">2023 - 2024</span>
-                        <p>Hosted seminars on artificial intelligence and AI safety across educational campuses, educating students and faculty about AI applications, ethical considerations, and safety protocols.</p>
-                    </div>
-                </div>
+  <div class="awards-grid">
+    <div class="award reveal" data-hover="">
+      <div class="ord">1.</div>
+      <h4>Merit Scholarship</h4>
+      <p>Rangamati Science and Technology University.</p>
+      <div class="year">2023 · 2024</div>
+    </div>
+    <div class="award reveal reveal-delay-1" data-hover="">
+      <div class="ord">2.</div>
+      <h4>CHT Development Board Scholarship</h4>
+      <p>Awarded for academic excellence.</p>
+      <div class="year">2018 · 2022 · 2023 · 2024</div>
+    </div>
+    <div class="award reveal reveal-delay-2" data-hover="">
+      <div class="ord">3.</div>
+      <h4>Rangamati Hill District Council Scholarship</h4>
+      <p>For academic performance.</p>
+      <div class="year">2023 · 2025</div>
+    </div>
+    <div class="award reveal" data-hover="">
+      <div class="ord">4.</div>
+      <h4>3rd Place — Hackathon</h4>
+      <p>Web platform for Rangamati Hill Tracts community resource mapping.</p>
+      <div class="year">2023</div>
+    </div>
+    <div class="award reveal reveal-delay-2" data-hover="">
+      <div class="ord">5.</div>
+      <h4>Debate Championship &amp; Best Debater</h4>
+      <p>Inter-school level — Champion and Best Debater awards.</p>
+      <div class="year">2009</div>
+    </div>
+    <div class="award reveal" data-hover="">
+      <div class="ord">6.</div>
+      <h4>Inter-School Drawing Competition</h4>
+      <p>National level — 1st place.</p>
+      <div class="year">2008</div>
+    </div>
+    <div class="award reveal reveal-delay-1" data-hover="">
+      <div class="ord">7.</div>
+      <h4>Inter-School Drawing Competition</h4>
+      <p>National level — 2nd place.</p>
+      <div class="year">2009</div>
+    </div>
+  </div>
+</section>
 
-                </div>
-        </div>
-    </section>
+<footer id="contact" class="colophon">
+  <div class="colophon-inner">
+    <div class="chapter-header reveal">
+      <div class="chapter-no" style="color:var(--paper);opacity:.7">Contact</div>
+      <h2 class="chapter-title">Get in Touch</h2>
+      <div class="chapter-sub" style="color:rgba(243,236,220,.75)">Open to research collaboration and graduate study inquiries.</div>
+      <svg class="ornament" viewBox="0 0 120 18" fill="none" stroke="#f3ecdc" stroke-width="1">
+        <line x1="0" y1="9" x2="48" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" y1="9" x2="120" y2="9"></line>
+      </svg>
+    </div>
 
-    <button class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+    <div class="colophon-grid">
+      <div class="colophon-col reveal">
+        <h5>By Post</h5>
+        <p>Dhaka, Bangladesh</p>
+        <small>Available for remote collaboration with research groups worldwide.</small>
+      </div>
+      <div class="colophon-col reveal reveal-delay-1">
+        <h5>By Wire</h5>
+        <a href="mailto:auntorchakma@gmail.com" data-hover="">auntorchakma@gmail.com</a>
+        <a href="tel:+8801759859159" data-hover="">(+880) 1759 859 159</a>
+        <button class="copy-btn" id="copyEmail" data-hover="">Copy email</button>
+      </div>
+      <div class="colophon-col reveal reveal-delay-2">
+        <h5>Elsewhere</h5>
+        <a href="https://github.com/auntor101" target="_blank" rel="noopener" data-hover="">GitHub</a>
+        <a href="https://linkedin.com/in/auntor101" target="_blank" rel="noopener" data-hover="">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=zhwU8sUAAAAJ&amp;hl=en" target="_blank" rel="noopener" data-hover="">Google Scholar</a>
+      </div>
+    </div>
 
-    <script src="script.js"></script>
-</body>
-</html>
+    <div class="colophon-foot">
+      <span>© 2026 · Auntor Chakma</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body></html>

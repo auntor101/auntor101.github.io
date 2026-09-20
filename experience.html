@@ -1,146 +1,267 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Auntor Chakma - Work Experience and Professional Journey">
-    <title>Experience | Auntor Chakma</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experience · Auntor Chakma</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap">
+<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">Auntor Chakma</div>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="research.html" class="nav-link">Research</a></li>
-                <li><a href="experience.html" class="nav-link active">Experience</a></li>
-                <li><a href="projects.html" class="nav-link">Projects</a></li>
-                <li><a href="publications.html" class="nav-link">Publications</a></li>
-                <li><a href="education.html" class="nav-link">Education</a></li>
-                <li><a href="skills.html" class="nav-link">Skills</a></li>
-                <li><a href="references.html" class="nav-link">References</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1>Work Experience</h1>
-            <p>Professional Journey in AI Research and Software Development</p>
-        </div>
-    </section>
+<!-- Cursor -->
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor-dot" id="cursorDot"></div>
 
-    <!-- Experience Section -->
-    <section class="section">
-        <div class="container">
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">January 2026 - Present</span>
-                        <h3>Research Intern</h3>
-                        <h4><a href="https://elitelab.ai/" target="_blank" style="color: inherit; text-decoration: underline;">ELITE Research Lab LLC</a></h4>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i> New York, USA (Remote)</p>
-                        <ul>
-                            <li>Researched multimodal and federated learning architectures, focusing on distributed and cross-modal model development</li>
-                            <li>Designed and executed model training pipelines including data preprocessing, optimization, and performance evaluation</li>
-                            <li>Authored academic manuscripts and contributed to peer-reviewed publication preparation as primary author</li>
-                        </ul>
-                        <div class="tech-tags">
-                            <span class="tech-tag">Multimodal Learning</span>
-                            <span class="tech-tag">Federated Learning</span>
-                            <span class="tech-tag">Generative AI</span>
-                            <span class="tech-tag">PyTorch</span>
-                        </div>
-                    </div>
-                </div>
+<!-- Progress -->
+<div class="progress" id="progress"></div>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">August 2025 - December 2025</span>
-                        <h3>Research Collaborator</h3>
-                        <h4><a href="https://elitelab.ai/" target="_blank" style="color: inherit; text-decoration: underline;">ELITE Research Lab LLC</a></h4>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i> Queens, NY, USA (Remote)</p>
-                        <ul>
-                            <li>Worked on generative AI (Stable Diffusion), diabetic retinopathy (medical image) classification, and transfer learning.</li>
-                            <li>Designed dual-head neural architecture integrating ordinal regression and categorical classification</li>
-                            <li>Implemented stacking ensemble combining five CNN architectures improving baseline accuracy by 2.09%</li>
-                            <li>Applied Stable Diffusion 2.1 with ControlNet for synthetic image generation addressing severe class imbalance</li>
-                        </ul>
-                        <div class="tech-tags">
-                            <span class="tech-tag">PyTorch</span>
-                            <span class="tech-tag">Stable Diffusion</span>
-                            <span class="tech-tag">Ensemble Learning</span>
-                            <span class="tech-tag">Generative AI</span>
-                            <span class="tech-tag">Grad-CAM++</span>
-                        </div>
-                    </div>
-                </div>
+<nav class="masthead" aria-label="Primary">
+  <div class="masthead-inner">
+    <a href="index.html" class="brand">Auntor Chakma</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" data-hover=""><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" data-nav="">About</a></li>
+      <li><a href="research.html#interests" data-nav="">Interests</a></li>
+      <li><a href="research.html#publications" data-nav="">Publications</a></li>
+      <li><a href="projects.html" data-nav="">Projects</a></li>
+      <li><a href="experience.html#experience" data-nav="">Experience</a></li>
+      <li><a href="education.html#education" data-nav="">Education</a></li>
+      <li><a href="education.html#skills" data-nav="">Skills</a></li>
+      <li><a href="education.html#awards" data-nav="">Awards</a></li>
+      <li><a href="experience.html#service" data-nav="">Leadership</a></li>
+      <li><a href="references.html" data-nav="">References</a></li>
+      <li><a href="#contact" data-nav="">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">December 2024 - June 2025</span>
-                        <h3>Research Assistant</h3>
-                        <h4>Rangamati Science and Technology University</h4>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i> Rangamati, Bangladesh</p>
-                        <ul>
-                            <li>Simulated and collected network traffic data, conducted literature review, performed data analysis and preprocessing.</li>
-                            <li>Conducted literature review on intrusion detection systems and network security methodologies</li>
-                            <li>Collaborated with research team on developing deep learning framework for malicious traffic detection</li>
-                            <li>Supported experiment environment setup and data pipeline development</li>
-                        </ul>
-                        <div class="tech-tags">
-                            <span class="tech-tag">Deep Learning</span>
-                            <span class="tech-tag">Network Security</span>
-                            <span class="tech-tag">Data Preprocessing</span>
-                            <span class="tech-tag">Literature Review</span>
-                        </div>
-                    </div>
-                </div>
+<section id="experience" class="chapter">
+  <div class="chapter-header reveal">
+    <div class="chapter-no">05</div>
+    <h2 class="chapter-title">Experience</h2>
+    <div class="chapter-sub">Research and professional positions held.</div>
+    <svg class="ornament" viewBox="0 0 120 18" fill="none" stroke="currentColor" stroke-width="1">
+      <line x1="0" y1="9" x2="48" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" y1="9" x2="120" y2="9"></line>
+    </svg>
+  </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">March 2024 - June 2024</span>
-                        <h3>Software Engineer Intern</h3>
-                        <h4>Celloscope Limited</h4>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</p>
-                        <ul>
-                            <li>Contributed to backend systems development using Java, Spring Boot, and RESTful APIs</li>
-                            <li>Designed and implemented relational database schemas with MySQL</li>
-                            <li>Completed training in Agile software development methodologies and sprint planning</li>
-                            <li>Collaborated with development team using Git version control workflows</li>
-                        </ul>
-                        <div class="tech-tags">
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">Spring Boot</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">REST APIs</span>
-                            <span class="tech-tag">Git</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="experience">
+    <article class="exp-item reveal">
+      <div class="exp-date">Apr 2026<br>— Present</div>
+      <div class="exp-content">
+        <h3>Researcher &amp; Research Assistant</h3>
+        <div class="exp-org"><a href="https://elitelab.ai/" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);">ELITE Research Lab LLC</a> · Queens, NY, USA (Remote)</div>
+        <ul>
+          <li>Extending the research into multimodal AI, centred on vision-language models that show what an answer relies on, expose where they fail, and protect the data they learn from.</li>
+          <li>Supervising two interns on biomedical signal processing and outcome prediction, since Aug 2026</li>
+        </ul>
+      </div>
+    </article>
 
-    <button class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+    <article class="exp-item reveal">
+      <div class="exp-date">Jul 2026<br>— Present</div>
+      <div class="exp-content">
+        <h3>Management Information System (MIS) Officer</h3>
+        <div class="exp-org"><a href="https://ashikacht.org/" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);">ASHIKA Development Associates</a> · Rangamati, Chittagong</div>
+        <ul>
+          <li>WFP-funded Mother and Child Benefit Programme, which protects women and children in the Chittagong Hill Tracts from malnutrition and supports healthy child growth and safe pregnancy and childbirth</li>
+        </ul>
+      </div>
+    </article>
 
-    <script src="script.js"></script>
-</body>
-</html>
+    <article class="exp-item reveal">
+      <div class="exp-date">Mar 2026<br>— Apr 2026</div>
+      <div class="exp-content">
+        <h3>Junior Research Assistant</h3>
+        <div class="exp-org"><a href="https://elitelab.ai/" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);">ELITE Research Lab LLC</a> · Queens, NY, USA (Remote)</div>
+        <ul>
+          <li>Led a project under the supervision of Md Kishor Morol, still in progress. Hospitals want one shared model without exchanging patient records, but shared updates can still leak information, so the project adds differential privacy and explanation methods.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="exp-item reveal">
+      <div class="exp-date">Jan 2026<br>— Mar 2026</div>
+      <div class="exp-content">
+        <h3>AI Research Intern</h3>
+        <div class="exp-org"><a href="https://elitelab.ai/" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);">ELITE Research Lab LLC</a> · Queens, NY, USA (Remote)</div>
+        <ul>
+          <li>Examined 14 studies on multimodal federated learning across seven databases and identified the open problem that now drives the research. Learned to run a systematic review and write a review paper.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="exp-item reveal">
+      <div class="exp-date">Aug 2025<br>— Dec 2025</div>
+      <div class="exp-content">
+        <h3>Research Collaborator</h3>
+        <div class="exp-org"><a href="https://elitelab.ai/" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);">ELITE Research Lab LLC</a> · Queens, NY, USA (Remote)</div>
+        <ul>
+          <li>Worked on why retinopathy models miss advanced stages when public data is mostly normal and mild cases. Learned to treat a model failure as separate problems (rare stages, severity order, attention, shared blind spots), test each fix by removing it, and handle heavily imbalanced medical imaging data.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="exp-item reveal">
+      <div class="exp-date">Dec 2024<br>— Jun 2025</div>
+      <div class="exp-content">
+        <h3>Research Assistant, Dept. of CSE</h3>
+        <div class="exp-org">Rangamati Science and Technology University</div>
+        <ul>
+          <li>Built a real-time network traffic dataset from Bangladesh telecommunications and trained CNN intrusion detectors. Learned the full pipeline from raw data to evaluation on messy, imbalanced real-world traffic, and identified the research gaps through the literature review.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="exp-item reveal">
+      <div class="exp-date">Mar 2024<br>— Jun 2024</div>
+      <div class="exp-content">
+        <h3>Software Engineer Intern (Industrial Attachment)</h3>
+        <div class="exp-org">Celloscope Limited · Dhaka, Bangladesh</div>
+        <ul>
+          <li>Backend development with Java, Spring Boot, REST APIs, and MySQL</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="service" class="chapter alt-bg">
+  <div class="chapter-header reveal">
+    <div class="chapter-no">09</div>
+    <h2 class="chapter-title">Leadership &amp; Extracurricular Activities</h2>
+    <div class="chapter-sub">I supervise two research interns at ELITE Research Lab. In 2023 and 2024 I facilitated a three-day workshop on food habits and climate change for 20 to 50 mothers and adolescent girls each time, and I handled the logistics of winter relief that reached about 60 families and 80 students.</div>
+    <svg class="ornament" viewBox="0 0 120 18" fill="none" stroke="currentColor" stroke-width="1">
+      <line x1="0" y1="9" x2="48" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" y1="9" x2="120" y2="9"></line>
+    </svg>
+  </div>
+
+  <div class="experience">
+    <article class="exp-item reveal">
+      <div class="exp-date">2026</div>
+      <div class="exp-content">
+        <h3>Emergency flash flood relief</h3>
+        <div class="exp-org">ASHIKA Development Associates, funded by WFP · Rangamati</div>
+        <ul>
+          <li><strong>Problem.</strong> Flooding hit five unions in Rangamati hard. Households needed food and energy supplies quickly, and there was no record yet of who was affected or what each family still lacked.</li>
+          <li><strong>What I did.</strong> Helped distribute rice, oil, dry food, and energy biscuits under the WFP-funded relief programme. I recorded each household's situation on paper forms and entered the data afterwards, so that relief could be directed by need.</li>
+          <li><strong>Role.</strong> Volunteer and coordinator among the affected households, as part of a team led by Ratna Jyoti Chakma.</li>
+          <li><strong>Result.</strong> The distribution reached about 400 households across the five affected unions.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="exp-item reveal">
+      <div class="exp-date">2025</div>
+      <div class="exp-content">
+        <h3>Conference website developer</h3>
+        <div class="exp-org">RMSTU International Bioscience Conference 2025 (ICBC)</div>
+        <ul>
+          <li><strong>Problem.</strong> The conference needed a public website for registration and paper submissions, built by a small student team on a fixed deadline.</li>
+          <li><strong>What I did.</strong> Built and secured icbc.rmstu-conf.ac.bd as backend developer and security analyst on a six-person team.</li>
+          <li><strong>Leadership.</strong> Owned the backend and security architecture for the whole team, so the site's reliability on conference days rested on decisions I made.</li>
+          <li><strong>Result.</strong> The site handled registration and paper submissions for roughly 100 to 300 conference participants.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="exp-item reveal">
+      <div class="exp-date">16–18 May 2025</div>
+      <div class="exp-content">
+        <h3>Technical Session Coordinator &amp; Volunteer</h3>
+        <div class="exp-org">RMSTU International Bioscience Conference 2025 (ICBC)</div>
+        <ul>
+          <li><strong>Problem.</strong> Technical sessions over three days needed a fixed schedule that presenters and moderators kept to, alongside general on-the-ground conference support.</li>
+          <li><strong>What I did.</strong> Coordinated the technical sessions and managed the presentation schedule. I also worked the registration desk and delegate check-in, informally, wherever help was needed.</li>
+          <li><strong>Leadership.</strong> Kept presenters and moderators on schedule directly, rather than escalating delays to someone else.</li>
+          <li><strong>Result.</strong> I coordinated between one and three technical sessions across the three days.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="exp-item reveal">
+      <div class="exp-date">2024</div>
+      <div class="exp-content">
+        <h3>AI seminar organizer &amp; host</h3>
+        <div class="exp-org">Independent initiative · Schools and colleges of Rangamati Hill District</div>
+        <ul>
+          <li><strong>Problem.</strong> Students at schools and colleges across Rangamati Hill District had little exposure to how AI systems work and where they fail.</li>
+          <li><strong>What I did.</strong> Organized the seminar series myself, without an institutional sponsor, and ran the sessions with four or more fellow RMSTU students as co-presenters. The sessions covered AI applications, ethical considerations, and safety practices.</li>
+          <li><strong>Leadership.</strong> Initiated the series, chose the schools and colleges to visit, and recruited the fellow students who co-presented with me.</li>
+          <li><strong>Result.</strong> The series ran at six schools and colleges across the district, reaching more than 300 students in total.</li>
+          <li><strong>Venues.</strong> Included Moanoghar Residential School and Moanoghar Pre-Cadet School, Rangamati Government College, Rangamati Government Mohila College, and Rani Dayamoyee High School.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="exp-item reveal">
+      <div class="exp-date">Winters<br>2023, 2024</div>
+      <div class="exp-content">
+        <h3>Winter relief distribution</h3>
+        <div class="exp-org">RMSTU Indigenous Students&#39; Union · Baghaichhari and Kaptai upazilas, Rangamati Hill District</div>
+        <ul>
+          <li><strong>Problem.</strong> Indigenous families in rural parts of Rangamati Hill District needed books, warm clothing, and study materials during winter.</li>
+          <li><strong>What I did.</strong> As a general member and volunteer of the union, I helped distribute supplies, collected data on affected families, and coordinated logistics.</li>
+          <li><strong>Leadership.</strong> Handled the on-the-ground logistics across both winters, while the union raised the funds from within the community.</li>
+          <li><strong>Result.</strong> The union raised around BDT 45,000. The distribution reached about 60 families in three villages, two in Baghaichhari Upazila and one in Kaptai Upazila, and 80 students received the study materials they needed.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="exp-item reveal">
+      <div class="exp-date">2023, 2024</div>
+      <div class="exp-content">
+        <h3>Food habits &amp; climate change workshop</h3>
+        <div class="exp-org">RMSTU Indigenous Students&#39; Union · Chittagong Hill Tracts</div>
+        <ul>
+          <li><strong>Problem.</strong> Mothers and adolescent girls (kishories) in the Chittagong Hill Tracts had few structured sessions on how local food habits relate to nutrition and to climate change.</li>
+          <li><strong>What I did.</strong> Facilitated a three-day workshop on the food habits of the Chittagong Hill Tracts and the impact of climate change, organized by the RMSTU Indigenous Students' Union. The sessions covered what the region's indigenous food habits offer for nutrition, and how climate change affects food and jhum cultivation. Printed material was produced from the sessions.</li>
+          <li><strong>Leadership.</strong> Facilitated the sessions directly rather than assisting someone else who led them.</li>
+          <li><strong>Result.</strong> The workshop ran across 2023 and 2024, with 20 to 50 mothers and kishories attending each time.</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<footer id="contact" class="colophon">
+  <div class="colophon-inner">
+    <div class="chapter-header reveal">
+      <div class="chapter-no" style="color:var(--paper);opacity:.7">Contact</div>
+      <h2 class="chapter-title">Get in Touch</h2>
+      <div class="chapter-sub" style="color:rgba(243,236,220,.75)">Open to research collaboration and graduate study inquiries.</div>
+      <svg class="ornament" viewBox="0 0 120 18" fill="none" stroke="#f3ecdc" stroke-width="1">
+        <line x1="0" y1="9" x2="48" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" y1="9" x2="120" y2="9"></line>
+      </svg>
+    </div>
+
+    <div class="colophon-grid">
+      <div class="colophon-col reveal">
+        <h5>By Post</h5>
+        <p>Dhaka, Bangladesh</p>
+        <small>Available for remote collaboration with research groups worldwide.</small>
+      </div>
+      <div class="colophon-col reveal reveal-delay-1">
+        <h5>By Wire</h5>
+        <a href="mailto:auntorchakma@gmail.com" data-hover="">auntorchakma@gmail.com</a>
+        <a href="tel:+8801759859159" data-hover="">(+880) 1759 859 159</a>
+        <button class="copy-btn" id="copyEmail" data-hover="">Copy email</button>
+      </div>
+      <div class="colophon-col reveal reveal-delay-2">
+        <h5>Elsewhere</h5>
+        <a href="https://github.com/auntor101" target="_blank" rel="noopener" data-hover="">GitHub</a>
+        <a href="https://linkedin.com/in/auntor101" target="_blank" rel="noopener" data-hover="">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=zhwU8sUAAAAJ&amp;hl=en" target="_blank" rel="noopener" data-hover="">Google Scholar</a>
+      </div>
+    </div>
+
+    <div class="colophon-foot">
+      <span>© 2026 · Auntor Chakma</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body></html>

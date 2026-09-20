@@ -1,95 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Auntor Chakma - Professional References">
-    <title>References | Auntor Chakma</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>References · Auntor Chakma</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap">
+<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">Auntor Chakma</div>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="research.html" class="nav-link">Research</a></li>
-                <li><a href="experience.html" class="nav-link">Experience</a></li>
-                <li><a href="projects.html" class="nav-link">Projects</a></li>
-                <li><a href="publications.html" class="nav-link">Publications</a></li>
-                <li><a href="education.html" class="nav-link">Education</a></li>
-                <li><a href="skills.html" class="nav-link">Skills</a></li>
-                <li><a href="references.html" class="nav-link active">References</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1>Professional References</h1>
-            <p>Academic and Professional Connections</p>
-        </div>
-    </section>
+<!-- Cursor -->
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor-dot" id="cursorDot"></div>
 
-    <!-- References Section -->
-    <section class="section">
-        <div class="container">
-            <div class="about-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-                
-                <div class="stat-card" style="text-align: left; padding: 30px;">
-                    <i class="fas fa-user-tie" style="font-size: 2rem; color: #1a73e8; margin-bottom: 15px;"></i>
-                    <h3 style="margin-bottom: 5px;">Dr. Tanjim Mahmud</h3>
-                    <p style="color: #666; margin-bottom: 15px; font-weight: 500;">Associate Professor</p>
-                    <p style="margin-bottom: 5px; font-size: 0.9rem;">Computer Science and Engineering</p>
-                    <p style="margin-bottom: 15px; font-size: 0.9rem;">Rangamati Science and Technology University</p>
-                    <div style="margin-bottom: 5px; font-size: 0.9rem; word-break: break-word;">
-                        <i class="fas fa-envelope" style="color: #1a73e8; width: 20px;"></i> <a href="mailto:tanjim.cse@rmstu.ac.bd" style="color: var(--text); text-decoration: none; font-weight: 500;">tanjim.cse@rmstu.ac.bd</a>
-                    </div>
-                    <div style="font-size: 0.9rem; word-break: break-word; color: var(--text); font-weight: 500;">
-                        <i class="fas fa-phone" style="color: #1a73e8; width: 20px;"></i> 01818752331
-                    </div>
-                </div>
+<!-- Progress -->
+<div class="progress" id="progress"></div>
 
-                <div class="stat-card" style="text-align: left; padding: 30px;">
-                    <i class="fas fa-user-tie" style="font-size: 2rem; color: #1a73e8; margin-bottom: 15px;"></i>
-                    <h3 style="margin-bottom: 5px;">Md Mynoddin</h3>
-                    <p style="color: #666; margin-bottom: 15px; font-weight: 500;">Assistant Professor</p>
-                    <p style="margin-bottom: 5px; font-size: 0.9rem;">Department of Computer Science and Engineering</p>
-                    <p style="margin-bottom: 15px; font-size: 0.9rem;">Rangamati Science and Technology University</p>
-                    <div style="font-size: 0.9rem; word-break: break-word;">
-                        <i class="fas fa-envelope" style="color: #1a73e8; width: 20px;"></i> <a href="mailto:mynoddinrmstu@gmail.com" style="color: var(--text); text-decoration: none; font-weight: 500;">mynoddinrmstu@gmail.com</a>
-                    </div>
-                </div>
+<nav class="masthead" aria-label="Primary">
+  <div class="masthead-inner">
+    <a href="index.html" class="brand">Auntor Chakma</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" data-hover=""><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" data-nav="">About</a></li>
+      <li><a href="research.html#interests" data-nav="">Interests</a></li>
+      <li><a href="research.html#publications" data-nav="">Publications</a></li>
+      <li><a href="projects.html" data-nav="">Projects</a></li>
+      <li><a href="experience.html#experience" data-nav="">Experience</a></li>
+      <li><a href="education.html#education" data-nav="">Education</a></li>
+      <li><a href="education.html#skills" data-nav="">Skills</a></li>
+      <li><a href="education.html#awards" data-nav="">Awards</a></li>
+      <li><a href="experience.html#service" data-nav="">Leadership</a></li>
+      <li><a href="references.html" data-nav="">References</a></li>
+      <li><a href="#contact" data-nav="">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
-                <div class="stat-card" style="text-align: left; padding: 30px;">
-                    <i class="fas fa-user-tie" style="font-size: 2rem; color: #1a73e8; margin-bottom: 15px;"></i>
-                    <h3 style="margin-bottom: 5px;">Md Kishor Morol</h3>
-                    <p style="color: #666; margin-bottom: 15px; font-weight: 500;">CEO / Assistant Professor (on leave)</p>
-                    <p style="margin-bottom: 5px; font-size: 0.9rem;">ELITE Research Lab LLC / AIUB</p>
-                    <p style="margin-bottom: 15px; font-size: 0.9rem;">Former BJIT Employee</p>
-                    <div style="font-size: 0.9rem; word-break: break-word;">
-                        <i class="fas fa-envelope" style="color: #1a73e8; width: 20px;"></i> <a href="mailto:kishor@elitelab.ai" style="color: var(--text); text-decoration: none; font-weight: 500;">kishor@elitelab.ai</a>
-                    </div>
-                </div>
+<section id="references" class="chapter">
+  <div class="chapter-header reveal">
+    <div class="chapter-no">10</div>
+    <h2 class="chapter-title">References</h2>
+    <div class="chapter-sub">Academic and professional references, available upon request.</div>
+    <svg class="ornament" viewBox="0 0 120 18" fill="none" stroke="currentColor" stroke-width="1">
+      <line x1="0" y1="9" x2="48" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" y1="9" x2="120" y2="9"></line>
+    </svg>
+  </div>
 
-            </div>
-        </div>
-    </section>
+  <div class="refs-grid">
+    <div class="ref-card reveal" data-hover="">
+      <div class="ord">1.</div>
+      <h4>Dr. Tanjim Mahmud</h4>
+      <div class="ttl">Associate Professor · World's Top 2% Scientist</div>
+      <div class="org">Department of Computer Science and Engineering<br>Rangamati Science and Technology University</div>
+      <div class="lines">
+        <a href="mailto:tanjim.cse@rmstu.ac.bd"><span class="lbl">Email</span>tanjim.cse@rmstu.ac.bd</a>
+      </div>
+    </div>
 
-    <button class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+    <div class="ref-card reveal reveal-delay-1" data-hover="">
+      <div class="ord">2.</div>
+      <h4>Md Mynoddin</h4>
+      <div class="ttl">Assistant Professor</div>
+      <div class="org">Department of Computer Science and Engineering<br>Rangamati Science and Technology University</div>
+      <div class="lines">
+        <a href="mailto:mynoddin@rmstu.ac.bd"><span class="lbl">Email</span>mynoddin@rmstu.ac.bd</a>
+      </div>
+    </div>
 
-    <script src="script.js"></script>
-</body>
-</html>
+    <div class="ref-card reveal reveal-delay-2" data-hover="">
+      <div class="ord">3.</div>
+      <h4>Md Kishor Morol</h4>
+      <div class="ttl">CEO / Assistant Professor (on leave)</div>
+      <div class="org">ELITE Research Lab LLC · Queens, NY, USA</div>
+      <div class="lines">
+        <a href="mailto:kishor@elitelab.ai"><span class="lbl">Email</span>kishor@elitelab.ai</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact" class="colophon">
+  <div class="colophon-inner">
+    <div class="chapter-header reveal">
+      <div class="chapter-no" style="color:var(--paper);opacity:.7">Contact</div>
+      <h2 class="chapter-title">Get in Touch</h2>
+      <div class="chapter-sub" style="color:rgba(243,236,220,.75)">Open to research collaboration and graduate study inquiries.</div>
+      <svg class="ornament" viewBox="0 0 120 18" fill="none" stroke="#f3ecdc" stroke-width="1">
+        <line x1="0" y1="9" x2="48" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" y1="9" x2="120" y2="9"></line>
+      </svg>
+    </div>
+
+    <div class="colophon-grid">
+      <div class="colophon-col reveal">
+        <h5>By Post</h5>
+        <p>Dhaka, Bangladesh</p>
+        <small>Available for remote collaboration with research groups worldwide.</small>
+      </div>
+      <div class="colophon-col reveal reveal-delay-1">
+        <h5>By Wire</h5>
+        <a href="mailto:auntorchakma@gmail.com" data-hover="">auntorchakma@gmail.com</a>
+        <a href="tel:+8801759859159" data-hover="">(+880) 1759 859 159</a>
+        <button class="copy-btn" id="copyEmail" data-hover="">Copy email</button>
+      </div>
+      <div class="colophon-col reveal reveal-delay-2">
+        <h5>Elsewhere</h5>
+        <a href="https://github.com/auntor101" target="_blank" rel="noopener" data-hover="">GitHub</a>
+        <a href="https://linkedin.com/in/auntor101" target="_blank" rel="noopener" data-hover="">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=zhwU8sUAAAAJ&amp;hl=en" target="_blank" rel="noopener" data-hover="">Google Scholar</a>
+      </div>
+    </div>
+
+    <div class="colophon-foot">
+      <span>© 2026 · Auntor Chakma</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body></html>

@@ -1,200 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Auntor Chakma - Personal Projects and Open Source Contributions">
-    <title>Projects | Auntor Chakma</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects · Auntor Chakma</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap">
+<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">Auntor Chakma</div>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="research.html" class="nav-link">Research</a></li>
-                <li><a href="experience.html" class="nav-link">Experience</a></li>
-                <li><a href="projects.html" class="nav-link active">Projects</a></li>
-                <li><a href="publications.html" class="nav-link">Publications</a></li>
-                <li><a href="education.html" class="nav-link">Education</a></li>
-                <li><a href="skills.html" class="nav-link">Skills</a></li>
-                <li><a href="references.html" class="nav-link">References</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1>Personal Projects</h1>
-            <p>Showcase of Technical Projects and Applications</p>
-        </div>
-    </section>
+<!-- Cursor -->
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor-dot" id="cursorDot"></div>
 
-    <!-- Projects Section -->
-    <section class="section">
-        <div class="container">
-            <div class="projects-grid">
-                
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3>AI Customer Support Chatbot (RAG)</h3>
-                    <p>A RAG-based chatbot for an e-commerce store that answers questions about products, shipping, and policies with grounded source references. Built an end-to-end RAG pipeline with LangChain and ChromaDB.</p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">LangChain</span>
-                        <span class="tech-tag">ChromaDB</span>
-                        <span class="tech-tag">Streamlit</span>
-                        <span class="tech-tag">Groq</span>
-                    </div>
-                    <a href="https://smartshop-rag-chatbot.streamlit.app/" target="_blank" class="project-link">
-                        <i class="fas fa-external-link-alt"></i> Live Demo
-                    </a>
-                </div>
+<!-- Progress -->
+<div class="progress" id="progress"></div>
 
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-eye"></i>
-                    </div>
-                    <h3>VisualMind AI</h3>
-                    <p>A multimodal computer vision application that captions uploaded images and answers follow-up questions using a vision-language model. Chained Hugging Face BLIP-large for image captioning with Groq Llama 4 Scout.</p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Streamlit</span>
-                        <span class="tech-tag">Groq API</span>
-                        <span class="tech-tag">Hugging Face</span>
-                        <span class="tech-tag">Docker</span>
-                    </div>
-                    <a href="https://huggingface.co/spaces/auntor101/Visual_AI_Assist" target="_blank" class="project-link">
-                        <i class="fas fa-external-link-alt"></i> Live Demo
-                    </a>
-                </div>
+<nav class="masthead" aria-label="Primary">
+  <div class="masthead-inner">
+    <a href="index.html" class="brand">Auntor Chakma</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" data-hover=""><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" data-nav="">About</a></li>
+      <li><a href="research.html#interests" data-nav="">Interests</a></li>
+      <li><a href="research.html#publications" data-nav="">Publications</a></li>
+      <li><a href="projects.html" data-nav="">Projects</a></li>
+      <li><a href="experience.html#experience" data-nav="">Experience</a></li>
+      <li><a href="education.html#education" data-nav="">Education</a></li>
+      <li><a href="education.html#skills" data-nav="">Skills</a></li>
+      <li><a href="education.html#awards" data-nav="">Awards</a></li>
+      <li><a href="experience.html#service" data-nav="">Leadership</a></li>
+      <li><a href="references.html" data-nav="">References</a></li>
+      <li><a href="#contact" data-nav="">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <h3>HireTrack AI</h3>
-                    <p>A job application pipeline with local ATS resume scoring, LLM-generated cover letters, and semantic job discovery via Exa AI. Built a local ATS scoring engine using OOP design patterns and ML-based feature weighting.</p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">FastAPI</span>
-                        <span class="tech-tag">FAISS</span>
-                        <span class="tech-tag">Scikit-learn</span>
-                        <span class="tech-tag">Exa AI</span>
-                    </div>
-                    <a href="https://hiretrack-ai.onrender.com" target="_blank" class="project-link">
-                        <i class="fas fa-external-link-alt"></i> Live Demo
-                    </a>
-                </div>
+<section id="projects" class="chapter alt-bg">
+  <div class="chapter-header reveal">
+    <div class="chapter-no">04</div>
+    <h2 class="chapter-title">Projects</h2>
+    <div class="chapter-sub">Selected projects and working prototypes.</div>
+    <svg class="ornament" viewBox="0 0 120 18" fill="none" stroke="currentColor" stroke-width="1">
+      <line x1="0" y1="9" x2="48" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" y1="9" x2="120" y2="9"></line>
+    </svg>
+  </div>
 
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Anomaly Detection in IOMT Devices</h3>
-                    <p>Developed anomaly detection system for Internet of Medical Things devices using VAE (Variational Autoencoder), Autoencoder, and LSTM models. The framework identifies security threats and unusual patterns in healthcare IoT environments through unsupervised learning techniques.</p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">VAE</span>
-                        <span class="tech-tag">Autoencoder</span>
-                        <span class="tech-tag">LSTM</span>
-                        <span class="tech-tag">IoMT</span>
-                        <span class="tech-tag">Security</span>
-                    </div>
-                    <a href="https://github.com/auntor101/Anomaly--Detections-in-IOMT-devices-" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                </div>
+  <div class="projects-grid">
+    <a class="project reveal" href="https://smartshop-rag-chatbot.streamlit.app/" target="_blank" rel="noopener" data-hover="">
+      <div class="p-num">No. 01 · Live</div>
+      <h3>AI Customer Support Chatbot (RAG)</h3>
+      <p>A chatbot that answers customer questions about shipping, returns, payments, accounts, discounts, warranties, and products from a store's own documents, and shows the source of each answer.</p>
+      <p><strong>Problem.</strong> Support staff repeat the same policy answers all day, and a general chatbot can invent a policy that does not exist. Here each answer is retrieved from the store's documents and cited, so a customer or an agent can check it.</p>
+      <p><strong>How it works.</strong> The question is first rewritten using the chat history, then matched against a ChromaDB index built with local all-MiniLM-L6-v2 embeddings. Llama 3 on Groq, the default model, writes the answer from the retrieved passages.</p>
+      <p><strong>Real-world use.</strong> First-line support for a small online shop, leaving staff to handle the cases that need a person. The demo runs on a fictional Bangladeshi store, ShopSmart BD.</p>
+      <div class="p-stack"><span>Python</span><span>LangChain</span><span>ChromaDB</span><span>Streamlit</span><span>FastAPI</span><span>Groq</span></div>
+      <span class="p-link">Open the demo <span class="arrow">→</span></span>
+    </a>
 
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Github Profile Analyzer</h3>
-                    <p>Full-stack application for analyzing GitHub profiles and generating hirability scores for job market assessment. Provides insights into developer activity, code quality, and professional visibility.</p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">GitHub API</span>
-                        <span class="tech-tag">Data Analysis</span>
-                        <span class="tech-tag">Web Development</span>
-                    </div>
-                    <a href="https://github.com/auntor101/Github-Profile-Analyzer" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                </div>
+    <a class="project reveal reveal-delay-1" href="https://huggingface.co/spaces/auntor101/Visual_AI_Assist" target="_blank" rel="noopener" data-hover="">
+      <div class="p-num">No. 02 · Live</div>
+      <h3>VisualMind AI</h3>
+      <p>An app that describes an uploaded image and answers follow-up questions about it.</p>
+      <p><strong>Problem.</strong> A caption alone leaves questions open, and text inside an image is easy to miss. Chaining a captioning model with a vision-language model lets a user ask what is in the image and get the answer in one place.</p>
+      <p><strong>How it works.</strong> BLIP writes a short caption. Llama 4 Scout on Groq then analyses the objects, colors, text, and context, and a chat keeps the image in memory for follow-up questions. The app accepts JPEG, PNG, WebP, and GIF files up to 4 MB.</p>
+      <p><strong>Real-world use.</strong> Drafting alt text for images, reading text in screenshots, and checking what a photo contains. It is also a small working example of a vision-language pipeline.</p>
+      <div class="p-stack"><span>Streamlit</span><span>Groq</span><span>Hugging Face</span><span>Docker</span></div>
+      <span class="p-link">Open the demo <span class="arrow">→</span></span>
+    </a>
 
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-bus"></i>
-                    </div>
-                    <h3>University Vehicle Tracking System</h3>
-                    <p>Real-time GPS tracking system for university vehicles enabling students to monitor location, routes, and seat availability. Features live updates, route optimization, and mobile interface.</p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Java</span>
-                        <span class="tech-tag">Android</span>
-                        <span class="tech-tag">Real-time GPS</span>
-                        <span class="tech-tag">Firebase</span>
-                    </div>
-                    <a href="https://github.com/auntor101/Multiple-University-Vehicles-Tracking-in-Real-Time-for-a-Smoother-Transportation" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                </div>
+    <a class="project reveal reveal-delay-2" href="https://hiretrack-ai.onrender.com" target="_blank" rel="noopener" data-hover="">
+      <div class="p-num">No. 03 · Live</div>
+      <h3>HireTrack AI</h3>
+      <p>A job-application tracker that scores a resume against a job description, drafts tailored application documents, and follows each application through to an offer.</p>
+      <p><strong>Problem.</strong> Applicants rarely know why automated screening filters out a resume, and tailoring a resume and cover letter for every posting takes time.</p>
+      <p><strong>How it works.</strong> A local scoring engine rates a resume on skills, experience, education, and keywords without any API call, and lists the missing skills. A language model then drafts a tailored resume (PDF and DOCX) and cover letter, and Exa AI finds job listings by semantic search.</p>
+      <p><strong>Real-world use.</strong> A job seeker can check a resume against a posting before applying, and can see which missing skills recur across applications.</p>
+      <div class="p-stack"><span>FastAPI</span><span>PostgreSQL</span><span>spaCy</span><span>FAISS</span><span>Exa AI</span><span>LiteLLM</span><span>Streamlit</span></div>
+      <span class="p-link">Open the demo <span class="arrow">→</span></span>
+    </a>
 
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-shopping-cart"></i>
-                    </div>
-                    <h3>Ecommerce Web Application</h3>
-                    <p>Full-stack ecommerce platform built with Django and React featuring product management, shopping cart functionality, secure payment integration, and responsive design.</p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Django</span>
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">REST API</span>
-                    </div>
-                    <a href="https://github.com/auntor101/Ecommerce-Web-Application-using-Django-and-React" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                </div>
+    <a class="project reveal" href="https://github.com/auntor101/Anomaly--Detections-in-IOMT-devices-" target="_blank" rel="noopener" data-hover="">
+      <div class="p-num">No. 04 · GitHub</div>
+      <h3>Anomaly Detection in IoMT Devices</h3>
+      <p>A pipeline that detects and classifies attacks in network traffic from connected medical devices.</p>
+      <p><strong>Problem.</strong> Connected medical devices are targets for network attacks, and attack records are far rarer than normal traffic. The pipeline learns what normal traffic looks like and flags what deviates from it.</p>
+      <p><strong>How it works.</strong> A variational autoencoder trained on about 171,000 normal records and an Isolation Forest each score how unusual a record is. A TabNet classifier takes those scores as extra features and assigns the attack type. The data is a merged WiFi traffic set of about 2.68 million training and 892,000 test records.</p>
+      <p><strong>Real-world use.</strong> The approach applies to a hospital network monitor that flags unusual device traffic.</p>
+      <p><strong>Status.</strong> Research code, not deployed.</p>
+      <div class="p-stack"><span>VAE</span><span>Isolation Forest</span><span>TabNet</span><span>TensorFlow</span><span>Optuna</span></div>
+      <span class="p-link">View on GitHub <span class="arrow">→</span></span>
+    </a>
 
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-cloud-sun-rain"></i>
-                    </div>
-                    <h3>Chittagong Weather Prediction Model</h3>
-                    <p>Machine learning-based weather forecasting system for Chittagong Division, Bangladesh using historical meteorological data. Implements time series analysis and regression models for accurate weather predictions.</p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Time Series</span>
-                        <span class="tech-tag">ML Models</span>
-                        <span class="tech-tag">Data Science</span>
-                    </div>
-                    <a href="https://github.com/auntor101/Weather-Prediction" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <a class="project reveal reveal-delay-1" href="https://github.com/auntor101/Multiple-University-Vehicles-Tracking-in-Real-Time-for-a-Smoother-Transportation" target="_blank" rel="noopener" data-hover="">
+      <div class="p-num">No. 05 · GitHub</div>
+      <h3>University Vehicle Tracking</h3>
+      <p>A web platform that shows university vehicles on a live location dashboard, with alerts and role-based access for administrators, drivers, students, and teachers.</p>
+      <p><strong>Problem.</strong> Students and bus drivers lose time on campus transport because nobody outside the vehicle can see where it is.</p>
+      <p><strong>How it works.</strong> Vehicle positions are stored in Firebase Realtime Database and pushed to a React dashboard as they change. Firebase Cloud Messaging sends push notifications, and access is split across five roles (admin, driver, student, teacher, office admin) with Firebase Authentication and JWT.</p>
+      <p><strong>Real-world use.</strong> A university transport office could show students where each bus is and manage the fleet from one dashboard.</p>
+      <p><strong>Status.</strong> A development and learning project.</p>
+      <div class="p-stack"><span>Spring Boot</span><span>Java 17</span><span>React</span><span>Firebase</span></div>
+      <span class="p-link">View on GitHub <span class="arrow">→</span></span>
+    </a>
 
-    <button class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+    <a class="project reveal reveal-delay-2" href="https://github.com/auntor101/Weather-Prediction" target="_blank" rel="noopener" data-hover="">
+      <div class="p-num">No. 06 · GitHub</div>
+      <h3>Chittagong Weather Prediction</h3>
+      <p>A classifier that predicts the weather in Chittagong as rain, high temperature, normal temperature, or cold, with a web interface.</p>
+      <p><strong>Problem.</strong> Weather information matters for agriculture, transport, and disaster management. This project builds a small model for Chittagong from local daily records.</p>
+      <p><strong>How it works.</strong> It trains on daily temperature, rainfall, humidity, and sunshine records from a public Mendeley dataset. Median imputation fills gaps, SMOTE balances the classes, and a stacking ensemble of Random Forest, Gradient Boosting, XGBoost, SVM, and Logistic Regression is tuned with randomized search and stratified cross-validation. A Flask app takes the measurements and returns the class with a confidence score.</p>
+      <p><strong>Real-world use.</strong> A small local aid for planning around rain or heat, for example in farming or transport.</p>
+      <p><strong>Status.</strong> A student project, not an operational forecast.</p>
+      <div class="p-stack"><span>Python</span><span>scikit-learn</span><span>XGBoost</span><span>SMOTE</span><span>Flask</span></div>
+      <span class="p-link">View on GitHub <span class="arrow">→</span></span>
+    </a>
+  </div>
+</section>
 
-    <script src="script.js"></script>
-    <script src="cms-loader.js"></script>
-</body>
-</html>
+<footer id="contact" class="colophon">
+  <div class="colophon-inner">
+    <div class="chapter-header reveal">
+      <div class="chapter-no" style="color:var(--paper);opacity:.7">Contact</div>
+      <h2 class="chapter-title">Get in Touch</h2>
+      <div class="chapter-sub" style="color:rgba(243,236,220,.75)">Open to research collaboration and graduate study inquiries.</div>
+      <svg class="ornament" viewBox="0 0 120 18" fill="none" stroke="#f3ecdc" stroke-width="1">
+        <line x1="0" y1="9" x2="48" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" y1="9" x2="120" y2="9"></line>
+      </svg>
+    </div>
+
+    <div class="colophon-grid">
+      <div class="colophon-col reveal">
+        <h5>By Post</h5>
+        <p>Dhaka, Bangladesh</p>
+        <small>Available for remote collaboration with research groups worldwide.</small>
+      </div>
+      <div class="colophon-col reveal reveal-delay-1">
+        <h5>By Wire</h5>
+        <a href="mailto:auntorchakma@gmail.com" data-hover="">auntorchakma@gmail.com</a>
+        <a href="tel:+8801759859159" data-hover="">(+880) 1759 859 159</a>
+        <button class="copy-btn" id="copyEmail" data-hover="">Copy email</button>
+      </div>
+      <div class="colophon-col reveal reveal-delay-2">
+        <h5>Elsewhere</h5>
+        <a href="https://github.com/auntor101" target="_blank" rel="noopener" data-hover="">GitHub</a>
+        <a href="https://linkedin.com/in/auntor101" target="_blank" rel="noopener" data-hover="">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=zhwU8sUAAAAJ&amp;hl=en" target="_blank" rel="noopener" data-hover="">Google Scholar</a>
+      </div>
+    </div>
+
+    <div class="colophon-foot">
+      <span>© 2026 · Auntor Chakma</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body></html>
