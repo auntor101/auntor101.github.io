@@ -796,3 +796,23 @@
 
   /* small note next to publication count */
   .note{font-family:'Playfair Display',serif;font-style:italic;color:var(--ink-mute);font-size:14px;}
+
+  /* ============ HIGHLIGHTS ============ */
+  .hl{color:var(--accent);font-weight:600;}
+
+  /* ============ STAT CARDS ============ */
+  .stats{grid-template-columns:repeat(3,1fr);margin-bottom:56px;}
+  .stats .ref-card h4{font-size:46px;line-height:1;margin-bottom:10px;}
+  @media (max-width:920px){
+    .stats .ref-card{border-right:1px solid var(--rule);}
+    .stats .ref-card:last-child{border-right:none;}
+  }
+  @media (max-width:600px){
+    .stats{margin-bottom:36px;}
+    .stats .ref-card{padding:16px 10px;}
+    .stats .ref-card h4{font-size:32px;margin-bottom:6px;}
+    .stats .ref-card .ttl{font-size:12.5px;line-height:1.35;margin-bottom:0;}
+  }
+
+  /* ============ REFERENCE LINKS ============ */
+  .ref-card .lines a, .ref-card .org a{color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none;}
