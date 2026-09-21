@@ -72,11 +72,11 @@
 
   // ============ NAV ACTIVE STATE (multi-page) ============
   (function(){
-    var cur = window.location.pathname.split('/').pop() || 'index.html';
+    var cur = (window.location.pathname.split('/').pop() || 'index').replace(/\.html$/, '');
     var items = [];
     document.querySelectorAll('.nav-links a[data-nav]').forEach(function(a){
       var parts = a.getAttribute('href').split('#');
-      var file = parts[0] || cur;
+      var file = (parts[0] || cur).replace(/\.html$/, '');
       if(file !== cur) return;
       items.push({a:a, el: parts[1] ? document.getElementById(parts[1]) : null});
     });
@@ -123,14 +123,16 @@
 
   // ============ COPY EMAIL ============
   (function(){
-    var btn = document.getElementById('copyEmail');
-    if(!btn) return;
-    btn.addEventListener('click', function(){
-      navigator.clipboard.writeText('auntorchakma@gmail.com').then(function(){
-        var orig = btn.textContent; btn.textContent = 'Copied \u2713';
-        setTimeout(function(){ btn.textContent = orig; }, 1600);
-      }).catch(function(){
-        btn.textContent = 'auntorchakma@gmail.com';
+    document.querySelectorAll('.copy-btn[data-copy]').forEach(function(btn){
+      var label = btn.textContent;
+      btn.addEventListener('click', function(){
+        var addr = btn.getAttribute('data-copy');
+        navigator.clipboard.writeText(addr).then(function(){
+          btn.textContent = 'Copied \u2713';
+          setTimeout(function(){ btn.textContent = label; }, 1600);
+        }).catch(function(){
+          btn.textContent = addr;
+        });
       });
     });
   })();

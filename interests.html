@@ -2,7 +2,7 @@
 <html lang="en"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Education · Auntor Chakma</title>
+<title>Research Interests · Auntor Chakma</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap">
@@ -37,71 +37,48 @@
   </div>
 </nav>
 
-<section id="education" class="chapter">
+<section id="interests" class="chapter alt-bg">
   <div class="chapter-header reveal">
-    <div class="chapter-no">06</div>
-    <h2 class="chapter-title">Education</h2>
-    <div class="chapter-sub">Academic degrees, coursework, and thesis work.</div>
+    <div class="chapter-no">02</div>
+    <h2 class="chapter-title">Research Interests</h2>
+    <div class="chapter-sub">Primary and secondary areas of research focus.</div>
     <svg class="ornament" viewBox="0 0 120 18" fill="none" stroke="currentColor" stroke-width="1">
       <line x1="0" y1="9" x2="48" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" y1="9" x2="120" y2="9"></line>
     </svg>
   </div>
 
-  <div class="edu-list">
-    <article class="edu-item reveal">
-      <div class="edu-side"><strong>Bachelor's</strong>Rangamati, Bangladesh</div>
-      <div class="edu-body">
-        <h3>Bachelor of Science in Computer Science and Engineering</h3>
-        <div class="inst">Rangamati Science and Technology University</div>
-        <div class="meta"><strong>CGPA 3.50 / 4.00</strong>Department of Computer Science and Engineering</div>
-        <div class="sem-grades">
-          <h5>Recent Semester GPA</h5>
-          <div class="sem-row">
-            <div class="sem"><span class="sem-no">Sem 5</span><span class="sem-gpa">3.70</span></div>
-            <div class="sem"><span class="sem-no">Sem 6</span><span class="sem-gpa">3.82</span></div>
-            <div class="sem"><span class="sem-no">Sem 7</span><span class="sem-gpa">3.93</span></div>
-            <div class="sem"><span class="sem-no">Sem 8</span><span class="sem-gpa">3.74</span></div>
-          </div>
-        </div>
-        <div class="thesis">
-          <h5>Thesis</h5>
-          <span class="ttl">Attentive TabNet Framework for Multiclass Intrusion Detection in IoMT</span>
-          <p>An attention-based TabNet framework with GAN-based synthetic minority-sample generation for intrusion detection in Internet of Medical Things networks, reaching 97.96% multiclass accuracy across 89 million network traffic records.</p>
-        </div>
-        <div class="coursework">
-          <h5>Relevant Coursework</h5>
-          <div class="row">
-            <span>Machine Learning</span>
-            <span>Artificial Intelligence</span>
-            <span>Data Structures &amp; Algorithms</span>
-            <span>Database Management Systems</span>
-            <span>Computer Networking</span>
-            <span>Information Security</span>
-            <span>Vector Calculus &amp; Linear Algebra</span>
-            <span>Probability &amp; Statistics</span>
-          </div>
-        </div>
+  <div class="interests">
+    <div class="interest-block reveal">
+      <h3><span class="sn">1.</span> Primary Focus</h3>
+      <div class="tag-list">
+        <span class="tag primary" data-hover="">Multimodal AI</span>
+        <span class="tag primary" data-hover="">Vision-Language Models (VLMs)</span>
+        <span class="tag primary" data-hover="">Large Language Models</span>
+        <span class="tag primary" data-hover="">Trustworthy AI</span>
       </div>
-    </article>
-
-    <article class="edu-item reveal">
-      <div class="edu-side"><strong>Higher Secondary</strong>Dhaka Board</div>
-      <div class="edu-body">
-        <h3>Higher Secondary Certificate (HSC)</h3>
-        <div class="inst">Notre Dame College</div>
-        <div class="meta"><strong>GPA 5.00 / 5.00</strong>Dhaka Board</div>
+    </div>
+    <div class="interest-block reveal reveal-delay-1">
+      <h3><span class="sn">2.</span> Secondary Focus</h3>
+      <div class="tag-list">
+        <span class="tag" data-hover="">Federated Learning</span>
+        <span class="tag" data-hover="">Computer Vision</span>
+        <span class="tag" data-hover="">AI Safety</span>
+        <span class="tag" data-hover="">Network &amp; AI Security</span>
       </div>
-    </article>
-
-    <article class="edu-item reveal">
-      <div class="edu-side"><strong>Secondary</strong>Chittagong Board</div>
-      <div class="edu-body">
-        <h3>Secondary School Certificate (SSC)</h3>
-        <div class="inst">Laker's Public School and College</div>
-        <div class="meta"><strong>GPA 5.00 / 5.00</strong>Chittagong Board</div>
-      </div>
-    </article>
-
+    </div>
+    <div class="interest-block reveal">
+      <p>I build multimodal and vision-language models, with healthcare as my main application area, and work on four properties of them, interpretability, trustworthiness, AI safety, and privacy for data security. In my diabetic retinopathy paper, lesion masks guided the model's attention during training, and an ensemble of three backbones reached 91.63% accuracy on seven-stage classification. Our multimodal federated learning review found that only 1 of 8 empirical studies (12.5%) applied a formal privacy mechanism to model updates.</p>
+    </div>
+    <div class="interest-block reveal reveal-delay-1">
+      <h3><span class="sn">3.</span> Real-world applications</h3>
+      <div class="exp-content"><ul>
+        <li>A health worker in a clinic with no specialist could record a patient's breathing and receive a classification with an explanation. The lung-sound project works toward this by combining three public datasets: ICBHI, KAUH, and RD@TR.</li>
+        <li>Public fundus datasets hold mostly normal and mild cases, so models miss advanced diabetic retinopathy, where a missed reading costs the most. Our paper generates images of the rare stages and trains the model to attend to lesions, and the full pipeline beats standard augmentation by 4.65% absolute accuracy at matched training-set size.</li>
+        <li>Hospitals can train one model without exchanging patient records, but the model updates they exchange can still leak information, so those updates need a formal privacy mechanism. Only one of the eight empirical studies in our review applied one.</li>
+        <li>A vision-language model can describe an image wrongly and with full confidence. Testing where it fails, and showing which parts of the image its answer relies on, gives a reader a way to catch the error before acting on it.</li>
+        <li>Networked medical devices are exposed to attacks. My thesis model detected and classified attacks in Internet of Medical Things traffic with 97.96% multiclass accuracy across 89 million records.</li>
+      </ul></div>
+    </div>
   </div>
 </section>
 

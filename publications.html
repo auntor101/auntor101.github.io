@@ -2,7 +2,7 @@
 <html lang="en"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Research · Auntor Chakma</title>
+<title>Publications · Auntor Chakma</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap">
@@ -23,64 +23,19 @@
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" data-hover=""><span></span><span></span><span></span></button>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html" data-nav="">About</a></li>
-      <li><a href="research.html#interests" data-nav="">Interests</a></li>
-      <li><a href="research.html#publications" data-nav="">Publications</a></li>
+      <li><a href="interests.html" data-nav="">Interests</a></li>
+      <li><a href="publications.html" data-nav="">Publications</a></li>
       <li><a href="projects.html" data-nav="">Projects</a></li>
-      <li><a href="experience.html#experience" data-nav="">Experience</a></li>
-      <li><a href="education.html#education" data-nav="">Education</a></li>
-      <li><a href="education.html#skills" data-nav="">Skills</a></li>
-      <li><a href="education.html#awards" data-nav="">Awards</a></li>
-      <li><a href="experience.html#service" data-nav="">Leadership</a></li>
+      <li><a href="experience.html" data-nav="">Experience</a></li>
+      <li><a href="education.html" data-nav="">Education</a></li>
+      <li><a href="skills.html" data-nav="">Skills</a></li>
+      <li><a href="awards.html" data-nav="">Awards</a></li>
+      <li><a href="leadership.html" data-nav="">Leadership</a></li>
       <li><a href="references.html" data-nav="">References</a></li>
       <li><a href="#contact" data-nav="">Contact</a></li>
     </ul>
   </div>
 </nav>
-
-<section id="interests" class="chapter alt-bg">
-  <div class="chapter-header reveal">
-    <div class="chapter-no">02</div>
-    <h2 class="chapter-title">Research Interests</h2>
-    <div class="chapter-sub">Primary and secondary areas of research focus.</div>
-    <svg class="ornament" viewBox="0 0 120 18" fill="none" stroke="currentColor" stroke-width="1">
-      <line x1="0" y1="9" x2="48" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" y1="9" x2="120" y2="9"></line>
-    </svg>
-  </div>
-
-  <div class="interests">
-    <div class="interest-block reveal">
-      <h3><span class="sn">1.</span> Primary Focus</h3>
-      <div class="tag-list">
-        <span class="tag primary" data-hover="">Multimodal AI</span>
-        <span class="tag primary" data-hover="">Vision-Language Models (VLMs)</span>
-        <span class="tag primary" data-hover="">Large Language Models</span>
-        <span class="tag primary" data-hover="">Trustworthy AI</span>
-      </div>
-    </div>
-    <div class="interest-block reveal reveal-delay-1">
-      <h3><span class="sn">2.</span> Secondary Focus</h3>
-      <div class="tag-list">
-        <span class="tag" data-hover="">Federated Learning</span>
-        <span class="tag" data-hover="">Computer Vision</span>
-        <span class="tag" data-hover="">AI Safety</span>
-        <span class="tag" data-hover="">Network &amp; AI Security</span>
-      </div>
-    </div>
-    <div class="interest-block reveal">
-      <p>I build multimodal and vision-language models, with healthcare as my main application area, and work on four properties of them, interpretability, trustworthiness, AI safety, and privacy for data security. In my diabetic retinopathy paper, lesion masks guided the model's attention during training, and an ensemble of three backbones reached 91.63% accuracy on seven-stage classification. Our multimodal federated learning review found that only 1 of 8 empirical studies (12.5%) applied a formal privacy mechanism to model updates.</p>
-    </div>
-    <div class="interest-block reveal reveal-delay-1">
-      <h3><span class="sn">3.</span> Real-world applications</h3>
-      <div class="exp-content"><ul>
-        <li>A health worker in a clinic with no specialist could record a patient's breathing and receive a classification with an explanation. The lung-sound project works toward this by combining three public datasets: ICBHI, KAUH, and RD@TR.</li>
-        <li>Public fundus datasets hold mostly normal and mild cases, so models miss advanced diabetic retinopathy, where a missed reading costs the most. Our paper generates images of the rare stages and trains the model to attend to lesions, and the full pipeline beats standard augmentation by 4.65% absolute accuracy at matched training-set size.</li>
-        <li>Hospitals can train one model without exchanging patient records, but the model updates they exchange can still leak information, so those updates need a formal privacy mechanism. Only one of the eight empirical studies in our review applied one.</li>
-        <li>A vision-language model can describe an image wrongly and with full confidence. Testing where it fails, and showing which parts of the image its answer relies on, gives a reader a way to catch the error before acting on it.</li>
-        <li>Networked medical devices are exposed to attacks. My thesis model detected and classified attacks in Internet of Medical Things traffic with 97.96% multiclass accuracy across 89 million records.</li>
-      </ul></div>
-    </div>
-  </div>
-</section>
 
 <section id="publications" class="chapter">
   <div class="chapter-header reveal">
@@ -207,8 +162,10 @@
       <div class="colophon-col reveal reveal-delay-1">
         <h5>By Wire</h5>
         <a href="mailto:auntorchakma@gmail.com" data-hover="">auntorchakma@gmail.com</a>
+        <a href="mailto:auntor.chakma@elitelab.ai" data-hover="">auntor.chakma@elitelab.ai</a>
         <a href="tel:+8801759859159" data-hover="">(+880) 1759 859 159</a>
-        <button class="copy-btn" id="copyEmail" data-hover="">Copy email</button>
+        <button class="copy-btn" data-copy="auntorchakma@gmail.com" data-hover="" style="margin-right:8px">Copy Gmail</button>
+        <button class="copy-btn" data-copy="auntor.chakma@elitelab.ai" data-hover="">Copy ELITE email</button>
       </div>
       <div class="colophon-col reveal reveal-delay-2">
         <h5>Elsewhere</h5>
