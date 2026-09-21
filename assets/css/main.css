@@ -816,3 +816,8 @@
 
   /* ============ REFERENCE LINKS ============ */
   .ref-card .lines a, .ref-card .org a{color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none;}
+
+  /* ============ PROSE (Mentors) ============ */
+  .prose{max-width:760px;margin:0 auto;}
+  .prose p{font-size:17px;line-height:1.8;margin-bottom:18px;color:var(--ink-soft);}
+  .prose a{color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none;}
