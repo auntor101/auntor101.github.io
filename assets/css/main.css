@@ -821,3 +821,14 @@
   .prose{max-width:760px;margin:0 auto;}
   .prose p{font-size:17px;line-height:1.8;margin-bottom:18px;color:var(--ink-soft);}
   .prose a{color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none;}
+
+  /* ============ FIGURES & DETAILS (added) ============ */
+  .fig{margin:14px 0;}
+  .fig img{display:block;max-width:min(100%,640px);height:auto;border:1px solid var(--rule);}
+  .fig figcaption{font-size:13px;font-style:italic;color:var(--ink-soft);margin-top:6px;}
+  details.writeup{margin-top:14px;}
+  details.writeup summary{cursor:pointer;color:var(--accent);font-size:15px;}
+  details.writeup p{font-size:15px;line-height:1.7;margin:10px 0;}
+  details.writeup .sources{color:var(--ink-soft);font-size:14px;}
+  .edu-body .note{font-size:15px;line-height:1.7;margin:10px 0;color:var(--ink-soft);}
+  .exp-content a,details.writeup a{color:var(--accent);border-bottom:1px solid var(--rule);text-decoration:none;}

@@ -55,6 +55,7 @@
         <span class="tag primary" data-hover="">Vision-Language Models (VLMs)</span>
         <span class="tag primary" data-hover="">Large Language Models</span>
         <span class="tag primary" data-hover="">Trustworthy AI</span>
+        <span class="tag primary" data-hover="">AI Safety</span>
       </div>
     </div>
     <div class="interest-block reveal reveal-delay-1">
@@ -62,12 +63,11 @@
       <div class="tag-list">
         <span class="tag" data-hover="">Federated Learning</span>
         <span class="tag" data-hover="">Computer Vision</span>
-        <span class="tag" data-hover="">AI Safety</span>
         <span class="tag" data-hover="">Network &amp; AI Security</span>
       </div>
     </div>
     <div class="interest-block reveal">
-      <p>I build multimodal and vision-language models, with healthcare as my main application area, and work on four properties of them, interpretability, trustworthiness, AI safety, and privacy for data security. In my diabetic retinopathy paper, lesion masks guided the model's attention during training, and an ensemble of three backbones reached 91.63% accuracy on seven-stage classification. Our multimodal federated learning review found that only 1 of 8 empirical studies (12.5%) applied a formal privacy mechanism to model updates.</p>
+      <p>I study multimodal and vision-language models, mainly in healthcare and in AI agents, with a focus on four properties: interpretability, trustworthiness, AI safety, and privacy for data security. In my diabetic retinopathy paper, lesion masks guided the model's attention during training, and an ensemble of three backbones reached 91.63% accuracy on seven-stage classification. Our multimodal federated learning review found that only 1 of 8 empirical studies (12.5%) applied a formal privacy mechanism to model updates.</p>
     </div>
     <div class="interest-block reveal reveal-delay-1">
       <h3><span class="sn">3.</span> Real-world applications</h3>
@@ -75,8 +75,8 @@
         <li>A health worker in a clinic with no specialist could record a patient's breathing and receive a classification with an explanation. The lung-sound project works toward this by combining three public datasets: ICBHI, KAUH, and RD@TR.</li>
         <li>Public fundus datasets hold mostly normal and mild cases, so models miss advanced diabetic retinopathy, where a missed reading costs the most. Our paper generates images of the rare stages and trains the model to attend to lesions, and the full pipeline beats standard augmentation by 4.65% absolute accuracy at matched training-set size.</li>
         <li>Hospitals can train one model without exchanging patient records, but the model updates they exchange can still leak information, so those updates need a formal privacy mechanism. Only one of the eight empirical studies in our review applied one.</li>
-        <li>A vision-language model can describe an image wrongly and with full confidence. Testing where it fails, and showing which parts of the image its answer relies on, gives a reader a way to catch the error before acting on it.</li>
-        <li>Networked medical devices are exposed to attacks. My thesis model detected and classified attacks in Internet of Medical Things traffic with 97.96% multiclass accuracy across 89 million records.</li>
+        <li>An AI agent that books tickets or fills forms by reading the screen can be hijacked by a line of text hidden in an image. Measuring how often vision-language agents obey such hidden instructions, and flagging them before they act, is a step toward agents people can safely hand tasks to.</li>
+        <li>Networked medical devices are exposed to attacks. My thesis model detected and classified attacks in Internet of Medical Things traffic, reaching 99.6% accuracy on 2 classes, 97.9% on 6 categories and 95.7% on 19 attack types, on the CICIoMT2024 dataset of 8.78 million records.</li>
       </ul></div>
     </div>
   </div>

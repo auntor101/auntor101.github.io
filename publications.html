@@ -67,6 +67,11 @@
         <h3>An Ensemble Approach for Diabetic Retinopathy Severity Classification with Diffusion-Based Augmentation and Explainability</h3>
         <p class="pub-authors"><strong>Auntor Chakma</strong>, Diya Rahman, T. H. Liew</p>
         <p class="pub-venue"><span class="hl">Accepted</span> 9 August 2026</p>
+        <details class="writeup">
+          <summary>Show abstract</summary>
+          <p>Public fundus-image datasets are dominated by normal and mild cases, so models trained on them read common stages well but miss advanced disease, the stages where a missed reading matters most. This paper treats that failure as four separate problems rather than one: too few examples of rare stages, a severity scale that ordinary classifiers treat as unrelated categories, no way to check where a model is actually looking, and single models that share the same blind spots. Each gets its own fix: Stable Diffusion 2.1 with ControlNet generates additional minority-class images, an ordinal loss teaches the model that stages progress rather than sit as unrelated labels, lesion masks direct attention during training rather than only explaining it afterward, and three architecturally different backbones are combined through a learned meta-learner instead of a fixed voting rule. On 1,437 fundus photographs from Hospital de Clínicas, Paraguay, the combination reaches 91.63% accuracy and an AUC of 0.9920 on held-out images, cuts the ordinal model's mean error from 0.78 to 0.46 stages, and, at matched training-set size, beats standard image augmentation by 4.65% absolute accuracy. To our knowledge, no prior published pipeline combines all four elements for seven-stage classification, and removing any one of them measurably hurt accuracy.</p>
+        </details>
+        <figure class="fig"><a href="assets/img/ga-dr-ensemble.webp" target="_blank" rel="noopener"><img src="assets/img/ga-dr-ensemble.webp" alt="Graphical abstract of the diabetic retinopathy ensemble paper"></a></figure>
       </div>
       <span class="pub-link" data-hover="">Accepted</span>
     </article>
@@ -81,6 +86,11 @@
         <h3>Multimodal Federated Learning with Privacy-Preserving Mechanisms in Healthcare: A Mini Review of Convergence, Challenges, and Future Directions</h3>
         <p class="pub-authors"><strong>Auntor Chakma</strong>, F. T. Z. Moon, F. Jahan, M. K. Morol, T. H. Liew, D. Nandi, A. A. Jubair, M. Rahman</p>
         <p class="pub-venue"><span class="hl">Accepted</span> September 2026. My role: <span class="hl">first author</span>, from the literature search to the written review, during a three-month internship at ELITE Research Lab.</p>
+        <details class="writeup">
+          <summary>Show abstract</summary>
+          <p>Hospitals hold scan images, health records, and genomic data that improve diagnosis when combined, but each data type carries a different amount of patient-identifiable information, and most federated systems protect all of them with a single shared privacy setting. This mini-review searched seven databases and examined 14 studies published between 2020 and early 2026 (eight reporting original results and six providing field-level context) to find out how far the field has actually gone. Federated training proved stable at real scale, with one glioblastoma imaging federation holding steady across 71 hospitals, and multimodal models beat single-modality ones in most direct comparisons reported. Privacy design told a different story. Only 1 of the 8 empirical studies (12.5%) applied a formal privacy mechanism to model updates at all, and none of them gave different data types their own privacy protection, so a scan and a heart-rate reading were treated the same. The review reports this as an open question rather than a proven flaw.</p>
+        </details>
+        <figure class="fig"><a href="assets/img/ga-mfl-review.webp" target="_blank" rel="noopener"><img src="assets/img/ga-mfl-review.webp" alt="Graphical abstract of the multimodal federated learning mini review"></a></figure>
       </div>
       <span class="pub-link" data-hover="">Accepted</span>
     </article>
@@ -95,6 +105,10 @@
         <h3>A Deep Learning–Based Framework for Bangla Vehicle License Plate Detection and Recognition</h3>
         <p class="pub-authors">Sagar Mohajan, G. M. Sakhawat Hossain, Md Mynoddin, Rishita Chakma, Tanjim Mahmud, Punam Kanungoe, <strong>Auntor Chakma</strong></p>
         <p class="pub-venue"><span class="hl">Published</span> 10 January 2026. My role: model development, and writing and figures.</p>
+        <details class="writeup">
+          <summary>Show abstract</summary>
+          <p>Automated license-plate recognition built for Latin scripts performs poorly on Bangla plates, where character shapes, ligatures, and inconsistent plate quality across Bangladeshi vehicles break the assumptions those systems rely on. This work builds an end-to-end pipeline specifically for that script: an image-restoration stage first corrects the blur, low light, and motion artefacts typical of roadside camera captures, and a sequence-recognition model then reads the restored plate as an ordered character sequence rather than a set of isolated glyphs. On a synthetic Bangla license-plate dataset built to reflect that variability, the pipeline reaches 96% character-level accuracy, giving a practical basis for local vehicle-identification systems that existing Latin-script recognizers cannot serve.</p>
+        </details>
       </div>
       <a class="pub-link" href="https://link.springer.com/chapter/10.1007/978-3-032-11355-9_16" target="_blank" rel="noopener" data-hover="">Read <span class="arrow">→</span></a>
     </article>
@@ -106,11 +120,15 @@
           <span class="pub-badge ongoing">Ongoing Research</span>
           <span class="pub-type">ELITE Research Lab LLC</span>
         </div>
-        <h3>Multimodal and Vision-Language Models</h3>
+        <h3>Visual Prompt Injection in Multimodal AI Agents</h3>
         <p class="pub-authors"><strong>Auntor Chakma</strong>, mentored by Md Kishor Morol</p>
-        <p class="pub-venue">Vision-language models that show what an answer relies on, expose where they fail, and protect the data they learn from. The work continues my multimodal and federated learning research under the supervision of Md Kishor Morol.</p>
+        <p class="pub-venue">Early-stage project on how vision-language agents can be steered by instructions hidden in images.</p>
+        <details class="writeup">
+          <summary>Show description</summary>
+          <p>AI agents that read screens, web pages, and documents through a vision-language model can be steered by instructions hidden in an image, such as text in a banner, an ad, or a screenshot, that the user never sees as a command. This project measures how often open vision-language agents follow such injected instructions, which kinds of visual injection succeed, and whether the model's attention singles out the injected region before the agent acts. The aim is a benchmark of realistic injections and a lightweight check that flags a compromised screen before an action is taken.</p>
+        </details>
       </div>
-      <span class="pub-link" data-hover="">In Progress</span>
+      <span class="pub-link" data-hover="">Early Stage</span>
     </article>
 
     <article class="pub-card reveal" data-status="ongoing" data-year="2026" data-hover="">
@@ -134,9 +152,14 @@
           <span class="pub-badge thesis">Thesis</span>
           <span class="pub-type">Undergraduate Thesis</span>
         </div>
-        <h3>Attentive TabNet Framework for Multiclass Intrusion Detection in the Internet of Medical Things</h3>
+        <h3>Attentive TabNet Framework for Multiclass Intrusion Detection in Internet of Medical Things (IoMT) Environments</h3>
         <p class="pub-authors"><strong>Auntor Chakma</strong>, B.Sc. thesis, Rangamati Science and Technology University · Supervisor: Md Mynoddin</p>
-        <p class="pub-venue">An attention-based TabNet framework with GAN-based synthetic minority-sample generation for intrusion detection in Internet of Medical Things networks, reaching <span class="hl">97.96%</span> multiclass accuracy across <span class="hl">89 million network traffic records</span>.</p>
+        <p class="pub-venue">An attention-based TabNet framework with conditional-GAN synthetic samples for rare attack classes, reaching <span class="hl">99.6%</span> accuracy on 2 classes, <span class="hl">97.9%</span> on 6 categories and <span class="hl">95.7%</span> on 19 attack types.</p>
+        <details class="writeup">
+          <summary>Show description</summary>
+          <p>An attention-based TabNet framework that handles three detection tasks in one model, with conditional-GAN synthetic samples for rare attack classes. On CICIoMT2024 (8,775,013 raw records from 40 devices), it reaches 99.6% accuracy on 2 classes, 97.9% on 6 categories and 95.7% on 19 attack types, beating Random Forest, XGBoost and Logistic Regression on every task. GAN balancing beat SMOTE on all three, and the gap widened as the task got harder.</p>
+        </details>
+        <figure class="fig"><a href="assets/img/ga-thesis-tabnet.webp" target="_blank" rel="noopener"><img src="assets/img/ga-thesis-tabnet.webp" alt="Graphical abstract of the Attentive TabNet thesis"></a></figure>
       </div>
     </article>
   </div>

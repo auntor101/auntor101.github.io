@@ -51,6 +51,7 @@
     <a class="project reveal" href="https://smartshop-rag-chatbot.streamlit.app/" target="_blank" rel="noopener" data-hover="">
       <div class="p-num">No. 01 · Live</div>
       <h3>AI Customer Support Chatbot (RAG)</h3>
+      <figure class="fig"><img src="assets/img/shot-shopsmart.webp" alt="Screenshot of the ShopSmart BD support chatbot" loading="lazy"></figure>
       <p>A chatbot that answers customer questions about shipping, returns, payments, accounts, discounts, warranties, and products from a store's own documents, and shows the source of each answer.</p>
       <p><strong>Problem.</strong> Support staff repeat the same policy answers all day, and a general chatbot can invent a policy that does not exist. Here each answer is retrieved from the store's documents and cited, so a customer or an agent can check it.</p>
       <p><strong>How it works.</strong> The question is first rewritten using the chat history, then matched against a ChromaDB index built with local all-MiniLM-L6-v2 embeddings. Llama 3 on Groq, the default model, writes the answer from the retrieved passages.</p>
@@ -62,6 +63,7 @@
     <a class="project reveal reveal-delay-1" href="https://huggingface.co/spaces/auntor101/Visual_AI_Assist" target="_blank" rel="noopener" data-hover="">
       <div class="p-num">No. 02 · Live</div>
       <h3>VisualMind AI</h3>
+      <figure class="fig"><img src="assets/img/shot-visualmind.webp" alt="Screenshot of the VisualMind AI app on Hugging Face Spaces" loading="lazy"></figure>
       <p>An app that describes an uploaded image and answers follow-up questions about it.</p>
       <p><strong>Problem.</strong> A caption alone leaves questions open, and text inside an image is easy to miss. Chaining a captioning model with a vision-language model lets a user ask what is in the image and get the answer in one place.</p>
       <p><strong>How it works.</strong> BLIP writes a short caption. Llama 4 Scout on Groq then analyses the objects, colors, text, and context, and a chat keeps the image in memory for follow-up questions. The app accepts JPEG, PNG, WebP, and GIF files up to 4 MB.</p>
@@ -73,6 +75,7 @@
     <a class="project reveal reveal-delay-2" href="https://hiretrack-ai.onrender.com" target="_blank" rel="noopener" data-hover="">
       <div class="p-num">No. 03 · Live</div>
       <h3>HireTrack AI</h3>
+      <figure class="fig"><img src="assets/img/shot-hiretrack.webp" alt="Screenshot of the HireTrack AI dashboard" loading="lazy"><figcaption>Screenshot with demo data.</figcaption></figure>
       <p>A job-application tracker that scores a resume against a job description, drafts tailored application documents, and follows each application through to an offer.</p>
       <p><strong>Problem.</strong> Applicants rarely know why automated screening filters out a resume, and tailoring a resume and cover letter for every posting takes time.</p>
       <p><strong>How it works.</strong> A local scoring engine rates a resume on skills, experience, education, and keywords without any API call, and lists the missing skills. A language model then drafts a tailored resume (PDF and DOCX) and cover letter, and Exa AI finds job listings by semantic search.</p>
