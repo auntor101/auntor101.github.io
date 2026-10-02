@@ -1,198 +1,784 @@
 <!DOCTYPE html>
+
 <html lang="en"><head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Auntor Chakma · AI Researcher</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap">
-<link rel="stylesheet" href="assets/css/main.css">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&amp;display=swap" rel="stylesheet"/>
+<link href="assets/css/main.css?v=3" rel="stylesheet"/>
 </head>
 <body>
-
 <!-- Cursor -->
 <div class="cursor-ring" id="cursorRing"></div>
 <div class="cursor-dot" id="cursorDot"></div>
-
 <!-- Progress -->
 <div class="progress" id="progress"></div>
-
-<nav class="masthead" aria-label="Primary">
-  <div class="masthead-inner">
-    <a href="index.html" class="brand">Auntor Chakma</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" data-hover=""><span></span><span></span><span></span></button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html" data-nav="">About</a></li>
-      <li><a href="interests.html" data-nav="">Interests</a></li>
-      <li><a href="publications.html" data-nav="">Publications</a></li>
-      <li><a href="projects.html" data-nav="">Projects</a></li>
-      <li><a href="experience.html" data-nav="">Experience</a></li>
-      <li><a href="education.html" data-nav="">Education</a></li>
-      <li><a href="skills.html" data-nav="">Skills</a></li>
-      <li><a href="awards.html" data-nav="">Awards</a></li>
-      <li><a href="leadership.html" data-nav="">Leadership</a></li>
-      <li><a href="references.html" data-nav="">References</a></li>
-      <li><a href="#contact" data-nav="">Contact</a></li>
-    </ul>
-  </div>
+<nav aria-label="Primary" class="masthead">
+<div class="masthead-inner">
+<a class="brand" href="index.html">Auntor Chakma</a>
+<button aria-label="Toggle menu" class="nav-toggle" data-hover="" id="navToggle"><span></span><span></span><span></span></button>
+<ul class="nav-links" id="navLinks"><li><a data-nav="" href="#about">About</a></li><li><a data-nav="" href="#research">Research</a></li><li><a data-nav="" href="#projects">Projects &amp; Skills</a></li><li><a data-nav="" href="#education">Education &amp; Experience</a></li><li><a data-nav="" href="#awards">Awards</a></li><li><a data-nav="" href="#leadership">Leadership</a></li><li><a data-nav="" href="#references">References</a></li><li><a data-nav="" href="#contact">Contact</a></li></ul>
+</div>
 </nav>
-
-<header id="top" class="hero">
-  <div class="dateline">
-    <span>Auntor Chakma — AI Researcher</span>
-    <span>Dhaka, Bangladesh</span>
-  </div>
-
-  <div class="nameplate">
-    <h1>Auntor Chakma</h1>
-    <div class="subhead">Applied AI · Biomedical Application · Trustworthy AI · Large Language Models · Vision-Language Models</div>
-    <svg class="ornament" viewBox="0 0 120 18" fill="none" stroke="currentColor" stroke-width="1">
-      <line x1="0" y1="9" x2="48" y2="9"></line>
-      <circle cx="60" cy="9" r="3"></circle>
-      <circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle>
-      <line x1="72" y1="9" x2="120" y2="9"></line>
-    </svg>
-  </div>
-
-  <div class="hero-grid">
-    <div class="lede">
-      <p>I work at the intersection of explainable AI, vision-language models, large language models, and AI agents, with a focus on problems where the model's decision must be both accurate and interpretable. My recent work spans medical imaging, vision-language models, network security, and multimodal federated learning.</p>
-      <p>This page documents my research, projects, and academic record.</p>
-    </div>
-
-    <div class="portrait" data-hover="">
-      <div class="portrait-frame">
-        <img src="assets/uploads/Auntor.PNG.jpeg" alt="Auntor Chakma">
-      </div>
-      <div class="portrait-cap">
-        <strong>Auntor Chakma</strong>
-      </div>
-    </div>
-
-    <div class="details">
-      <dl>
-        <div class="detail-row"><dt>Currently</dt><dd>Researcher and Research Assistant · ELITE Research Lab LLC · Queens, NY, USA (Remote)<br>Management Information System Officer · ASHIKA Development Associates · Rangamati, Chittagong</dd></div>
-        <div class="detail-row"><dt>Since</dt><dd>Aug 2025 (ELITE Lab) · Jul 2026 (ASHIKA)</dd></div>
-        <div class="detail-row"><dt>Tests</dt><dd>GRE: 316/340 (Quantitative Reasoning: 167, Verbal Reasoning: 149)</dd></div>
-        <div class="detail-row"><dt>Education</dt><dd>B.Sc. (Engineering), CSE · RMSTU</dd></div>
-        <div class="detail-row"><dt>Located</dt><dd>Dhaka, Bangladesh</dd></div>
-        <div class="detail-row"><dt>Seeking</dt><dd>Research-based graduate positions in Computer Science (master's or doctoral), focusing on multimodal AI, vision-language models, trustworthy AI, and AI safety</dd></div>
-        <div class="detail-row"><dt>Email</dt><dd><a href="mailto:auntorchakma@gmail.com">auntorchakma@gmail.com</a><br><a href="mailto:auntor.chakma@elitelab.ai">auntor.chakma@elitelab.ai</a></dd></div>
-        <div class="detail-row"><dt>Scholar</dt><dd><a href="https://scholar.google.com/citations?user=zhwU8sUAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></dd></div>
-        <div class="detail-row"><dt>ORCID</dt><dd><a href="https://orcid.org/0009-0002-8220-8122" target="_blank" rel="noopener">0009-0002-8220-8122</a></dd></div>
-        <div class="detail-row"><dt>GitHub</dt><dd><a href="https://github.com/auntor101" target="_blank" rel="noopener">@auntor101</a></dd></div>
-      </dl>
-      <div class="hero-cta">
-        <a class="btn solid" href="assets/uploads/Auntor_Chakma.pdf" target="_blank" rel="noopener" data-hover=""><span>Download CV (Updated September 2026) →</span></a>
-        <a class="btn" href="#contact" data-hover=""><span>Get in Touch</span></a>
-      </div>
-    </div>
-  </div>
+<header class="hero" id="top">
+<div class="dateline">
+<span>Auntor Chakma — AI Researcher</span>
+<span>Dhaka, Bangladesh</span>
+</div>
+<div class="nameplate">
+<h1>Auntor Chakma</h1>
+<div class="subhead">Applied AI · Biomedical Application · Trustworthy AI · Large Language Models · Vision-Language Models</div>
+<svg class="ornament" fill="none" stroke="currentColor" stroke-width="1" viewbox="0 0 120 18">
+<line x1="0" x2="48" y1="9" y2="9"></line>
+<circle cx="60" cy="9" r="3"></circle>
+<circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle>
+<line x1="72" x2="120" y1="9" y2="9"></line>
+</svg>
+</div>
+<div class="hero-grid">
+<div class="lede">
+<p>I work on explainable AI, vision-language models, large language models, and AI agents, where decisions must be both accurate and interpretable.</p>
+<p>This page documents my research, projects, and academic record.</p>
+</div>
+<div class="portrait" data-hover="">
+<div class="portrait-frame">
+<img alt="Auntor Chakma" src="assets/uploads/Auntor.PNG.jpeg"/>
+</div>
+<div class="portrait-cap">
+<strong>Auntor Chakma</strong>
+</div>
+</div>
+<div class="details">
+<dl>
+<div class="detail-row"><dt>Currently</dt><dd>Researcher and Research Assistant · ELITE Research Lab LLC · Queens, NY, USA (Remote)<br/>Management Information System Officer · ASHIKA Development Associates · Rangamati, Chittagong</dd></div>
+<div class="detail-row"><dt>Since</dt><dd>Aug 2025 (ELITE Lab) · Jul 2026 (ASHIKA)</dd></div>
+<div class="detail-row"><dt>Tests</dt><dd>GRE: 316/340 (Quantitative Reasoning: 167, Verbal Reasoning: 149)</dd></div>
+<div class="detail-row"><dt>Education</dt><dd>B.Sc. (Engineering), CSE · RMSTU</dd></div>
+<div class="detail-row"><dt>Located</dt><dd>Dhaka, Bangladesh</dd></div>
+<div class="detail-row"><dt>Seeking</dt><dd>Research-based graduate positions in Computer Science (master's or doctoral), focusing on multimodal AI, vision-language models, trustworthy AI, and AI safety</dd></div>
+<div class="detail-row"><dt>Email</dt><dd><a href="mailto:auntorchakma@gmail.com">auntorchakma@gmail.com</a><br/><a href="mailto:auntor.chakma@elitelab.ai">auntor.chakma@elitelab.ai</a></dd></div>
+<div class="detail-row"><dt>Scholar</dt><dd><a href="https://scholar.google.com/citations?user=zhwU8sUAAAAJ&amp;hl=en" rel="noopener" target="_blank">Google Scholar</a></dd></div>
+<div class="detail-row"><dt>ORCID</dt><dd><a href="https://orcid.org/0009-0002-8220-8122" rel="noopener" target="_blank">0009-0002-8220-8122</a></dd></div>
+<div class="detail-row"><dt>GitHub</dt><dd><a href="https://github.com/auntor101" rel="noopener" target="_blank">@auntor101</a></dd></div>
+</dl>
+<div class="hero-cta">
+<a class="btn solid" data-hover="" href="assets/uploads/Auntor_Chakma.pdf" rel="noopener" target="_blank"><span>Download CV (Updated September 2026) →</span></a>
+<a class="btn" data-hover="" href="#contact"><span>Get in Touch</span></a>
+</div>
+</div>
+</div>
 </header>
+<section class="chapter" id="about">
+<div class="chapter-header reveal">
+<div class="chapter-no">01</div>
+<h2 class="chapter-title">About</h2>
+<div class="chapter-sub">Research background, experience, and current focus.</div>
+<svg class="ornament" fill="none" stroke="currentColor" stroke-width="1" viewbox="0 0 120 18">
+<line x1="0" x2="48" y1="9" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" x2="120" y1="9" y2="9"></line>
+</svg>
+</div>
+<div class="refs-grid stats">
+<div class="ref-card reveal"><h4>3</h4><div class="ttl">papers, two accepted and one published</div></div>
+<div class="ref-card reveal reveal-delay-1"><h4>1st</h4><div class="ttl">author on both accepted papers</div></div>
+<div class="ref-card reveal reveal-delay-2"><h4>2</h4><div class="ttl">research interns supervised at ELITE Research Lab</div></div>
+</div>
+<div class="about-grid">
+<div class="bio-prose reveal">
+<p>I'm Auntor Chakma, a Researcher and Research Assistant at <a href="https://elitelab.ai/" rel="noopener" target="_blank">ELITE Research Lab</a>, working on trustworthy multimodal AI. My papers so far cover federated learning and explainable AI in healthcare. I am moving toward vision-language models and AI safety. Code is on GitHub, with three live demos under Projects.</p>
+<p>I grew up in Rangamati, in the Chittagong Hill Tracts, where specialist care is hard to reach. My lung-sound project aims at a tool a clinic health worker could run and understand.</p>
 
-<section id="about" class="chapter">
-  <div class="chapter-header reveal">
-    <div class="chapter-no">01</div>
-    <h2 class="chapter-title">About</h2>
-    <div class="chapter-sub">Research background, experience, and current focus.</div>
-    <svg class="ornament" viewBox="0 0 120 18" fill="none" stroke="currentColor" stroke-width="1">
-      <line x1="0" y1="9" x2="48" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" y1="9" x2="120" y2="9"></line>
-    </svg>
-  </div>
-
-  <div class="refs-grid stats">
-      <div class="ref-card reveal"><h4>3</h4><div class="ttl">papers, two accepted and one published</div></div>
-      <div class="ref-card reveal reveal-delay-1"><h4>1st</h4><div class="ttl">author on both accepted papers</div></div>
-      <div class="ref-card reveal reveal-delay-2"><h4>2</h4><div class="ttl">research interns supervised at ELITE Research Lab</div></div>
-  </div>
-
-  <div class="about-grid">
-    <div class="bio-prose reveal">
-      <p>I'm Auntor Chakma, a Researcher and Research Assistant at <a href="https://elitelab.ai/" target="_blank" rel="noopener">ELITE Research Lab</a>. I work on trustworthy multimodal AI. My recent papers cover federated learning and explainable AI for healthcare, and I am moving toward vision-language models and AI safety. Within that work I study four properties of the models, interpretability, trustworthiness, AI safety, and privacy for data security.</p>
-
-      <p>I grew up in Rangamati, in the Chittagong Hill Tracts, where specialist medical care is hard to reach. The lung-sound project I supervise aims at a tool that a health worker in a low-resource clinic could run and understand.</p>
-
-      <p>My recent papers cover diabetic retinopathy classification from fundus images, Bangla license plate recognition, and a review of multimodal federated learning in healthcare. My B.Sc. thesis was on intrusion detection for Internet of Medical Things networks. Project code is on GitHub, and three live demos are linked under Projects.</p>
-
-      <p>I am a Researcher and Research Assistant at <a href="https://elitelab.ai/" target="_blank" rel="noopener">ELITE Research Lab</a> (New York, remote), and Management Information System (MIS) Officer on the World Food Programme (WFP)-funded Mother and Child Benefit Programme and Natural Disaster Risk Reduction Project, run by <a href="https://ashikacht.org/" target="_blank" rel="noopener">ASHIKA Development Associates</a> in Rangamati. I hold a B.Sc. in Computer Science and Engineering from Rangamati Science and Technology University (2025).</p>
-
-      <p>Currently seeking: research-based graduate positions in Computer Science, with a focus on multimodal AI, vision-language models, trustworthy AI, and AI safety, open to both master's and doctoral programmes. Supervisors and collaborators can reach me by email.</p>
-    </div>
-
-    <aside class="reveal reveal-delay-1">
-      <button class="timeline-toggle" id="tlToggle" data-hover="">
-        <span>Recent News</span>
-        <span class="plus" aria-hidden="true">+</span>
-      </button>
-      <div class="timeline" id="timeline">
-        <div class="timeline-item"><div class="yr">2026<small>Sep</small></div><div><p>&quot;Multimodal Federated Learning with Privacy-Preserving Mechanisms in Healthcare: A Mini Review of Convergence, Challenges, and Future Directions&quot; <span class="hl">accepted</span> in <a href="https://www.frontiersin.org/journals/digital-health" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);">Frontiers in Digital Health</a> .</p></div></div>
-        <div class="timeline-item"><div class="yr">2026<small>9 Aug</small></div><div><p>&quot;An Ensemble Approach for Diabetic Retinopathy Severity Classification with Diffusion-Based Augmentation and Explainability&quot; <span class="hl">accepted</span> in <a href="https://hightechjournal.org/" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);">HighTech and Innovation Journal</a> (<span class="hl">Q1</span>, <span class="hl">Scopus-indexed</span>).</p></div></div>
-        <div class="timeline-item"><div class="yr">2026<small>Aug</small></div><div><p>Started supervising two research interns on biomedical signal processing at <a href="https://elitelab.ai/" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);">ELITE Research Lab</a>.</p></div></div>
-        <div class="timeline-item"><div class="yr">2026<small>Jul</small></div><div><p>Joined <a href="https://ashikacht.org/" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);">ASHIKA Development Associates</a> as MIS Officer on the World Food Programme (WFP)-funded Mother and Child Benefit Programme and Natural Disaster Risk Reduction Project in Rangamati.</p></div></div>
-        <div class="timeline-item"><div class="yr">2026<small>Apr</small></div><div><p><span class="hl">Promoted</span> to Researcher &amp; Research Assistant at <a href="https://elitelab.ai/" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);">ELITE Research Lab</a>.</p></div></div>
-        <div class="timeline-item"><div class="yr">2026<small>10 Jan</small></div><div><p>&quot;A Deep Learning-Based Framework for Bangla Vehicle License Plate Detection and Recognition&quot; <span class="hl">published</span> in <a href="https://link.springer.com/book/10.1007/978-3-032-11355-9" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);">Springer CCIS</a>, vol. 2683.</p></div></div>
-        <div class="timeline-item"><div class="yr">2026<small>Jan</small></div><div><p>Joined <a href="https://elitelab.ai/" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);">ELITE Research Lab</a> as AI Research Intern.</p></div></div>
-        <div class="timeline-item"><div class="yr">2025<small>Aug – Dec</small></div><div><p>Joined <a href="https://elitelab.ai/" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);">ELITE Research Lab</a> as a Research Collaborator.</p></div></div>
-        <div class="timeline-item"><div class="yr">2025<small>Jun</small></div><div><p>Left my research assistant role at Rangamati Science and Technology University after defending my B.Sc. thesis, &quot;Attentive TabNet Framework for Multiclass Intrusion Detection in Internet of Medical Things (IoMT) Environments.&quot;</p></div></div>
-        <div class="timeline-item"><div class="yr">2024<small>Dec</small></div><div><p>Joined Rangamati Science and Technology University as a Research Assistant, building a real-time network traffic dataset from Bangladesh telecommunications for malicious-traffic detection.</p></div></div>
-      </div>
-    </aside>
-  </div>
+<p>I am a Researcher and Research Assistant at <a href="https://elitelab.ai/" rel="noopener" target="_blank">ELITE Research Lab</a> (New York, remote), and Management Information System (MIS) Officer on the World Food Programme (WFP)-funded Mother and Child Benefit Programme and Natural Disaster Risk Reduction Project, run by <a href="https://ashikacht.org/" rel="noopener" target="_blank">ASHIKA Development Associates</a> in Rangamati. I hold a B.Sc. in Computer Science and Engineering from Rangamati Science and Technology University.</p>
+<p>I am looking for research-based master's or doctoral positions in Computer Science (multimodal AI, vision-language models, trustworthy AI, AI safety). Supervisors and collaborators can email me.</p>
+</div>
+<aside class="reveal reveal-delay-1">
+<button class="timeline-toggle" data-hover="" id="tlToggle">
+<span>Recent News</span>
+<span aria-hidden="true" class="plus">+</span>
+</button>
+<div class="timeline" id="timeline">
+<div class="timeline-item"><div class="yr">2026<small>Sep</small></div><div><p>"Multimodal Federated Learning with Privacy-Preserving Mechanisms in Healthcare: A Mini Review of Convergence, Challenges, and Future Directions" <span class="hl">accepted</span> in <a href="https://www.frontiersin.org/journals/digital-health" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);" target="_blank">Frontiers in Digital Health</a> .</p></div></div>
+<div class="timeline-item"><div class="yr">2026<small>9 Aug</small></div><div><p>"An Ensemble Approach for Diabetic Retinopathy Severity Classification with Diffusion-Based Augmentation and Explainability" <span class="hl">accepted</span> in <a href="https://hightechjournal.org/" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);" target="_blank">HighTech and Innovation Journal</a> (<span class="hl">Q1</span>, <span class="hl">Scopus-indexed</span>).</p></div></div>
+<div class="timeline-item"><div class="yr">2026<small>Aug</small></div><div><p>Started supervising two research interns on biomedical signal processing at <a href="https://elitelab.ai/" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);" target="_blank">ELITE Research Lab</a>.</p></div></div>
+<div class="timeline-item"><div class="yr">2026<small>Jul</small></div><div><p>Joined <a href="https://ashikacht.org/" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);" target="_blank">ASHIKA Development Associates</a> as MIS Officer on a World Food Programme-funded project with two components, the Mother and Child Benefit Programme and the Natural Disaster Risk Reduction Project, in Rangamati.</p></div></div>
+<div class="timeline-item"><div class="yr">2026<small>Apr</small></div><div><p><span class="hl">Promoted</span> to Researcher &amp; Research Assistant at <a href="https://elitelab.ai/" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);" target="_blank">ELITE Research Lab</a>.</p></div></div>
+<div class="timeline-item"><div class="yr">2026<small>10 Jan</small></div><div><p>"A Deep Learning-Based Framework for Bangla Vehicle License Plate Detection and Recognition" <span class="hl">published</span> in <a href="https://link.springer.com/book/10.1007/978-3-032-11355-9" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);" target="_blank">Springer CCIS</a>, vol. 2683.</p></div></div>
+<div class="timeline-item"><div class="yr">2026<small>Jan</small></div><div><p>Joined <a href="https://elitelab.ai/" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);" target="_blank">ELITE Research Lab</a> as AI Research Intern.</p></div></div>
+<div class="timeline-item"><div class="yr">2025<small>Aug – Dec</small></div><div><p>Joined <a href="https://elitelab.ai/" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);" target="_blank">ELITE Research Lab</a> as a Research Collaborator.</p></div></div>
+<div class="timeline-item"><div class="yr">2025<small>Jun</small></div><div><p>Left my research assistant role at Rangamati Science and Technology University after defending my B.Sc. thesis.</p></div></div>
+<div class="timeline-item"><div class="yr">2024<small>Dec</small></div><div><p>Joined Rangamati Science and Technology University as a Research Assistant, building a Bangladeshi telecom traffic dataset to detect malicious traffic.</p></div></div>
+</div>
+</aside>
+</div>
 </section>
-
-<section id="mentors" class="chapter alt-bg">
-  <div class="chapter-header reveal">
-    <div class="chapter-no">&nbsp;</div>
-    <h2 class="chapter-title">Mentors</h2>
-    <svg class="ornament" viewBox="0 0 120 18" fill="none" stroke="currentColor" stroke-width="1">
-      <line x1="0" y1="9" x2="48" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" y1="9" x2="120" y2="9"></line>
-    </svg>
-  </div>
-
-  <div class="prose reveal">
-    <p>My current mentor and principal investigator is <a href="https://kishormorol.github.io/" target="_blank" rel="noopener">Md Kishor Morol</a>, a PhD student at Cornell University and a Researcher at Meta FAIR, who also founded <a href="https://elitelab.ai/" target="_blank" rel="noopener">ELITE Research Lab</a>. He supervised my work on multimodal and federated learning. He now advises me on vision-language models, their applications, and AI safety, and on formal privacy guarantees. He is a co-author on the Frontiers in Digital Health review and oversees the two interns I supervise.</p>
-    <p>During my undergraduate degree, my thesis supervisor <a href="https://rmstu.ac.bd/profile/mynoddin" target="_blank" rel="noopener">Md Mynoddin</a> guided the intrusion-detection work that became my B.Sc. thesis, and <a href="https://rmstu.ac.bd/profile/tanjim" target="_blank" rel="noopener">Dr. Tanjim Mahmud</a> supported my research as a co-author on the Bangla license plate paper.</p>
-  </div>
+<section class="chapter alt-bg" id="mentors">
+<div class="chapter-header reveal">
+<div class="chapter-no"> </div>
+<h2 class="chapter-title">Mentors</h2>
+<svg class="ornament" fill="none" stroke="currentColor" stroke-width="1" viewbox="0 0 120 18">
+<line x1="0" x2="48" y1="9" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" x2="120" y1="9" y2="9"></line>
+</svg>
+</div>
+<div class="prose reveal">
+<p>My mentor is <a href="https://kishormorol.github.io/" rel="noopener" target="_blank">Md Kishor Morol</a>, a PhD student at Cornell University and Researcher at Meta FAIR, and Assistant Professor (on leave) at AIUB, who founded <a href="https://elitelab.ai/" rel="noopener" target="_blank">ELITE Research Lab</a>. He supervised my federated learning work, co-authored the Frontiers in Digital Health review, and now advises me on vision-language models, AI safety, and privacy. He also oversees the two interns I supervise.</p>
+<p><a href="https://rmstu.ac.bd/profile/mynoddin" rel="noopener" target="_blank">Md Mynoddin</a> supervised my B.Sc. thesis, and <a href="https://rmstu.ac.bd/profile/tanjim" rel="noopener" target="_blank">Dr. Tanjim Mahmud</a> co-authored the Bangla license plate paper.</p>
+</div>
 </section>
+<section class="chapter" id="research">
+<div class="chapter-header reveal">
+<div class="chapter-no">02</div>
+<h2 class="chapter-title">Research</h2>
+<div class="chapter-sub">Focus areas, papers, and ongoing work.</div>
+<svg class="ornament" fill="none" stroke="currentColor" stroke-width="1" viewbox="0 0 120 18">
+<line x1="0" x2="48" y1="9" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" x2="120" y1="9" y2="9"></line>
+</svg>
+</div>
+<div class="interests">
+<div class="interest-block reveal">
+<h3><span class="sn">1.</span> Primary Focus</h3>
+<div class="tag-list">
+<span class="tag primary" data-hover="">Multimodal AI</span>
+<span class="tag primary" data-hover="">Vision-Language Models (VLMs)</span>
+<span class="tag primary" data-hover="">Large Language Models</span>
+<span class="tag primary" data-hover="">Trustworthy AI</span>
+<span class="tag primary" data-hover="">AI Safety</span>
+</div>
+</div>
+<div class="interest-block reveal reveal-delay-1">
+<h3><span class="sn">2.</span> Secondary Focus</h3>
+<div class="tag-list">
+<span class="tag" data-hover="">Federated Learning</span>
+<span class="tag" data-hover="">Computer Vision</span>
+<span class="tag" data-hover="">Network &amp; AI Security</span>
+</div>
+</div>
+<div class="interest-block reveal">
+<p>I study multimodal and vision-language models, mainly in healthcare and AI agents, for interpretability, trustworthiness, AI safety, and privacy.</p>
+</div>
+<div class="interest-block reveal reveal-delay-1">
+<h3><span class="sn">3.</span> Real-world applications</h3>
+<div class="exp-content"><ul>
+<li>A health worker with no specialist nearby could record a patient's breathing and get a classification with an explanation.</li>
+<li>Public fundus datasets are mostly normal and mild cases, so models miss advanced diabetic retinopathy. Our paper generates rare-stage images and trains the model to attend to lesions, beating standard augmentation by 4.65%.</li>
+<li>Hospitals can train one model without sharing patient records, but updates can still leak information. Only one of the eight empirical studies in our review used a formal privacy mechanism.</li>
+<li>An AI agent that reads the screen can be hijacked by text hidden in an image. Flagging such text before agents act would make them safer to rely on.</li>
+<li>My thesis model detected attacks on Internet of Medical Things devices with 99.6% accuracy on 2 classes, 97.9% on 6 categories, and 95.7% on 19 attack types.</li>
+</ul></div>
+</div>
+</div>
+</section><section class="chapter alt-bg" id="publications">
+<div class="chapter-header reveal">
+<div class="chapter-no"> </div>
+<h2 class="chapter-title">Publications</h2>
 
-<footer id="contact" class="colophon">
-  <div class="colophon-inner">
-    <div class="chapter-header reveal">
-      <div class="chapter-no" style="color:var(--paper);opacity:.7">Contact</div>
-      <h2 class="chapter-title">Get in Touch</h2>
-      <div class="chapter-sub" style="color:rgba(243,236,220,.75)">Open to research collaboration and graduate study inquiries.</div>
-      <svg class="ornament" viewBox="0 0 120 18" fill="none" stroke="#f3ecdc" stroke-width="1">
-        <line x1="0" y1="9" x2="48" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" y1="9" x2="120" y2="9"></line>
-      </svg>
-    </div>
+<svg class="ornament" fill="none" stroke="currentColor" stroke-width="1" viewbox="0 0 120 18">
+<line x1="0" x2="48" y1="9" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" x2="120" y1="9" y2="9"></line>
+</svg>
+</div>
+<div class="pub-filters reveal" role="tablist">
+<button class="filter-btn active" data-filter="all" data-hover="">All Writings</button>
+<button class="filter-btn" data-filter="published" data-hover="">Published</button>
+<button class="filter-btn" data-filter="accepted" data-hover="">Accepted</button>
+<button class="filter-btn" data-filter="ongoing" data-hover="">Ongoing Research</button>
+<button class="filter-btn" data-filter="thesis" data-hover="">Thesis</button>
+<button class="filter-btn" data-filter="2026" data-hover="">2026</button>
+</div>
+<div class="publications" id="pubs">
+<article class="pub-card reveal" data-hover="" data-status="accepted" data-year="2026">
+<div class="pub-year">2026<small>Accepted</small></div>
+<div>
+<div class="pub-meta">
+<span class="pub-badge accepted">Accepted</span>
+<span class="pub-type"><a href="https://hightechjournal.org/" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);" target="_blank">HighTech and Innovation Journal</a> · <span class="hl">Q1</span>, <span class="hl">Scopus-indexed</span></span>
+</div>
+<h3>An Ensemble Approach for Diabetic Retinopathy Severity Classification with Diffusion-Based Augmentation and Explainability</h3>
+<p class="pub-authors"><strong>Auntor Chakma</strong>, Diya Rahman, T. H. Liew</p>
+<p class="pub-venue"><span class="hl">Accepted</span> 9 August 2026</p>
+<details class="writeup">
+<summary>Show abstract</summary>
+<p>Public fundus-image datasets are dominated by normal and mild cases, so models trained on them read common stages well but miss advanced disease, the stages where a missed reading matters most. This paper treats that failure as four separate problems rather than one: too few examples of rare stages, a severity scale that ordinary classifiers treat as unrelated categories, no way to check where a model is actually looking, and single models that share the same blind spots. Each gets its own fix: Stable Diffusion 2.1 with ControlNet generates additional minority-class images, an ordinal loss teaches the model that stages progress rather than sit as unrelated labels, lesion masks direct attention during training rather than only explaining it afterward, and three architecturally different backbones are combined through a learned meta-learner instead of a fixed voting rule. On 1,437 fundus photographs from Hospital de Clínicas, Paraguay, the combination reaches 91.63% accuracy and an AUC of 0.9920 on held-out images, cuts the ordinal model's mean error from 0.78 to 0.46 stages, and, at matched training-set size, beats standard image augmentation by 4.65% absolute accuracy. To our knowledge, no prior published pipeline combines all four elements for seven-stage classification, and removing any one of them measurably hurt accuracy.</p>
+</details>
+<figure class="fig"><a href="assets/img/ga-dr-ensemble.webp" rel="noopener" target="_blank"><img alt="Graphical abstract of the diabetic retinopathy ensemble paper" src="assets/img/ga-dr-ensemble.webp"/></a></figure>
+</div>
+<span class="pub-link" data-hover="">Accepted</span>
+</article>
+<article class="pub-card reveal" data-hover="" data-status="accepted" data-year="2026">
+<div class="pub-year">2026<small>Accepted</small></div>
+<div>
+<div class="pub-meta">
+<span class="pub-badge accepted">Accepted</span>
+<span class="pub-type"><a href="https://www.frontiersin.org/journals/digital-health" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);" target="_blank">Frontiers in Digital Health</a> · <span class="hl">Q1</span> · <span class="hl">Impact Factor 5.2</span> · <span class="hl">CiteScore 6.8</span></span>
+</div>
+<h3>Multimodal Federated Learning with Privacy-Preserving Mechanisms in Healthcare: A Mini Review of Convergence, Challenges, and Future Directions</h3>
+<p class="pub-authors"><strong>Auntor Chakma</strong>, F. T. Z. Moon, F. Jahan, M. K. Morol, T. H. Liew, D. Nandi, A. A. Jubair, M. Rahman</p>
+<p class="pub-venue"><span class="hl">Accepted</span> September 2026. First author, from literature search to written review, in a three-month ELITE internship.</p>
+<details class="writeup">
+<summary>Show abstract</summary>
+<p>Hospitals hold scan images, health records, and genomic data that improve diagnosis when combined, but each data type carries a different amount of patient-identifiable information, and most federated systems protect all of them with a single shared privacy setting. This mini-review searched seven databases and examined 14 studies published between 2020 and early 2026 (eight reporting original results and six providing field-level context) to find out how far the field has actually gone. Federated training proved stable at real scale, with one glioblastoma imaging federation holding steady across 71 hospitals, and multimodal models beat single-modality ones in most direct comparisons reported. Privacy design told a different story. Only 1 of the 8 empirical studies (12.5%) applied a formal privacy mechanism to model updates at all, and none of them gave different data types their own privacy protection, so a scan and a heart-rate reading were treated the same. The review reports this as an open question rather than a proven flaw.</p>
+</details>
+<figure class="fig"><a href="assets/img/ga-mfl-review.webp" rel="noopener" target="_blank"><img alt="Graphical abstract of the multimodal federated learning mini review" src="assets/img/ga-mfl-review.webp"/></a></figure>
+</div>
+<span class="pub-link" data-hover="">Accepted</span>
+</article>
+<article class="pub-card reveal" data-hover="" data-status="published" data-year="2026">
+<div class="pub-year">2026<small>Conference</small></div>
+<div>
+<div class="pub-meta">
+<span class="pub-badge published">Published</span>
+<span class="pub-type"><a href="https://link.springer.com/book/10.1007/978-3-032-11355-9" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);" target="_blank">Springer CCIS</a>, vol. 2683 (ICDSAIA 2025, pp. 220–235)</span>
+</div>
+<h3>A Deep Learning–Based Framework for Bangla Vehicle License Plate Detection and Recognition</h3>
+<p class="pub-authors">Sagar Mohajan, G. M. Sakhawat Hossain, Md Mynoddin, Rishita Chakma, Tanjim Mahmud, Punam Kanungoe, <strong>Auntor Chakma</strong></p>
+<p class="pub-venue"><span class="hl">Published</span> 10 January 2026. My role: model development, and writing and figures.</p>
+<details class="writeup">
+<summary>Show abstract</summary>
+<p>Automated license-plate recognition built for Latin scripts performs poorly on Bangla plates, where character shapes, ligatures, and inconsistent plate quality across Bangladeshi vehicles break the assumptions those systems rely on. This work builds an end-to-end pipeline specifically for that script: an image-restoration stage first corrects the blur, low light, and motion artefacts typical of roadside camera captures, and a sequence-recognition model then reads the restored plate as an ordered character sequence rather than a set of isolated glyphs. On a synthetic Bangla license-plate dataset built to reflect that variability, the pipeline reaches 96% character-level accuracy, giving a practical basis for local vehicle-identification systems that existing Latin-script recognizers cannot serve.</p>
+</details>
+</div>
+<a class="pub-link" data-hover="" href="https://link.springer.com/chapter/10.1007/978-3-032-11355-9_16" rel="noopener" target="_blank">Read <span class="arrow">→</span></a>
+</article>
+<article class="pub-card reveal" data-hover="" data-status="ongoing" data-year="2026">
+<div class="pub-year">2026<small>Ongoing</small></div>
+<div>
+<div class="pub-meta">
+<span class="pub-badge ongoing">Ongoing Research</span>
+<span class="pub-type">ELITE Research Lab LLC</span>
+</div>
+<h3>Visual Prompt Injection in Multimodal AI Agents</h3>
+<p class="pub-authors"><strong>Auntor Chakma</strong>, mentored by Md Kishor Morol</p>
+<p class="pub-venue">Early-stage project on how vision-language agents can be steered by instructions hidden in images.</p>
+<details class="writeup">
+<summary>Show description</summary>
+<p>AI agents that read screens through a vision-language model can be steered by instructions hidden in an image. This project measures how often open agents obey such instructions, which kinds succeed, and whether attention flags the injected region before the agent acts. The aim is a benchmark and a check that flags a compromised screen.</p>
+</details>
+</div>
+<span class="pub-link" data-hover="">Early Stage</span>
+</article>
+<article class="pub-card reveal" data-hover="" data-status="ongoing" data-year="2026">
+<div class="pub-year">2026<small>Ongoing</small></div>
+<div>
+<div class="pub-meta">
+<span class="pub-badge ongoing">Ongoing Research</span>
+<span class="pub-type">ELITE Research Lab LLC</span>
+</div>
+<h3>Signal Processing on Medical Equipment for Outcome Prediction</h3>
+<p class="pub-authors"><strong>Auntor Chakma</strong> (supervising), with two research interns</p>
+<p class="pub-venue">Combines the ICBHI, KAUH and RD@TR lung-sound datasets and extends Pulmo-TS2ONN (IEEE TIM 2024) into one model that classifies lung disorders from breathing sounds, cheaply and with explanations. Started August 2026, targeting a Springer Nature journal.</p>
+</div>
+<span class="pub-link" data-hover="">In Progress</span>
+</article>
+<article class="pub-card reveal" data-hover="" data-status="thesis">
+<div class="pub-year">Thesis</div>
+<div>
+<div class="pub-meta">
+<span class="pub-badge thesis">Thesis</span>
+<span class="pub-type">Undergraduate Thesis</span>
+</div>
+<h3>Attentive TabNet Framework for Multiclass Intrusion Detection in Internet of Medical Things (IoMT) Environments</h3>
+<p class="pub-authors"><strong>Auntor Chakma</strong>, B.Sc. thesis, Rangamati Science and Technology University · Supervisor: Md Mynoddin</p>
+<p class="pub-venue">An attention-based TabNet framework with conditional-GAN synthetic samples for rare attack classes, reaching <span class="hl">99.6%</span> accuracy on 2 classes, <span class="hl">97.9%</span> on 6 categories and <span class="hl">95.7%</span> on 19 attack types.</p>
+<details class="writeup">
+<summary>Show description</summary>
+<p>An attention-based TabNet framework that handles three detection tasks in one model, with conditional-GAN synthetic samples for rare attack classes. On CICIoMT2024 (8,775,013 raw records from 40 devices), it reaches 99.6% accuracy on 2 classes, 97.9% on 6 categories and 95.7% on 19 attack types, beating Random Forest, XGBoost and Logistic Regression on every task. GAN balancing beat SMOTE on all three, and the gap widened as the task got harder.</p>
+</details>
+<figure class="fig"><a href="assets/img/ga-thesis-tabnet.webp" rel="noopener" target="_blank"><img alt="Graphical abstract of the Attentive TabNet thesis" src="assets/img/ga-thesis-tabnet.webp"/></a></figure>
+</div>
+</article>
+</div>
+</section><section class="chapter" id="projects">
+<div class="chapter-header reveal">
+<div class="chapter-no">03</div>
+<h2 class="chapter-title">Projects and Skills</h2>
+<div class="chapter-sub">Selected projects and working prototypes, and the tools behind them.</div>
+<svg class="ornament" fill="none" stroke="currentColor" stroke-width="1" viewbox="0 0 120 18">
+<line x1="0" x2="48" y1="9" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" x2="120" y1="9" y2="9"></line>
+</svg>
+</div>
+<div class="projects-grid">
+<a class="project reveal" data-hover="" href="https://smartshop-rag-chatbot.streamlit.app/" rel="noopener" target="_blank">
+<div class="p-num">No. 01 · Live</div>
+<h3>AI Customer Support Chatbot (RAG)</h3>
+<figure class="fig"><img alt="Screenshot of the ShopSmart BD support chatbot" loading="lazy" src="assets/img/shot-shopsmart.webp"/></figure>
+<p>A chatbot that answers customer questions on shipping, returns, payments, and products from a store's documents, citing each source.</p>
+<p><strong>Problem.</strong> Support staff repeat answers, and general chatbots invent policies.</p>
+<p><strong>How it works.</strong> The question is rewritten using chat history, matched against a ChromaDB index of local embeddings, and answered by Llama 3 on Groq from the retrieved passages.</p>
+<p><strong>Real-world use.</strong> First-line shop support. The demo uses a fictional store, ShopSmart BD.</p>
+<div class="p-stack"><span>Python</span><span>LangChain</span><span>ChromaDB</span><span>Streamlit</span><span>FastAPI</span><span>Groq</span></div>
+<span class="p-link">Open the demo <span class="arrow">→</span></span>
+</a>
+<a class="project reveal reveal-delay-1" data-hover="" href="https://huggingface.co/spaces/auntor101/Visual_AI_Assist" rel="noopener" target="_blank">
+<div class="p-num">No. 02 · Live</div>
+<h3>VisualMind AI</h3>
+<figure class="fig"><img alt="Screenshot of the VisualMind AI app on Hugging Face Spaces" loading="lazy" src="assets/img/shot-visualmind.webp"/></figure>
+<p>An app that describes an uploaded image and answers follow-up questions about it.</p>
+<p><strong>Problem.</strong> A caption alone leaves questions open, and text in images is easy to miss.</p>
+<p><strong>How it works.</strong> BLIP writes a caption, then Llama 4 Scout on Groq analyses the image and answers follow-up questions. It accepts JPEG, PNG, WebP, and GIF files up to 4 MB.</p>
+<p><strong>Real-world use.</strong> Alt text, reading screenshots, and checking photos.</p>
+<div class="p-stack"><span>Streamlit</span><span>Groq</span><span>Hugging Face</span><span>Docker</span></div>
+<span class="p-link">Open the demo <span class="arrow">→</span></span>
+</a>
+<a class="project reveal reveal-delay-2" data-hover="" href="https://hiretrack-ai.onrender.com" rel="noopener" target="_blank">
+<div class="p-num">No. 03 · Live</div>
+<h3>HireTrack AI</h3>
+<figure class="fig"><img alt="Screenshot of the HireTrack AI dashboard" loading="lazy" src="assets/img/shot-hiretrack.webp"/><figcaption>Screenshot with demo data.</figcaption></figure>
+<p>A job tracker that scores a resume against a job description, drafts tailored documents, and tracks each application to an offer.</p>
+<p><strong>Problem.</strong> Applicants rarely know why screening rejects a resume.</p>
+<p><strong>How it works.</strong> A local scoring engine rates a resume on skills, experience, education, and keywords with no API call, and lists missing skills. A language model drafts a tailored resume and cover letter, and Exa AI finds listings.</p>
+<p><strong>Real-world use.</strong> Checking a resume before applying and seeing recurring skill gaps.</p>
+<div class="p-stack"><span>FastAPI</span><span>PostgreSQL</span><span>spaCy</span><span>FAISS</span><span>Exa AI</span><span>LiteLLM</span><span>Streamlit</span></div>
+<span class="p-link">Open the demo <span class="arrow">→</span></span>
+</a>
+<a class="project reveal" data-hover="" href="https://github.com/auntor101/Anomaly--Detections-in-IOMT-devices-" rel="noopener" target="_blank">
+<div class="p-num">No. 04 · GitHub</div>
+<h3>Anomaly Detection in IoMT Devices</h3>
+<p>A pipeline that detects and classifies attacks in network traffic from connected medical devices.</p>
+<p><strong>Problem.</strong> Medical devices are attack targets, and attacks are rare in the data.</p>
+<p><strong>How it works.</strong> A variational autoencoder (trained on about 171,000 normal records) and an Isolation Forest score how unusual each record is. A TabNet classifier uses the scores to assign the attack type, on about 2.68 million training and 892,000 test records.</p>
+<p><strong>Real-world use.</strong> A hospital network monitor.</p>
+<p><strong>Status.</strong> Research code, not deployed.</p>
+<div class="p-stack"><span>VAE</span><span>Isolation Forest</span><span>TabNet</span><span>TensorFlow</span><span>Optuna</span></div>
+<span class="p-link">View on GitHub <span class="arrow">→</span></span>
+</a>
+<a class="project reveal reveal-delay-1" data-hover="" href="https://github.com/auntor101/Multiple-University-Vehicles-Tracking-in-Real-Time-for-a-Smoother-Transportation" rel="noopener" target="_blank">
+<div class="p-num">No. 05 · GitHub</div>
+<h3>University Vehicle Tracking</h3>
+<p>A web platform showing university vehicles on a live dashboard, with alerts and role-based access for administrators, drivers, students, and teachers.</p>
+<p><strong>Problem.</strong> Nobody outside the vehicle can see where it is.</p>
+<p><strong>How it works.</strong> Vehicle positions in Firebase Realtime Database update a React dashboard live, Firebase Cloud Messaging sends alerts, and five roles use Firebase Authentication and JWT.</p>
+<p><strong>Real-world use.</strong> Showing students where each bus is, and managing the fleet.</p>
+<p><strong>Status.</strong> A development and learning project.</p>
+<div class="p-stack"><span>Spring Boot</span><span>Java 17</span><span>React</span><span>Firebase</span></div>
+<span class="p-link">View on GitHub <span class="arrow">→</span></span>
+</a>
+<a class="project reveal reveal-delay-2" data-hover="" href="https://github.com/auntor101/Weather-Prediction" rel="noopener" target="_blank">
+<div class="p-num">No. 06 · GitHub</div>
+<h3>Chittagong Weather Prediction</h3>
+<p>A classifier that predicts Chittagong weather as rain, high temperature, normal temperature, or cold, with a web interface.</p>
+<p><strong>Problem.</strong> Weather matters for farming, transport, and disaster management.</p>
+<p><strong>How it works.</strong> Trains on daily temperature, rainfall, humidity, and sunshine records from a public Mendeley dataset, using SMOTE for class balance. A stacking ensemble of Random Forest, Gradient Boosting, XGBoost, SVM, and Logistic Regression is tuned by randomized search and cross-validation. A Flask app returns the class with a confidence score.</p>
+<p><strong>Real-world use.</strong> Planning around rain or heat in farming or transport.</p>
+<p><strong>Status.</strong> A student project, not an operational forecast.</p>
+<div class="p-stack"><span>Python</span><span>scikit-learn</span><span>XGBoost</span><span>SMOTE</span><span>Flask</span></div>
+<span class="p-link">View on GitHub <span class="arrow">→</span></span>
+</a>
+</div>
+</section><section class="chapter alt-bg" id="skills">
+<div class="chapter-header reveal">
+<div class="chapter-no"> </div>
+<h2 class="chapter-title">Skills</h2>
 
-    <div class="colophon-grid">
-      <div class="colophon-col reveal">
-        <h5>By Post</h5>
-        <p>Dhaka, Bangladesh</p>
-        <small>Available for remote collaboration with research groups worldwide.</small>
-      </div>
-      <div class="colophon-col reveal reveal-delay-1">
-        <h5>By Wire</h5>
-        <a href="mailto:auntorchakma@gmail.com" data-hover="">auntorchakma@gmail.com</a>
-        <a href="mailto:auntor.chakma@elitelab.ai" data-hover="">auntor.chakma@elitelab.ai</a>
-        <a href="tel:+8801759859159" data-hover="">(+880) 1759 859 159</a>
-        <button class="copy-btn" data-copy="auntorchakma@gmail.com" data-hover="" style="margin-right:8px">Copy Gmail</button>
-        <button class="copy-btn" data-copy="auntor.chakma@elitelab.ai" data-hover="">Copy ELITE email</button>
-      </div>
-      <div class="colophon-col reveal reveal-delay-2">
-        <h5>Elsewhere</h5>
-        <a href="https://github.com/auntor101" target="_blank" rel="noopener" data-hover="">GitHub</a>
-        <a href="https://linkedin.com/in/auntor101" target="_blank" rel="noopener" data-hover="">LinkedIn</a>
-        <a href="https://scholar.google.com/citations?user=zhwU8sUAAAAJ&amp;hl=en" target="_blank" rel="noopener" data-hover="">Google Scholar</a>
-      </div>
-    </div>
+<svg class="ornament" fill="none" stroke="currentColor" stroke-width="1" viewbox="0 0 120 18">
+<line x1="0" x2="48" y1="9" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" x2="120" y1="9" y2="9"></line>
+</svg>
+</div>
+<div class="skills-grid">
+<div class="skill-cat reveal">
+<span class="sn">1.</span>
+<div class="row"><span>Python</span><span>Java</span><span>C++</span></div>
+</div>
+<div class="skill-cat reveal">
+<span class="sn">2.</span>
+<div class="row"><span>Federated Learning</span><span>Differential Privacy</span><span>Explainable AI</span><span>Vision-Language Models</span><span>Ordinal Regression</span><span>Diffusion-Based Augmentation</span></div>
+</div>
+<div class="skill-cat reveal">
+<span class="sn">3.</span>
+<div class="row"><span>PyTorch</span><span>TensorFlow</span><span>Scikit-learn</span><span>Keras</span><span>OpenCV</span><span>Hugging Face Transformers</span><span>LangChain</span><span>LangGraph</span><span>RAG</span></div>
+</div>
+<div class="skill-cat reveal">
+<span class="sn">4.</span>
+<div class="row"><span>NumPy</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span><span>Data Preprocessing</span><span>Feature Engineering</span></div>
+</div>
+<div class="skill-cat reveal">
+<span class="sn">5.</span>
+<div class="row"><span>Django</span><span>FastAPI</span><span>Spring Boot</span><span>RESTful APIs</span></div>
+</div>
+<div class="skill-cat reveal">
+<span class="sn">6.</span>
+<div class="row"><span>MySQL</span><span>MongoDB</span><span>PostgreSQL</span></div>
+</div>
+<div class="skill-cat reveal">
+<span class="sn">7.</span>
+<div class="row"><span>Wireshark</span><span>Network Analysis</span></div>
+</div>
+<div class="skill-cat reveal">
+<span class="sn">8.</span>
+<div class="row"><span>Linux</span><span>Git</span><span>GitHub</span></div>
+</div>
+<div class="skill-cat reveal">
+<span class="sn">9.</span>
+<div class="row"><span>LaTeX</span><span>Microsoft Office</span><span>Technical Writing</span></div>
+</div>
+</div>
+</section><section class="chapter" id="education">
+<div class="chapter-header reveal">
+<div class="chapter-no">04</div>
+<h2 class="chapter-title">Education and Experience</h2>
+<div class="chapter-sub">Academic record, and research and professional positions held.</div>
+<svg class="ornament" fill="none" stroke="currentColor" stroke-width="1" viewbox="0 0 120 18">
+<line x1="0" x2="48" y1="9" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" x2="120" y1="9" y2="9"></line>
+</svg>
+</div>
+<div class="edu-list">
+<article class="edu-item reveal">
+<div class="edu-side"><strong>Bachelor's</strong>Rangamati, Bangladesh</div>
+<div class="edu-body">
+<h3>Bachelor of Science in Computer Science and Engineering</h3>
+<div class="inst">Rangamati Science and Technology University</div>
+<div class="meta"><strong>CGPA 3.50 / 4.00</strong>Department of Computer Science and Engineering</div>
+<p class="note">My cohort's coursework was delayed by roughly 3 years by COVID closures and university scheduling backlogs.</p>
+<div class="sem-grades">
+<h5>Recent Semester GPA</h5>
+<div class="sem-row">
+<div class="sem"><span class="sem-no">Sem 5</span><span class="sem-gpa">3.70</span></div>
+<div class="sem"><span class="sem-no">Sem 6</span><span class="sem-gpa">3.82</span></div>
+<div class="sem"><span class="sem-no">Sem 7</span><span class="sem-gpa">3.93</span></div>
+<div class="sem"><span class="sem-no">Sem 8</span><span class="sem-gpa">3.74</span></div>
+</div>
+</div>
+<div class="thesis">
+<h5>Thesis</h5>
+<span class="ttl">Attentive TabNet Framework for Multiclass Intrusion Detection in Internet of Medical Things (IoMT) Environments</span>
+<p>An attention-based TabNet framework that handles three detection tasks in one model, with conditional-GAN synthetic samples for rare attack classes. On CICIoMT2024 (8,775,013 raw records from 40 devices), it reaches 99.6% accuracy on 2 classes, 97.9% on 6 categories and 95.7% on 19 attack types, beating Random Forest, XGBoost and Logistic Regression on every task. GAN balancing beat SMOTE on all three, and the gap widened as the task got harder.</p>
+</div>
+<div class="coursework">
+<h5>Relevant Coursework</h5>
+<div class="row">
+<span>Machine Learning</span>
+<span>Artificial Intelligence</span>
+<span>Data Structures &amp; Algorithms</span>
+<span>Database Management Systems</span>
+<span>Computer Networking</span>
+<span>Information Security</span>
+<span>Vector Calculus &amp; Linear Algebra</span>
+<span>Probability &amp; Statistics</span>
+</div>
+</div>
+</div>
+</article>
+<article class="edu-item reveal">
+<div class="edu-side"><strong>Higher Secondary</strong>Dhaka Board</div>
+<div class="edu-body">
+<h3>Higher Secondary Certificate (HSC)</h3>
+<div class="inst">Notre Dame College</div>
+<div class="meta"><strong>GPA 5.00 / 5.00</strong>Dhaka Board</div>
+</div>
+</article>
+<article class="edu-item reveal">
+<div class="edu-side"><strong>Secondary</strong>Chittagong Board</div>
+<div class="edu-body">
+<h3>Secondary School Certificate (SSC)</h3>
+<div class="inst">Laker's Public School and College</div>
+<div class="meta"><strong>GPA 5.00 / 5.00</strong>Chittagong Board</div>
+</div>
+</article>
+</div>
+</section><section class="chapter alt-bg" id="experience">
+<div class="chapter-header reveal">
+<div class="chapter-no"> </div>
+<h2 class="chapter-title">Experience</h2>
 
-    <div class="colophon-foot">
-      <span>© 2026 · Auntor Chakma</span>
-    </div>
-  </div>
+<svg class="ornament" fill="none" stroke="currentColor" stroke-width="1" viewbox="0 0 120 18">
+<line x1="0" x2="48" y1="9" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" x2="120" y1="9" y2="9"></line>
+</svg>
+</div>
+<div class="experience">
+<article class="exp-item reveal">
+<div class="exp-date">Apr 2026<br/>— Present</div>
+<div class="exp-content">
+<h3>Researcher &amp; Research Assistant</h3>
+<div class="exp-org"><a href="https://elitelab.ai/" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);" target="_blank">ELITE Research Lab LLC</a> · Queens, NY, USA (Remote)</div>
+<ul>
+<li>Studying how vision-language agents can be hijacked by instructions hidden in images, and how to detect it.</li>
+<li>Supervising two interns on biomedical signal processing and outcome prediction, since Aug 2026</li>
+<li>Advised by Md Kishor Morol on vision-language models, AI safety, and privacy.</li>
+</ul>
+</div>
+</article>
+<article class="exp-item reveal">
+<div class="exp-date">Jul 2026<br/>— Present</div>
+<div class="exp-content">
+<h3>Management Information System (MIS) Officer</h3>
+<div class="exp-org"><a href="https://ashikacht.org/" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);" target="_blank">ASHIKA Development Associates</a> · Rangamati, Chittagong</div>
+<ul>
+<li>MIS Officer on a World Food Programme-funded project with two components: the Mother and Child Benefit Programme, protecting women and children in the Chittagong Hill Tracts from malnutrition, and the Natural Disaster Risk Reduction Project, mapping high-risk areas to reduce disaster risk.</li>
+<li>Building data pipelines, dashboards, and automated reports to monitor project indicators.</li>
+</ul>
+</div>
+</article>
+<article class="exp-item reveal">
+<div class="exp-date">Mar 2026<br/>— Apr 2026</div>
+<div class="exp-content">
+<h3>Junior Research Assistant</h3>
+<div class="exp-org"><a href="https://elitelab.ai/" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);" target="_blank">ELITE Research Lab LLC</a> · Queens, NY, USA (Remote)</div>
+<ul>
+<li><span class="hl">Led</span> a project under Md Kishor Morol, still in progress, adding differential privacy and explanations so hospitals can share one model without exchanging patient records.</li>
+<li>Simulated federated clients, merged two datasets, benchmarked against a baseline, and used XAI to interpret predictions.</li>
+</ul>
+</div>
+</article>
+<article class="exp-item reveal">
+<div class="exp-date">Jan 2026<br/>— Mar 2026</div>
+<div class="exp-content">
+<h3>AI Research Intern</h3>
+<div class="exp-org"><a href="https://elitelab.ai/" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);" target="_blank">ELITE Research Lab LLC</a> · Queens, NY, USA (Remote)</div>
+<ul>
+<li>Examined <span class="hl">14 studies</span> on multimodal federated learning across seven databases and found the open problem that now drives the research. Learned systematic review.</li>
+<li><span class="hl">Led</span> as <span class="hl">first author</span> the mini-review <span class="hl">accepted</span> in Frontiers in Digital Health (<span class="hl">Q1</span>) in September 2026.</li>
+</ul>
+</div>
+</article>
+<article class="exp-item reveal">
+<div class="exp-date">Aug 2025<br/>— Dec 2025</div>
+<div class="exp-content">
+<h3>Research Collaborator</h3>
+<div class="exp-org"><a href="https://elitelab.ai/" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);" target="_blank">ELITE Research Lab LLC</a> · Queens, NY, USA (Remote)</div>
+<ul>
+<li>Worked on why retinopathy models miss advanced stages when public data is mostly normal and mild cases. Learned to treat a model failure as separate problems (rare stages, severity order, attention, shared blind spots), test each fix by removing it, and handle heavily imbalanced medical imaging data.</li>
+<li>Built the diffusion augmentation and three-backbone ensemble behind the retinopathy paper (<span class="hl">91.63%</span> accuracy on seven-stage classification).</li>
+</ul>
+</div>
+</article>
+<article class="exp-item reveal">
+<div class="exp-date">Dec 2024<br/>— Jun 2025</div>
+<div class="exp-content">
+<h3>Research Assistant, Dept. of CSE</h3>
+<div class="exp-org">Rangamati Science and Technology University</div>
+<ul>
+<li>Built a real-time network traffic dataset from Bangladesh telecommunications and trained CNN intrusion detectors. Learned the full pipeline from raw data to evaluation on messy, imbalanced real-world traffic, and identified the research gaps through the literature review.</li>
+<li>Collected and simulated real-time traffic to test the detector, and built its data pipelines and experiment environments.</li>
+</ul>
+</div>
+</article>
+<article class="exp-item reveal">
+<div class="exp-date">Mar 2024<br/>— Jun 2024</div>
+<div class="exp-content">
+<h3>Software Engineer Intern (Industrial Attachment)</h3>
+<div class="exp-org">Celloscope Limited · Dhaka, Bangladesh</div>
+<ul>
+<li>Built Java Spring Boot REST endpoints in a controller-service-repository structure, with @Valid validation and field-level 400 errors.</li>
+<li>Designed MySQL database schemas and worked with Agile methods and Git workflows.</li>
+</ul>
+</div>
+</article>
+</div>
+</section><section class="chapter" id="awards">
+<div class="chapter-header reveal">
+<div class="chapter-no">05</div>
+<h2 class="chapter-title">Awards</h2>
+<div class="chapter-sub">Scholarships, competitions, and academic recognitions.</div>
+<svg class="ornament" fill="none" stroke="currentColor" stroke-width="1" viewbox="0 0 120 18">
+<line x1="0" x2="48" y1="9" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" x2="120" y1="9" y2="9"></line>
+</svg>
+</div>
+<div class="awards-grid">
+<div class="award reveal" data-hover="">
+<div class="ord">1.</div>
+<h4><span class="hl">Merit Scholarship</span></h4>
+<p>Rangamati Science and Technology University.</p>
+<div class="year">2023 · 2024</div>
+</div>
+<div class="award reveal reveal-delay-1" data-hover="">
+<div class="ord">2.</div>
+<h4>Chittagong Hill Tracts Development Board <span class="hl">Scholarship</span></h4>
+<p>Awarded for academic excellence.</p>
+<div class="year">2018 · 2022 · 2023 · 2024</div>
+</div>
+<div class="award reveal reveal-delay-2" data-hover="">
+<div class="ord">3.</div>
+<h4>Rangamati Hill District Council <span class="hl">Scholarship</span></h4>
+<p>For academic performance.</p>
+<div class="year">2023 · 2025</div>
+</div>
+<div class="award reveal" data-hover="">
+<div class="ord">4.</div>
+<h4><span class="hl">Merit Scholarship</span> in SSC and HSC</h4>
+<p>Directorate of Secondary and Higher Education (DSHE), Government of Bangladesh.</p>
+<div class="year">2015 · 2017</div>
+</div>
+<div class="award reveal" data-hover="">
+<div class="ord">5.</div>
+<h4><span class="hl">3rd Place</span> — Hackathon</h4>
+<p>Web platform for Rangamati Hill Tracts community resource mapping. <span class="hl">Led</span> a three-person team.</p>
+<div class="year">2023</div>
+</div>
+<div class="award reveal reveal-delay-2" data-hover="">
+<div class="ord">6.</div>
+<h4>Debate <span class="hl">Championship</span> &amp; <span class="hl">Best Debater</span></h4>
+<p>Inter-school level — <span class="hl">Champion</span> and <span class="hl">Best Debater</span> awards.</p>
+<div class="year">2009</div>
+</div>
+<div class="award reveal" data-hover="">
+<div class="ord">7.</div>
+<h4>Inter-School Drawing Competition</h4>
+<p>National level — <span class="hl">1st place</span>.</p>
+<div class="year">2008</div>
+</div>
+<div class="award reveal reveal-delay-1" data-hover="">
+<div class="ord">8.</div>
+<h4>Inter-School Drawing Competition</h4>
+<p>National level — <span class="hl">2nd place</span>.</p>
+<div class="year">2009</div>
+</div>
+</div>
+</section><section class="chapter alt-bg" id="leadership">
+<div class="chapter-header reveal">
+<div class="chapter-no">06</div>
+<h2 class="chapter-title">Leadership &amp; Extracurricular Activities</h2>
+<div class="chapter-sub">I supervise two research interns at ELITE Research Lab. In June 2026 I organized a three-day awareness programme on indigenous food habits and climate change for 48 mothers and adolescent girls in Kaptai and Bandarban, and I helped distribute flood relief that reached 396 households.</div>
+<svg class="ornament" fill="none" stroke="currentColor" stroke-width="1" viewbox="0 0 120 18">
+<line x1="0" x2="48" y1="9" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" x2="120" y1="9" y2="9"></line>
+</svg>
+</div>
+<div class="experience">
+<article class="exp-item reveal">
+<div class="exp-date">2026</div>
+<div class="exp-content">
+<h3>Emergency Food Distribution for Communities Affected by Flash Floods</h3>
+<div class="exp-org"><a href="https://ashikacht.org" rel="noopener" target="_blank">ASHIKA Development Associates</a>, funded by the <span class="hl">World Food Programme</span> · Rangamati Hill District</div>
+<ul>
+<li><strong>Problem.</strong> Flooding hit five upazilas of Rangamati Hill District hard. Households needed food and energy supplies quickly, and there was no record yet of who was affected or what each family still lacked.</li>
+<li><strong>What I did.</strong> Helped distribute rice, oil, dry food, and energy biscuits under the relief programme funded by the <span class="hl">World Food Programme</span>. Together with two supporting team members, I collected household data from the affected families on paper forms and entered it afterwards, creating the first structured record of who was affected and what each family still lacked, so that relief could be directed by need.</li>
+<li><strong>Role.</strong> Volunteer and coordinator among the affected households, as part of a team led by Ratna Jyoti Chakma. I volunteered specifically in Rangamati Sadar.</li>
+<li><strong>Result.</strong> The distribution reached <span class="hl">396 households</span> across five affected upazilas: Rangamati Sadar, Baghaichhari, Belaichhari, Barkal, and Juraichhari.</li>
+<li><strong>Links.</strong> <a href="assets/img/ashika-volunteer-cert.webp" rel="noopener" target="_blank">Volunteer certificate ↗</a></li>
+</ul>
+</div>
+</article>
+<article class="exp-item reveal">
+<div class="exp-date">2025</div>
+<div class="exp-content">
+<h3>Conference website developer</h3>
+<div class="exp-org">RMSTU International Bioscience Conference 2025 (ICBC)</div>
+<ul>
+<li><strong>Problem.</strong> The conference needed a public website for registration and paper submissions, built by a small student team on a fixed deadline.</li>
+<li><strong>What I did.</strong> <span class="hl">Built and secured</span> <a href="https://icbc.rmstu-conf.ac.bd/" rel="noopener" target="_blank">icbc.rmstu-conf.ac.bd</a> as backend developer and security analyst on a six-person team.</li>
+<li><strong>Leadership.</strong> <span class="hl">Owned</span> the backend and security architecture for the whole team, so the site's reliability on conference days rested on decisions I made.</li>
+<li><strong>Result.</strong> The site handled registration and paper submissions for <span class="hl">245 registered participants</span>.</li>
+<li><strong>Links.</strong> <a href="https://icbc.rmstu-conf.ac.bd" rel="noopener" target="_blank">Live site ↗</a> · <a href="https://www.facebook.com/share/p/18PXWp41YY/" rel="noopener" target="_blank">ICBC post ↗</a></li>
+</ul>
+<figure class="fig"><a href="assets/img/shot-icbc-site.webp" rel="noopener" target="_blank"><img alt="Screenshot of the ICBC 2025 conference website" loading="lazy" src="assets/img/shot-icbc-site.webp"/></a><figcaption>icbc.rmstu-conf.ac.bd, the conference website.</figcaption></figure>
+</div>
+</article>
+<article class="exp-item reveal">
+<div class="exp-date">16–18 May 2025</div>
+<div class="exp-content">
+<h3>Technical Session Coordinator &amp; Volunteer</h3>
+<div class="exp-org">RMSTU International Bioscience Conference 2025 (ICBC)</div>
+<ul>
+<li><strong>Problem.</strong> Technical sessions over three days needed a fixed schedule that presenters and moderators kept to, alongside general on-the-ground conference support.</li>
+<li><strong>What I did.</strong> <span class="hl">Coordinated</span> the technical sessions and managed the presentation schedule. I also worked the registration desk and delegate check-in, informally, wherever help was needed.</li>
+<li><strong>Leadership.</strong> Kept presenters and moderators on schedule directly, rather than escalating delays to someone else.</li>
+<li><strong>Result.</strong> I coordinated three technical sessions across the three days.</li>
+<li><strong>Links.</strong> <a href="https://www.facebook.com/share/p/18PXWp41YY/" rel="noopener" target="_blank">ICBC post ↗</a> · <a href="assets/uploads/icbc-2025-certificate.pdf" rel="noopener" target="_blank">ICBC certificate ↗</a></li>
+</ul>
+<figure class="fig"><a href="assets/img/icbc-2025-team.webp" rel="noopener" target="_blank"><img alt="ICBC Volunteer 2025 team" loading="lazy" src="assets/img/icbc-2025-team.webp"/></a><figcaption>ICBC Volunteer 2025 team, Rangamati Science and Technology University, 16–18 May 2025.</figcaption></figure>
+</div>
+</article>
+<article class="exp-item reveal">
+<div class="exp-date">11–13 June 2026</div>
+<div class="exp-content">
+<h3>Indigenous Food Habits &amp; Climate Change Awareness</h3>
+<div class="exp-org">Self-organized, with support from <a href="https://ashikacht.org" rel="noopener" target="_blank">ASHIKA Development Associates</a> · Kaptai Upazila (Rangamati) and Bandarban Sadar Upazila (Bandarban)</div>
+<ul>
+<li><strong>Programme.</strong> Awareness Programme on Indigenous Peoples' Food Habits and Climate-Driven Change in Food Habits.</li>
+<li><strong>Problem.</strong> Mothers and adolescent girls (kishories) in the Chittagong Hill Tracts had few structured sessions on how local food habits relate to nutrition and to climate change.</li>
+<li><strong>What I did.</strong> <span class="hl">Organized</span> and led a group of <span class="hl">15 volunteers</span>, and went out to communities in Kaptai and Bandarban Sadar upazilas to meet mothers and adolescent girls (kishories). We held meetings and awareness sessions with them, including at UNICEF-supported Para Centres and a monthly cluster meeting of Para Centre workers. The sessions covered what the region's indigenous food habits offer for nutrition, and how climate change affects food and jhum cultivation. Printed material was produced from the sessions.</li>
+<li><strong>Leadership.</strong> Assembled and led the 15-person team myself, rather than joining one someone else had organized.</li>
+<li><strong>Result.</strong> The programme ran from 11 to 13 June 2026 and reached <span class="hl">48 mothers and kishories</span>.</li>
+</ul>
+<details class="writeup">
+<summary>Show full write-up</summary>
+<p>The Chittagong Hill Tracts differ from the plains districts of Bangladesh in what people eat and how they farm. A published review of traditional food plants in the region describes indigenous livelihoods as still dominated by subsistence agriculture that combines jhum (shifting cultivation), plough cultivation, and mixed fruit gardens. The programme asked what this local food base offers for the nutrition of mothers and adolescent girls.</p>
+<p>Climate change bears on the same food base. An ethnographic study in Kutukchhari and Sapchhari unions of Rangamati Sadar found that climate change and human causes together threaten food security and disrupt farming, and that people are being pushed to change their traditional jhum cultivation. In work reported by UNESCO, a youth-led study of 72 Tripura women in Simana Para, Khagrachari found that erratic weather disrupts jhum cultivation, water access, health, and food security.</p>
+<p>Kaptai was chosen because it shows how loss of land changes food. The Kaptai Dam flooded about 22,000 ha, around 40% of the cultivable land in the Chittagong Hill Tracts, displaced about 100,000 people, most of them Chakma, and shortened jhum cycles from 7–10 years to 3–5.</p>
+<p>Para Centres are neighbourhood centres set up by UNICEF with the Chittagong Hill Tracts Development Board under the Integrated Community Development Project, and now run under the Board's Sustainable Social Services Delivery Project. They deliver health, nutrition, education, and water and sanitation services to mothers and children in remote villages.</p>
+<p>Participants discussed how food and climate change are linked, and how changes in jhum affect what is grown and eaten.</p>
+<p class="sources">Sources: <a href="https://doi.org/10.3390/wild2020013" rel="noopener" target="_blank">Garai (2025), Wild 2(2):13</a>; <a href="https://www.unesco.org/en/articles/indigenous-youth-led-climate-research-across-chittagong-hill-tracts-bangladesh" rel="noopener" target="_blank">UNESCO, youth-led climate research in the Chittagong Hill Tracts</a>; <a href="https://www.researchgate.net/publication/352729165_Traditional_Food_Plants_and_Agro-biodiversity_in_Chittagong_Hill_Tracts_Bangladesh_Food_Security_Nutrition_and_Conservation_Strategy" rel="noopener" target="_blank">Traditional food plants and agro-biodiversity in the Chittagong Hill Tracts</a>; <a href="https://www.unicef.org/bangladesh/sites/unicef.org.bangladesh/files/2019-09/CHT-report-LR-August20-website.pdf" rel="noopener" target="_blank">UNICEF, Many Tracts One Community</a>; <a href="https://evaluationreports.unicef.org/GetDocument?documentID=203&amp;fileID=24857" rel="noopener" target="_blank">UNICEF, evaluation of the Integrated Community Development Project</a>; <a href="https://www.researchgate.net/publication/335701834_Involuntary_Displacement_and_Human_Security_A_Study_of_the_Kaptai_Dam_in_Bangladesh" rel="noopener" target="_blank">Involuntary displacement and human security: the Kaptai Dam</a>.</p>
+</details>
+</div>
+</article>
+</div>
+</section><section class="chapter" id="references">
+<div class="chapter-header reveal">
+<div class="chapter-no">07</div>
+<h2 class="chapter-title">Mentors &amp; References</h2>
+<div class="chapter-sub">Academic and professional references, available upon request.</div>
+<svg class="ornament" fill="none" stroke="currentColor" stroke-width="1" viewbox="0 0 120 18">
+<line x1="0" x2="48" y1="9" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" x2="120" y1="9" y2="9"></line>
+</svg>
+</div>
+<div class="refs-grid">
+<div class="ref-card reveal" data-hover="">
+<div class="ord">1.</div>
+<h4>Md Kishor Morol</h4>
+<div class="ttl">Mentor &amp; Principal Investigator, ELITE Research Lab</div>
+<div class="org">CEO, ELITE Research Lab LLC · Assistant Professor (on leave), American International University-Bangladesh<br/><a href="https://elitelab.ai/" rel="noopener" target="_blank">ELITE Research Lab LLC</a>, Queens, NY, USA</div>
+<div class="lines">
+<a href="mailto:kishor@elitelab.ai"><span class="lbl">Email</span>kishor@elitelab.ai</a>
+<a href="https://kishormorol.github.io/" rel="noopener" target="_blank"><span class="lbl">Website</span>kishormorol.github.io</a>
+<a href="https://scholar.google.com/citations?hl=en&amp;user=pjn3jg4AAAAJ" rel="noopener" target="_blank"><span class="lbl">Scholar</span>Google Scholar</a>
+</div>
+</div>
+<div class="ref-card reveal reveal-delay-1" data-hover="">
+<div class="ord">2.</div>
+<h4>Dr. Tanjim Mahmud</h4>
+<div class="ttl">Reference · Associate Professor · World's Top 2% Scientist</div>
+<div class="org">Dept. of Computer Science and Engineering, Rangamati Science and Technology University</div>
+<div class="lines">
+<a href="mailto:tanjim.cse@rmstu.ac.bd"><span class="lbl">Email</span>tanjim.cse@rmstu.ac.bd</a>
+<a href="https://rmstu.ac.bd/profile/tanjim" rel="noopener" target="_blank"><span class="lbl">Profile</span>RMSTU profile</a>
+<a href="https://scholar.google.com/citations?hl=en&amp;user=MmuzMOoAAAAJ" rel="noopener" target="_blank"><span class="lbl">Scholar</span>Google Scholar</a>
+</div>
+</div>
+<div class="ref-card reveal reveal-delay-2" data-hover="">
+<div class="ord">3.</div>
+<h4>Md Mynoddin</h4>
+<div class="ttl">B.Sc. Thesis Supervisor · Assistant Professor</div>
+<div class="org">Dept. of Computer Science and Engineering, Rangamati Science and Technology University</div>
+<div class="lines">
+<a href="mailto:mynoddin@rmstu.ac.bd"><span class="lbl">Email</span>mynoddin@rmstu.ac.bd</a>
+<a href="https://rmstu.ac.bd/profile/mynoddin" rel="noopener" target="_blank"><span class="lbl">Profile</span>RMSTU profile</a>
+<a href="https://scholar.google.com/citations?hl=en&amp;user=GJdr1I0AAAAJ" rel="noopener" target="_blank"><span class="lbl">Scholar</span>Google Scholar</a>
+</div>
+</div>
+</div>
+</section><footer class="colophon" id="contact">
+<div class="colophon-inner">
+<div class="chapter-header reveal">
+<div class="chapter-no" style="color:var(--paper);opacity:.7">Contact</div>
+<h2 class="chapter-title">Get in Touch</h2>
+<div class="chapter-sub" style="color:rgba(243,236,220,.75)">Open to research collaboration and graduate study inquiries.</div>
+<svg class="ornament" fill="none" stroke="#f3ecdc" stroke-width="1" viewbox="0 0 120 18">
+<line x1="0" x2="48" y1="9" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" x2="120" y1="9" y2="9"></line>
+</svg>
+</div>
+<div class="colophon-grid">
+<div class="colophon-col reveal">
+<h5>By Post</h5>
+<p>Dhaka, Bangladesh</p>
+<small>Available for remote collaboration with research groups worldwide.</small>
+</div>
+<div class="colophon-col reveal reveal-delay-1">
+<h5>By Wire</h5>
+<a data-hover="" href="mailto:auntorchakma@gmail.com">auntorchakma@gmail.com</a>
+<a data-hover="" href="mailto:auntor.chakma@elitelab.ai">auntor.chakma@elitelab.ai</a>
+<a data-hover="" href="tel:+8801759859159">(+880) 1759 859 159</a>
+<button class="copy-btn" data-copy="auntorchakma@gmail.com" data-hover="" style="margin-right:8px">Copy Gmail</button>
+<button class="copy-btn" data-copy="auntor.chakma@elitelab.ai" data-hover="">Copy ELITE email</button>
+</div>
+<div class="colophon-col reveal reveal-delay-2">
+<h5>Elsewhere</h5>
+<a data-hover="" href="https://github.com/auntor101" rel="noopener" target="_blank">GitHub</a>
+<a data-hover="" href="https://linkedin.com/in/auntor101" rel="noopener" target="_blank">LinkedIn</a>
+<a data-hover="" href="https://scholar.google.com/citations?user=zhwU8sUAAAAJ&amp;hl=en" rel="noopener" target="_blank">Google Scholar</a>
+</div>
+</div>
+<div class="colophon-foot">
+<span>© 2026 · Auntor Chakma</span>
+</div>
+</div>
 </footer>
-
-<script src="assets/js/main.js"></script>
+<button class="to-top" id="toTop" aria-label="Back to top" data-hover="">&#8593;</button>
+<script src="assets/js/main.js?v=3"></script>
 </body></html>

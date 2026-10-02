@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Research · Auntor Chakma</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&amp;display=swap" rel="stylesheet"/>
+<link href="assets/css/main.css?v=3" rel="stylesheet"/>
+</head>
+<body>
+<!-- Cursor -->
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+<!-- Progress -->
+<div class="progress" id="progress"></div>
+<nav aria-label="Primary" class="masthead">
+<div class="masthead-inner">
+<a class="brand" href="index.html">Auntor Chakma</a>
+<button aria-label="Toggle menu" class="nav-toggle" data-hover="" id="navToggle"><span></span><span></span><span></span></button>
+<ul class="nav-links" id="navLinks"><li><a data-nav="" href="index.html">About</a></li><li><a data-nav="" href="research.html">Research</a></li><li><a data-nav="" href="projects.html">Projects &amp; Skills</a></li><li><a data-nav="" href="experience.html">Education &amp; Experience</a></li><li><a data-nav="" href="awards.html">Awards</a></li><li><a data-nav="" href="leadership.html">Leadership</a></li><li><a data-nav="" href="references.html">References</a></li><li><a data-nav="" href="#contact">Contact</a></li></ul>
+</div>
+</nav>
+<section class="chapter" id="research">
+<div class="chapter-header reveal">
+<div class="chapter-no">02</div>
+<h2 class="chapter-title">Research</h2>
+<div class="chapter-sub">Focus areas, papers, and ongoing work.</div>
+<svg class="ornament" fill="none" stroke="currentColor" stroke-width="1" viewbox="0 0 120 18">
+<line x1="0" x2="48" y1="9" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" x2="120" y1="9" y2="9"></line>
+</svg>
+</div>
+<div class="interests">
+<div class="interest-block reveal">
+<h3><span class="sn">1.</span> Primary Focus</h3>
+<div class="tag-list">
+<span class="tag primary" data-hover="">Multimodal AI</span>
+<span class="tag primary" data-hover="">Vision-Language Models (VLMs)</span>
+<span class="tag primary" data-hover="">Large Language Models</span>
+<span class="tag primary" data-hover="">Trustworthy AI</span>
+<span class="tag primary" data-hover="">AI Safety</span>
+</div>
+</div>
+<div class="interest-block reveal reveal-delay-1">
+<h3><span class="sn">2.</span> Secondary Focus</h3>
+<div class="tag-list">
+<span class="tag" data-hover="">Federated Learning</span>
+<span class="tag" data-hover="">Computer Vision</span>
+<span class="tag" data-hover="">Network &amp; AI Security</span>
+</div>
+</div>
+<div class="interest-block reveal">
+<p>I study multimodal and vision-language models, mainly in healthcare and AI agents, for interpretability, trustworthiness, AI safety, and privacy.</p>
+</div>
+<div class="interest-block reveal reveal-delay-1">
+<h3><span class="sn">3.</span> Real-world applications</h3>
+<div class="exp-content"><ul>
+<li>A health worker with no specialist nearby could record a patient's breathing and get a classification with an explanation.</li>
+<li>Public fundus datasets are mostly normal and mild cases, so models miss advanced diabetic retinopathy. Our paper generates rare-stage images and trains the model to attend to lesions, beating standard augmentation by 4.65%.</li>
+<li>Hospitals can train one model without sharing patient records, but updates can still leak information. Only one of the eight empirical studies in our review used a formal privacy mechanism.</li>
+<li>An AI agent that reads the screen can be hijacked by text hidden in an image. Flagging such text before agents act would make them safer to rely on.</li>
+<li>My thesis model detected attacks on Internet of Medical Things devices with 99.6% accuracy on 2 classes, 97.9% on 6 categories, and 95.7% on 19 attack types.</li>
+</ul></div>
+</div>
+</div>
+</section><section class="chapter alt-bg" id="publications">
+<div class="chapter-header reveal">
+<div class="chapter-no"> </div>
+<h2 class="chapter-title">Publications</h2>
+
+<svg class="ornament" fill="none" stroke="currentColor" stroke-width="1" viewbox="0 0 120 18">
+<line x1="0" x2="48" y1="9" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" x2="120" y1="9" y2="9"></line>
+</svg>
+</div>
+<div class="pub-filters reveal" role="tablist">
+<button class="filter-btn active" data-filter="all" data-hover="">All Writings</button>
+<button class="filter-btn" data-filter="published" data-hover="">Published</button>
+<button class="filter-btn" data-filter="accepted" data-hover="">Accepted</button>
+<button class="filter-btn" data-filter="ongoing" data-hover="">Ongoing Research</button>
+<button class="filter-btn" data-filter="thesis" data-hover="">Thesis</button>
+<button class="filter-btn" data-filter="2026" data-hover="">2026</button>
+</div>
+<div class="publications" id="pubs">
+<article class="pub-card reveal" data-hover="" data-status="accepted" data-year="2026">
+<div class="pub-year">2026<small>Accepted</small></div>
+<div>
+<div class="pub-meta">
+<span class="pub-badge accepted">Accepted</span>
+<span class="pub-type"><a href="https://hightechjournal.org/" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);" target="_blank">HighTech and Innovation Journal</a> · <span class="hl">Q1</span>, <span class="hl">Scopus-indexed</span></span>
+</div>
+<h3>An Ensemble Approach for Diabetic Retinopathy Severity Classification with Diffusion-Based Augmentation and Explainability</h3>
+<p class="pub-authors"><strong>Auntor Chakma</strong>, Diya Rahman, T. H. Liew</p>
+<p class="pub-venue"><span class="hl">Accepted</span> 9 August 2026</p>
+<details class="writeup">
+<summary>Show abstract</summary>
+<p>Public fundus-image datasets are dominated by normal and mild cases, so models trained on them read common stages well but miss advanced disease, the stages where a missed reading matters most. This paper treats that failure as four separate problems rather than one: too few examples of rare stages, a severity scale that ordinary classifiers treat as unrelated categories, no way to check where a model is actually looking, and single models that share the same blind spots. Each gets its own fix: Stable Diffusion 2.1 with ControlNet generates additional minority-class images, an ordinal loss teaches the model that stages progress rather than sit as unrelated labels, lesion masks direct attention during training rather than only explaining it afterward, and three architecturally different backbones are combined through a learned meta-learner instead of a fixed voting rule. On 1,437 fundus photographs from Hospital de Clínicas, Paraguay, the combination reaches 91.63% accuracy and an AUC of 0.9920 on held-out images, cuts the ordinal model's mean error from 0.78 to 0.46 stages, and, at matched training-set size, beats standard image augmentation by 4.65% absolute accuracy. To our knowledge, no prior published pipeline combines all four elements for seven-stage classification, and removing any one of them measurably hurt accuracy.</p>
+</details>
+<figure class="fig"><a href="assets/img/ga-dr-ensemble.webp" rel="noopener" target="_blank"><img alt="Graphical abstract of the diabetic retinopathy ensemble paper" src="assets/img/ga-dr-ensemble.webp"/></a></figure>
+</div>
+<span class="pub-link" data-hover="">Accepted</span>
+</article>
+<article class="pub-card reveal" data-hover="" data-status="accepted" data-year="2026">
+<div class="pub-year">2026<small>Accepted</small></div>
+<div>
+<div class="pub-meta">
+<span class="pub-badge accepted">Accepted</span>
+<span class="pub-type"><a href="https://www.frontiersin.org/journals/digital-health" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);" target="_blank">Frontiers in Digital Health</a> · <span class="hl">Q1</span> · <span class="hl">Impact Factor 5.2</span> · <span class="hl">CiteScore 6.8</span></span>
+</div>
+<h3>Multimodal Federated Learning with Privacy-Preserving Mechanisms in Healthcare: A Mini Review of Convergence, Challenges, and Future Directions</h3>
+<p class="pub-authors"><strong>Auntor Chakma</strong>, F. T. Z. Moon, F. Jahan, M. K. Morol, T. H. Liew, D. Nandi, A. A. Jubair, M. Rahman</p>
+<p class="pub-venue"><span class="hl">Accepted</span> September 2026. First author, from literature search to written review, in a three-month ELITE internship.</p>
+<details class="writeup">
+<summary>Show abstract</summary>
+<p>Hospitals hold scan images, health records, and genomic data that improve diagnosis when combined, but each data type carries a different amount of patient-identifiable information, and most federated systems protect all of them with a single shared privacy setting. This mini-review searched seven databases and examined 14 studies published between 2020 and early 2026 (eight reporting original results and six providing field-level context) to find out how far the field has actually gone. Federated training proved stable at real scale, with one glioblastoma imaging federation holding steady across 71 hospitals, and multimodal models beat single-modality ones in most direct comparisons reported. Privacy design told a different story. Only 1 of the 8 empirical studies (12.5%) applied a formal privacy mechanism to model updates at all, and none of them gave different data types their own privacy protection, so a scan and a heart-rate reading were treated the same. The review reports this as an open question rather than a proven flaw.</p>
+</details>
+<figure class="fig"><a href="assets/img/ga-mfl-review.webp" rel="noopener" target="_blank"><img alt="Graphical abstract of the multimodal federated learning mini review" src="assets/img/ga-mfl-review.webp"/></a></figure>
+</div>
+<span class="pub-link" data-hover="">Accepted</span>
+</article>
+<article class="pub-card reveal" data-hover="" data-status="published" data-year="2026">
+<div class="pub-year">2026<small>Conference</small></div>
+<div>
+<div class="pub-meta">
+<span class="pub-badge published">Published</span>
+<span class="pub-type"><a href="https://link.springer.com/book/10.1007/978-3-032-11355-9" rel="noopener" style="color:inherit;border-bottom:1px solid var(--rule);" target="_blank">Springer CCIS</a>, vol. 2683 (ICDSAIA 2025, pp. 220–235)</span>
+</div>
+<h3>A Deep Learning–Based Framework for Bangla Vehicle License Plate Detection and Recognition</h3>
+<p class="pub-authors">Sagar Mohajan, G. M. Sakhawat Hossain, Md Mynoddin, Rishita Chakma, Tanjim Mahmud, Punam Kanungoe, <strong>Auntor Chakma</strong></p>
+<p class="pub-venue"><span class="hl">Published</span> 10 January 2026. My role: model development, and writing and figures.</p>
+<details class="writeup">
+<summary>Show abstract</summary>
+<p>Automated license-plate recognition built for Latin scripts performs poorly on Bangla plates, where character shapes, ligatures, and inconsistent plate quality across Bangladeshi vehicles break the assumptions those systems rely on. This work builds an end-to-end pipeline specifically for that script: an image-restoration stage first corrects the blur, low light, and motion artefacts typical of roadside camera captures, and a sequence-recognition model then reads the restored plate as an ordered character sequence rather than a set of isolated glyphs. On a synthetic Bangla license-plate dataset built to reflect that variability, the pipeline reaches 96% character-level accuracy, giving a practical basis for local vehicle-identification systems that existing Latin-script recognizers cannot serve.</p>
+</details>
+</div>
+<a class="pub-link" data-hover="" href="https://link.springer.com/chapter/10.1007/978-3-032-11355-9_16" rel="noopener" target="_blank">Read <span class="arrow">→</span></a>
+</article>
+<article class="pub-card reveal" data-hover="" data-status="ongoing" data-year="2026">
+<div class="pub-year">2026<small>Ongoing</small></div>
+<div>
+<div class="pub-meta">
+<span class="pub-badge ongoing">Ongoing Research</span>
+<span class="pub-type">ELITE Research Lab LLC</span>
+</div>
+<h3>Visual Prompt Injection in Multimodal AI Agents</h3>
+<p class="pub-authors"><strong>Auntor Chakma</strong>, mentored by Md Kishor Morol</p>
+<p class="pub-venue">Early-stage project on how vision-language agents can be steered by instructions hidden in images.</p>
+<details class="writeup">
+<summary>Show description</summary>
+<p>AI agents that read screens through a vision-language model can be steered by instructions hidden in an image. This project measures how often open agents obey such instructions, which kinds succeed, and whether attention flags the injected region before the agent acts. The aim is a benchmark and a check that flags a compromised screen.</p>
+</details>
+</div>
+<span class="pub-link" data-hover="">Early Stage</span>
+</article>
+<article class="pub-card reveal" data-hover="" data-status="ongoing" data-year="2026">
+<div class="pub-year">2026<small>Ongoing</small></div>
+<div>
+<div class="pub-meta">
+<span class="pub-badge ongoing">Ongoing Research</span>
+<span class="pub-type">ELITE Research Lab LLC</span>
+</div>
+<h3>Signal Processing on Medical Equipment for Outcome Prediction</h3>
+<p class="pub-authors"><strong>Auntor Chakma</strong> (supervising), with two research interns</p>
+<p class="pub-venue">Combines the ICBHI, KAUH and RD@TR lung-sound datasets and extends Pulmo-TS2ONN (IEEE TIM 2024) into one model that classifies lung disorders from breathing sounds, cheaply and with explanations. Started August 2026, targeting a Springer Nature journal.</p>
+</div>
+<span class="pub-link" data-hover="">In Progress</span>
+</article>
+<article class="pub-card reveal" data-hover="" data-status="thesis">
+<div class="pub-year">Thesis</div>
+<div>
+<div class="pub-meta">
+<span class="pub-badge thesis">Thesis</span>
+<span class="pub-type">Undergraduate Thesis</span>
+</div>
+<h3>Attentive TabNet Framework for Multiclass Intrusion Detection in Internet of Medical Things (IoMT) Environments</h3>
+<p class="pub-authors"><strong>Auntor Chakma</strong>, B.Sc. thesis, Rangamati Science and Technology University · Supervisor: Md Mynoddin</p>
+<p class="pub-venue">An attention-based TabNet framework with conditional-GAN synthetic samples for rare attack classes, reaching <span class="hl">99.6%</span> accuracy on 2 classes, <span class="hl">97.9%</span> on 6 categories and <span class="hl">95.7%</span> on 19 attack types.</p>
+<details class="writeup">
+<summary>Show description</summary>
+<p>An attention-based TabNet framework that handles three detection tasks in one model, with conditional-GAN synthetic samples for rare attack classes. On CICIoMT2024 (8,775,013 raw records from 40 devices), it reaches 99.6% accuracy on 2 classes, 97.9% on 6 categories and 95.7% on 19 attack types, beating Random Forest, XGBoost and Logistic Regression on every task. GAN balancing beat SMOTE on all three, and the gap widened as the task got harder.</p>
+</details>
+<figure class="fig"><a href="assets/img/ga-thesis-tabnet.webp" rel="noopener" target="_blank"><img alt="Graphical abstract of the Attentive TabNet thesis" src="assets/img/ga-thesis-tabnet.webp"/></a></figure>
+</div>
+</article>
+</div>
+</section>
+<footer class="colophon" id="contact">
+<div class="colophon-inner">
+<div class="chapter-header reveal">
+<div class="chapter-no" style="color:var(--paper);opacity:.7">Contact</div>
+<h2 class="chapter-title">Get in Touch</h2>
+<div class="chapter-sub" style="color:rgba(243,236,220,.75)">Open to research collaboration and graduate study inquiries.</div>
+<svg class="ornament" fill="none" stroke="#f3ecdc" stroke-width="1" viewbox="0 0 120 18">
+<line x1="0" x2="48" y1="9" y2="9"></line><circle cx="60" cy="9" r="3"></circle><circle cx="60" cy="9" r="6" stroke-dasharray="2 2"></circle><line x1="72" x2="120" y1="9" y2="9"></line>
+</svg>
+</div>
+<div class="colophon-grid">
+<div class="colophon-col reveal">
+<h5>By Post</h5>
+<p>Dhaka, Bangladesh</p>
+<small>Available for remote collaboration with research groups worldwide.</small>
+</div>
+<div class="colophon-col reveal reveal-delay-1">
+<h5>By Wire</h5>
+<a data-hover="" href="mailto:auntorchakma@gmail.com">auntorchakma@gmail.com</a>
+<a data-hover="" href="mailto:auntor.chakma@elitelab.ai">auntor.chakma@elitelab.ai</a>
+<a data-hover="" href="tel:+8801759859159">(+880) 1759 859 159</a>
+<button class="copy-btn" data-copy="auntorchakma@gmail.com" data-hover="" style="margin-right:8px">Copy Gmail</button>
+<button class="copy-btn" data-copy="auntor.chakma@elitelab.ai" data-hover="">Copy ELITE email</button>
+</div>
+<div class="colophon-col reveal reveal-delay-2">
+<h5>Elsewhere</h5>
+<a data-hover="" href="https://github.com/auntor101" rel="noopener" target="_blank">GitHub</a>
+<a data-hover="" href="https://linkedin.com/in/auntor101" rel="noopener" target="_blank">LinkedIn</a>
+<a data-hover="" href="https://scholar.google.com/citations?user=zhwU8sUAAAAJ&amp;hl=en" rel="noopener" target="_blank">Google Scholar</a>
+</div>
+</div>
+<div class="colophon-foot">
+<span>© 2026 · Auntor Chakma</span>
+</div>
+</div>
+</footer>
+<button class="to-top" id="toTop" aria-label="Back to top" data-hover="">&#8593;</button>
+<script src="assets/js/main.js?v=3"></script>
+</body></html>

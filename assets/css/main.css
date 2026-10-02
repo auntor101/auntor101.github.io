@@ -832,3 +832,17 @@
   details.writeup .sources{color:var(--ink-soft);font-size:14px;}
   .edu-body .note{font-size:15px;line-height:1.7;margin:10px 0;color:var(--ink-soft);}
   .exp-content a,details.writeup a{color:var(--accent);border-bottom:1px solid var(--rule);text-decoration:none;}
+
+  /* ============ MOBILE AND CONTINUOUS SCROLL POLISH (added) ============ */
+  section[id],footer[id]{scroll-margin-top:68px;}
+  .to-top{position:fixed;right:16px;bottom:16px;z-index:90;width:46px;height:46px;border:1px solid var(--rule);background:var(--paper);color:var(--ink);font-size:20px;line-height:1;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .25s;}
+  .to-top.show{opacity:.92;pointer-events:auto;}
+  @media (max-width:760px){
+    .row span,.tag,.tag-list span{font-size:13px;}
+    .filter-btn{min-height:42px;font-size:13px;}
+    details.writeup summary{padding:12px 0;font-size:16px;}
+    .detail-row dd a,.lines a{display:inline-block;padding:6px 0;}
+    .copy-btn{min-height:42px;font-size:12px;}
+    .pub-link{font-size:13px;}
+    .fig img{max-width:100%;}
+  }

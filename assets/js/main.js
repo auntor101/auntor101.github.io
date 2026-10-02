@@ -136,3 +136,10 @@
       });
     });
   })();
+
+  // ============ BACK TO TOP ============
+  (function(){
+    var b=document.getElementById('toTop'); if(!b) return;
+    window.addEventListener('scroll',function(){ b.classList.toggle('show',window.scrollY>700); },{passive:true});
+    b.addEventListener('click',function(){ window.scrollTo({top:0,behavior:'smooth'}); });
+  })();
