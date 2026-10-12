@@ -17,7 +17,7 @@
     background:var(--paper);
     color:var(--ink);
     line-height:1.65;
-    font-size:17px;
+    font-size:15.5px;
     overflow-x:hidden;
     cursor:none;
     background-image:
@@ -146,7 +146,7 @@
   .nameplate h1{
     font-family:'Playfair Display', serif;
     font-weight:900;
-    font-size:clamp(64px, 11vw, 156px);
+    font-size:clamp(49px, 8.5vw, 119px);
     line-height:.92;letter-spacing:-.02em;
     color:var(--ink);
   }
@@ -156,7 +156,7 @@
   }
   .subhead{
     font-family:'Playfair Display', serif;
-    font-size:clamp(18px, 2.2vw, 24px);font-style:italic;
+    font-size:clamp(16px, 2vw, 22px);font-style:italic;
     color:var(--ink-soft);margin-top:18px;
     letter-spacing:.01em;
   }
@@ -184,11 +184,11 @@
     font-size:11px;letter-spacing:.22em;color:var(--ink-mute);
     margin-bottom:14px;
   }
-  .lede p{font-size:16px;line-height:1.7;color:var(--ink-soft);}
+  .lede p{font-size:14.5px;line-height:1.65;color:var(--ink-soft);}
   .lede p + p{margin-top:14px;}
   .lede p:first-of-type::first-letter{
     font-family:'Playfair Display', serif;
-    font-weight:900;font-size:64px;line-height:.85;
+    font-weight:900;font-size:58px;line-height:.85;
     float:left;padding:6px 12px 0 0;color:var(--ink);
   }
 
@@ -271,7 +271,7 @@
   /* ============ SECTION COMMONS ============ */
   section.chapter{
     max-width:1200px;margin:0 auto;
-    padding:88px 32px;
+    padding:60px 32px;
     position:relative;
   }
   .chapter-header{
@@ -285,7 +285,7 @@
   }
   .chapter-title{
     font-family:'Playfair Display', serif;font-weight:800;
-    font-size:clamp(40px, 6vw, 64px);
+    font-size:clamp(36px, 5.4vw, 58px);
     letter-spacing:-.01em;line-height:1;
   }
   .chapter-sub{
@@ -306,14 +306,14 @@
     align-items:start;
   }
   @media (max-width: 880px){.about-grid{grid-template-columns:1fr;gap:32px;}}
-  .bio-prose p{font-size:17px;line-height:1.8;margin-bottom:18px;color:var(--ink-soft);}
+  .bio-prose p{font-size:15.5px;line-height:1.7;margin-bottom:16px;color:var(--ink-soft);}
   .bio-prose p:first-child::first-letter{
     font-family:'Playfair Display', serif;font-weight:900;
-    font-size:74px;line-height:.85;float:left;padding:8px 14px 0 0;color:var(--ink);
+    font-size:66px;line-height:.85;float:left;padding:8px 14px 0 0;color:var(--ink);
   }
   .pullquote{
     font-family:'Playfair Display', serif;font-style:italic;
-    font-size:22px;line-height:1.4;color:var(--ink);
+    font-size:20px;line-height:1.4;color:var(--ink);
     padding:24px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
     margin:30px 0;
     position:relative;
@@ -364,7 +364,7 @@
     font-family:'Playfair Display', serif;font-weight:600;font-size:17px;
     margin-bottom:4px;
   }
-  .timeline-item p{font-size:14px;color:var(--ink-mute);line-height:1.55;}
+  .timeline-item p{font-size:13px;color:var(--ink-mute);line-height:1.55;}
 
   /* ============ INTERESTS ============ */
   .interests{
@@ -423,7 +423,7 @@
   .pub-card > *{position:relative;z-index:1;}
   .pub-year{
     font-family:'Playfair Display', serif;font-weight:800;
-    font-size:42px;line-height:1;color:var(--ink);
+    font-size:38px;line-height:1;color:var(--ink);
   }
   .pub-year small{
     display:block;font-family:'Lora', serif;font-size:11px;font-weight:400;
@@ -446,12 +446,12 @@
   }
   .pub-card h3{
     font-family:'Playfair Display', serif;font-weight:600;
-    font-size:22px;line-height:1.3;margin-bottom:10px;
+    font-size:20px;line-height:1.3;margin-bottom:10px;
     color:var(--ink);
     transition: color .3s;
   }
   .pub-card:hover h3{color:var(--accent);}
-  .pub-authors{font-size:14px;color:var(--ink-soft);margin-bottom:6px;line-height:1.55;}
+  .pub-authors{font-size:13px;color:var(--ink-soft);margin-bottom:6px;line-height:1.55;}
   .pub-authors strong{color:var(--ink);}
   .pub-venue{
     font-family:'Playfair Display',serif;font-style:italic;
@@ -469,7 +469,7 @@
   .pub-link:hover .arrow{transform:translateX(4px);}
   @media (max-width: 720px){
     .pub-card{grid-template-columns:1fr;gap:12px;}
-    .pub-year{font-size:28px;}
+    .pub-year{font-size:26px;}
   }
 
   /* ============ PROJECTS ============ */
@@ -478,7 +478,7 @@
     gap:0;border-top:1px solid var(--rule);
   }
   .project{
-    padding:32px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);
+    padding:28px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);
     position:relative;cursor:none;transition: background .35s;
     overflow:hidden;
     display:block;text-decoration:none;color:inherit;
@@ -501,9 +501,9 @@
   }
   .project h3{
     font-family:'Playfair Display', serif;font-weight:600;
-    font-size:22px;line-height:1.25;margin-bottom:12px;color:var(--ink);
+    font-size:20px;line-height:1.25;margin-bottom:12px;color:var(--ink);
   }
-  .project p{font-size:14px;line-height:1.65;color:var(--ink-soft);margin-bottom:20px;}
+  .project p{font-size:13px;line-height:1.6;color:var(--ink-soft);margin-bottom:20px;}
   .p-stack{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px;}
   .p-stack span{
     font-family:'Lora', serif;font-size:11px;letter-spacing:.1em;
@@ -676,7 +676,7 @@
     font-family:'Lora',serif;font-size:11px;letter-spacing:.22em;
     text-transform:uppercase;color:var(--ink-mute);margin-bottom:6px;
   }
-  .edu-body .thesis p{font-size:14px;line-height:1.6;color:var(--ink-soft);}
+  .edu-body .thesis p{font-size:13px;line-height:1.6;color:var(--ink-soft);}
 
   /* semester grades */
   .sem-grades{margin:14px 0 0;}
@@ -802,7 +802,7 @@
 
   /* ============ STAT CARDS ============ */
   .stats{grid-template-columns:repeat(3,1fr);margin-bottom:56px;}
-  .stats .ref-card h4{font-size:46px;line-height:1;margin-bottom:10px;}
+  .stats .ref-card h4{font-size:42px;line-height:1;margin-bottom:10px;}
   @media (max-width:920px){
     .stats .ref-card{border-right:1px solid var(--rule);}
     .stats .ref-card:last-child{border-right:none;}
@@ -810,7 +810,7 @@
   @media (max-width:600px){
     .stats{margin-bottom:36px;}
     .stats .ref-card{padding:16px 10px;}
-    .stats .ref-card h4{font-size:32px;margin-bottom:6px;}
+    .stats .ref-card h4{font-size:29px;margin-bottom:6px;}
     .stats .ref-card .ttl{font-size:12.5px;line-height:1.35;margin-bottom:0;}
   }
 
@@ -819,18 +819,18 @@
 
   /* ============ PROSE (Mentors) ============ */
   .prose{max-width:760px;margin:0 auto;}
-  .prose p{font-size:17px;line-height:1.8;margin-bottom:18px;color:var(--ink-soft);}
+  .prose p{font-size:15.5px;line-height:1.7;margin-bottom:16px;color:var(--ink-soft);}
   .prose a{color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none;}
 
   /* ============ FIGURES & DETAILS (added) ============ */
   .fig{margin:14px 0;}
-  .fig img{display:block;max-width:min(100%,640px);height:auto;border:1px solid var(--rule);}
+  .fig img{display:block;max-width:min(100%,900px);height:auto;border:1px solid var(--rule);}
   .fig figcaption{font-size:13px;font-style:italic;color:var(--ink-soft);margin-top:6px;}
   details.writeup{margin-top:14px;}
-  details.writeup summary{cursor:pointer;color:var(--accent);font-size:15px;}
-  details.writeup p{font-size:15px;line-height:1.7;margin:10px 0;}
-  details.writeup .sources{color:var(--ink-soft);font-size:14px;}
-  .edu-body .note{font-size:15px;line-height:1.7;margin:10px 0;color:var(--ink-soft);}
+  details.writeup summary{cursor:pointer;color:var(--accent);font-size:14px;}
+  details.writeup p{font-size:14px;line-height:1.65;margin:10px 0;}
+  details.writeup .sources{color:var(--ink-soft);font-size:13px;}
+  .edu-body .note{font-size:14px;line-height:1.65;margin:10px 0;color:var(--ink-soft);}
   .exp-content a,details.writeup a{color:var(--accent);border-bottom:1px solid var(--rule);text-decoration:none;}
 
   /* ============ MOBILE AND CONTINUOUS SCROLL POLISH (added) ============ */
@@ -838,6 +838,8 @@
   .to-top{position:fixed;right:16px;bottom:16px;z-index:90;width:46px;height:46px;border:1px solid var(--rule);background:var(--paper);color:var(--ink);font-size:20px;line-height:1;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .25s;}
   .to-top.show{opacity:.92;pointer-events:auto;}
   @media (max-width:760px){
+    body{font-size:16px;}
+    .bio-prose p,.prose p{font-size:16px;}
     .row span,.tag,.tag-list span{font-size:13px;}
     .filter-btn{min-height:42px;font-size:13px;}
     details.writeup summary{padding:12px 0;font-size:16px;}
